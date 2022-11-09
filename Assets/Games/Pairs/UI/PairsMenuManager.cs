@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Games.Pairs.UI
 {
+    /// <summary>
+    /// Manages the visibility of all available menus (children of this) in the pairs game.
+    /// </summary>
     public class PairsMenuManager : MonoBehaviour
     {
         public LevelSelectMenuHandler levelSelectMenuHandler;

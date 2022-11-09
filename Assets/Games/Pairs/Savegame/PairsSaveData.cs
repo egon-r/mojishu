@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Games.Pairs.Savegame
 {
+    /// <summary>
+    /// Stores persistent data for "Pairs" game. 
+    /// </summary>
     [System.Serializable]
     public class PairsSaveData
     {

@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 7320453635335720414}
   - component: {fileID: 2444473500056210518}
   m_Layer: 0
-  m_Name: LevelPanelPairDetail
+  m_Name: KanaLatinVStackView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

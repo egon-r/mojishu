@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 3899714555841245229}
   - component: {fileID: 323783881194678626}
   m_Layer: 0
-  m_Name: LevelPanel
+  m_Name: LevelListItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   Info: {fileID: 9098160237925838462}
   Play: {fileID: 9098160238730430695}
   PairDetails: {fileID: 4931376265920406243}
-  PairDetailPrefab: {fileID: 2444473500056210518, guid: 9ce37a15b623d454da7acf22a57ad632, type: 3}
+  KanaLatinVStackViewPrefab: {fileID: 2444473500056210518, guid: 9ce37a15b623d454da7acf22a57ad632, type: 3}
   LevelNameText: {fileID: 9098160236960285367}
   DetailTitleText: {fileID: 9098160237120692718}
   HighscoreText: {fileID: 5149969615295770461}
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   Info: {fileID: 9098160237925838462}
   Play: {fileID: 9098160238730430695}
   PairDetails: {fileID: 4931376265920406243}
-  PairDetailPrefab: {fileID: 2444473500056210518, guid: 9ce37a15b623d454da7acf22a57ad632, type: 3}
+  KanaLatinVStackViewPrefab: {fileID: 0}
   LevelNameText: {fileID: 9098160236960285367}
   DetailTitleText: {fileID: 9098160237120692718}
   HighscoreText: {fileID: 0}
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hiragana in this level:'
+  m_text: 'Kana in this level:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
