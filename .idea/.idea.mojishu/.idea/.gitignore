@@ -2,10 +2,10 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/contentModel.xml
+/.idea.mojishu.iml
 /projectSettingsUpdater.xml
 /modules.xml
-/.idea.nihongo_game.iml
+/contentModel.xml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
