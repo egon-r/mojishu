@@ -13,6 +13,7 @@ public class MenuHandler : MonoBehaviour
 
     public Button playButton;
     public Button settingsButton;
+    public Button exitButton;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,15 @@ public class MenuHandler : MonoBehaviour
         
         playButton.onClick.AddListener(Play_clicked);
         settingsButton.onClick.AddListener(Settings_clicked);
+        exitButton.onClick.AddListener(exitButton_clicked);
 
         childMenus.AddRange(GetChildMenus());
         ShowMenu(mainMenu);
+    }
+
+    private void exitButton_clicked()
+    {
+        Application.Quit();
     }
 
     private IEnumerable<CanvasGroup> GetChildMenus()
