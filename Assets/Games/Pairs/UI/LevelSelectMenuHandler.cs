@@ -28,10 +28,13 @@ public class LevelSelectMenuHandler : MonoBehaviour
 
     private void InitializeLevels()
     {
-        var levelName = "Hiragana 1";
+        var levelCounter = 0;
+
+        levelCounter++;
+        var levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
                     { "あ", "A" },
@@ -44,10 +47,11 @@ public class LevelSelectMenuHandler : MonoBehaviour
         );
 
 
-        levelName = "Hiragana 2";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
                     { "か", "Ka" },
@@ -59,10 +63,11 @@ public class LevelSelectMenuHandler : MonoBehaviour
             )
         );
         
-        levelName = "Hiragana 2-2";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
                     { "が", "Ga" },
@@ -70,131 +75,219 @@ public class LevelSelectMenuHandler : MonoBehaviour
                     { "ぐ", "Gu" },
                     { "げ", "Ge" },
                     { "ご", "Go" },
-                    { "ぎゃ", "Gya" },
-                    { "ぎゅ", "Gyu" },
-                    { "ぎょ", "Gyo" },
                 }
             )
         );
         
-        levelName = "Hiragana 3";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Sa" },
-                    { "", "Shi" },
-                    { "", "Su" },
-                    { "", "Se" },
-                    { "", "So" },
-                    
-                    { "", "Za" },
-                    { "", "Ji" },
-                    { "", "Zu" },
-                    { "", "Ze" },
-                    { "", "Zo" },
+                    { "さ", "Sa" },
+                    { "し", "Shi" },
+                    { "す", "Su" },
+                    { "せ", "Se" },
+                    { "そ", "So" },
                 }
             )
         );
         
-        // TODO: Hiragana 1-3 (includes all from 1-3)
-        
-        levelName = "Hiragana 4";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Ta" },
-                    { "", "Ti" },
-                    { "", "Tu" },
-                    { "", "Te" },
-                    { "", "To" },
-                    
-                    { "", "Da" },
-                    { "", "Ji" },
-                    { "", "Zu" },
-                    { "", "De" },
-                    { "", "Do" },
+                    { "ざ", "Za" },
+                    { "じ", "Ji" },
+                    { "ず", "Zu" },
+                    { "ぜ", "Ze" },
+                    { "ぞ", "Zo" },
                 }
             )
         );
         
-        levelName = "Hiragana 5";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 5, 2, 3,
+                new Dictionary<string, string>()
+                {
+                    { "た", "Ta" },
+                    { "ち", "Ti" },
+                    { "つ", "Tsu" },
+                    { "て", "Te" },
+                    { "と", "To" },
+                }
+            )
+        );
+        
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 5, 2, 3,
+                new Dictionary<string, string>()
+                {
+                    { "だ", "Da" },
+                    { "ぢ", "Ji" },
+                    { "づ", "Du" },
+                    { "で", "De" },
+                    { "ど", "Do" },
+                }
+            )
+        );
+
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
             new PairsGameInitData(levelName, 4, 3, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Na" },
-                    { "", "Ni" },
-                    { "", "Nu" },
-                    { "", "Ne" },
-                    { "", "No" },
-                    { "", "N" },
+                    { "な", "Na" },
+                    { "に", "Ni" },
+                    { "ぬ", "Nu" },
+                    { "ね", "Ne" },
+                    { "の", "No" },
+                    { "ん", "N" },
                 }
             )
         );
         
-        levelName = "Hiragana 6";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Ha" },
-                    { "", "Hi" },
-                    { "", "Hu" },
-                    { "", "He" },
-                    { "", "Ho" },
+                    { "は", "Ha" },
+                    { "ひ", "Hi" },
+                    { "ふ", "Hu" },
+                    { "へ", "He" },
+                    { "ほ", "Ho" },
                 }
             )
         );
         
-        levelName = "Hiragana 7";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Ma" },
-                    { "", "Mi" },
-                    { "", "Mu" },
-                    { "", "Me" },
-                    { "", "Mo" },
+                    { "ば", "Ba" },
+                    { "び", "Bi" },
+                    { "ぶ", "Bu" },
+                    { "べ", "Be" },
+                    { "ぼ", "Bo" },
                 }
             )
         );
         
-        levelName = "Hiragana 8";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Ra" },
-                    { "", "Ri" },
-                    { "", "Ru" },
-                    { "", "Re" },
-                    { "", "Ro" },
+                    { "ぱ", "Pa" },
+                    { "ぴ", "Pi" },
+                    { "ぷ", "Pu" },
+                    { "ぺ", "Pe" },
+                    { "ぽ", "Po" },
                 }
             )
         );
         
-        levelName = "Hiragana 8";
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
         LevelPanels[levelName] = createLevel(
             levelName,
-            new PairsGameInitData(levelName, 4, 2, 3,
+            new PairsGameInitData(levelName, 5, 2, 3,
                 new Dictionary<string, string>()
                 {
-                    { "", "Ya" },
-                    { "", "Wa" },
-                    { "", "Yu" },
-                    { "", "Yo" },
-                    { "", "Wo" },
+                    { "ま", "Ma" },
+                    { "み", "Mi" },
+                    { "む", "Mu" },
+                    { "め", "Me" },
+                    { "も", "Mo" },
                 }
             )
+        );
+        
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 5, 2, 3,
+                new Dictionary<string, string>()
+                {
+                    { "ら", "Ra" },
+                    { "り", "Ri" },
+                    { "る", "Ru" },
+                    { "れ", "Re" },
+                    { "ろ", "Ro" },
+                }
+            )
+        );
+
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 5, 2, 3,
+                new Dictionary<string, string>()
+                {
+                    { "や", "Ya" },
+                    { "ゆ", "Yu" },
+                    { "よ", "Yo" },
+                    { "わ", "Wa" },
+                    { "を", "Wo" },
+                }
+            )
+        );
+        
+        levelCounter++;
+        levelName = $"Hiragana {levelCounter}";
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 6, 3, 3,
+                new Dictionary<string, string>()
+                {
+                    { "ぎゃ", "Gya" },
+                    { "ぎゅ", "Gyu" },
+                    { "ぎょ", "Gyo" },
+                    { "じゃ", "Ja" },
+                    { "じゅ", "Ju" },
+                    { "じょ", "Jo" },
+                    { "ぢゃ", "Ja" },
+                    { "ぢゅ", "Ju" },
+                    { "ぢょ", "Jo" },
+                }
+            )
+        );
+        
+        levelName = "All Hiragana";
+        var allHiragana = new Dictionary<string, string>();
+        foreach (var ldata in LevelData)
+        {
+            foreach (var pair in ldata.Value.Pairs)
+            {
+                allHiragana.Add(pair.Key, pair.Value);
+            }
+        }
+        LevelPanels[levelName] = createLevel(
+            levelName,
+            new PairsGameInitData(levelName, 6, 4, 3, allHiragana)
         );
     }
 
@@ -222,13 +315,13 @@ public class LevelSelectMenuHandler : MonoBehaviour
     private void OnEnable()
     {
         pairsSaveData.ReadFromFile();
-        foreach (var data in LevelData)
+        foreach (var ldata in LevelData)
         {
-            if (pairsSaveData.LevelHighscores100.ContainsKey(data.Key))
+            if (pairsSaveData.LevelHighscores100.ContainsKey(ldata.Key))
             {
-                var highscore100 = pairsSaveData.LevelHighscores100[data.Key];
-                LevelPanels[data.Key].SetHighscoreText(highscore100 + "%");
-                Debug.Log($"{data.Key} score: {highscore100}");
+                var highscore100 = pairsSaveData.LevelHighscores100[ldata.Key];
+                LevelPanels[ldata.Key].SetHighscoreText(highscore100 + "%");
+                Debug.Log($"{ldata.Key} score: {highscore100}");
             }
         }
     }
