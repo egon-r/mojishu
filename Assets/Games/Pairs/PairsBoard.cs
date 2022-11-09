@@ -1,5 +1,5 @@
 using System;
-using UnityEditor.PackageManager;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Games.Pairs
@@ -12,12 +12,15 @@ namespace Games.Pairs
         public float boardColSpacing = 0.1f;
         public float boardRowSpacing = 0.1f;
         public string[,] cardTextData;
+        private List<PairsCard> _cards = new List<PairsCard>();
 
         public delegate void CardClickedHandler(PairsCard card);
         public event CardClickedHandler CardClicked;
 
         public void Initialize(string[,] cardData)
         {
+            ClearBoard();
+            
             // check data array size
             if (cardData.GetLength(0) == boardRows && cardData.GetLength(1) == boardCols)
             {
@@ -63,11 +66,26 @@ namespace Games.Pairs
                     {
                         RaiseCardClickedEvent(card);
                     };
+                    _cards.Add(card);
                     nextPosition.x += cardSize.x + boardColSpacing;
                 }
                 nextPosition.y -= cardSize.y + boardRowSpacing;
                 nextPosition.x = boardLeftStart;
             }
+        }
+
+        public void ClearBoard()
+        {
+            foreach (var card in _cards)
+            {
+                Destroy(card.gameObject);
+            }
+            _cards.Clear();
+        }
+        
+        public List<PairsCard> GetCards()
+        {
+            return _cards;
         }
 
         protected virtual void RaiseCardClickedEvent(PairsCard card)

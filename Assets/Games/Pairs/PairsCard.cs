@@ -19,7 +19,7 @@ namespace Games.Pairs
                 return _textContent;
             }
         }
-        
+
         private bool isRevealed = false;
         private bool revealing = false;
         private bool concealing = false;
@@ -37,7 +37,10 @@ namespace Games.Pairs
 
         private void OnMouseDown()
         {
-            RaiseClickedEvent();
+            if (!revealing && !concealing)
+            {
+                RaiseClickedEvent();
+            }
         }
 
         public void Reveal()
