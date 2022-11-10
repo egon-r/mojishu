@@ -1,4 +1,5 @@
 using System;
+using DigitalRuby.Tween;
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ namespace Games.Pairs
 {
     public class PairsCard : MonoBehaviour
     {
+        public GameObject CardBack;
+        public GameObject CardFrontText;
+        
         private string _textContent;
         public string TextContent
         {
@@ -23,8 +27,8 @@ namespace Games.Pairs
         private bool isRevealed = false;
         private bool revealing = false;
         private bool concealing = false;
-        private Quaternion revealedRotation = Quaternion.Euler(0, 180, 0);
-        private Quaternion hiddenRotation = Quaternion.Euler(0, 0, 0);
+        private Quaternion revealedRotation = Quaternion.Euler(0, 0, 0);
+        private Quaternion hiddenRotation = Quaternion.Euler(0, 180, 0);
 
         public delegate void ClickedEvent();
         public event ClickedEvent Clicked;
@@ -51,6 +55,25 @@ namespace Games.Pairs
         public void Conceal()
         {
             isRevealed = false;
+        }
+
+        public void Dissolve()
+        {
+            System.Action<ITween<float>> dissolveCard = (t) =>
+            {
+                CardBack.GetComponent<SpriteRenderer>().material.SetFloat("_Dissolve", t.CurrentValue);
+                CardFrontText.GetComponent<MeshRenderer>().material.SetFloat("_Dissolve", t.CurrentValue);
+            };
+            var dissolveStart = 1.0f;
+            var dissolveEnd = 0.0f;
+            CardBack.gameObject.Tween(
+                dissolveCard,
+                dissolveStart,
+                dissolveEnd,
+                1.0f,
+                TweenScaleFunctions.SineEaseInOut,
+                dissolveCard
+            );
         }
 
         private void Update()

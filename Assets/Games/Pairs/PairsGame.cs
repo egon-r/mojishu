@@ -219,6 +219,8 @@ namespace Games.Pairs
                         if (cardsMatch)
                         {
                             // destroy matching cards
+                            firstCard.Dissolve();
+                            secondCard.Dissolve();
                             StartCoroutine(HideMatchedCards(firstCard, secondCard));
                         }
                         else
