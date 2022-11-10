@@ -17,7 +17,7 @@ namespace Games.Pairs
 
         private PairsSaveData saveData = new PairsSaveData();
         private float initialBoardRevealDuration = 3;
-        private float revealDuration = 3;
+        private float revealDuration = 2;
         private bool ignoreClickEvents = false;
         private PairsCard firstCardRevealed = null;
         private PairsCard secondCardRevealed = null;

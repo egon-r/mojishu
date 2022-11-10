@@ -56,6 +56,55 @@ namespace Games.Pairs.UI
             CreateHiraganaLevelItems();
         }
         
+        private LevelListItem createLevel(string levelName, PairsGameInitData gameInitData)
+        {
+            LevelData[levelName] = gameInitData;
+
+            var levelPanel = Instantiate(levelListItemPrefab, levelPanelContainer.transform);
+
+            levelPanel.LevelNameText.text = levelName;
+            levelPanel.SetHighscore(0);
+            foreach (var pair in gameInitData.Pairs)
+            {
+                levelPanel.AddPairDetail(pair.Key, pair.Value);
+            }
+
+            levelPanel.PlayClicked += () =>
+            {
+                menuManager.ShowMenu(menuManager.playerHud.gameObject);
+                pairsGame.Initialize(gameInitData);
+            };
+
+            return levelPanel;
+        }
+
+        private void ReadLevelHighscores()
+        {
+            pairsSaveData.ReadFromFile();
+            foreach (var ldata in LevelData)
+            {
+                if (pairsSaveData.LevelHighscores100.ContainsKey(ldata.Key))
+                {
+                    var highscore100 = pairsSaveData.LevelHighscores100[ldata.Key];
+                    LevelPanels[ldata.Key].SetHighscore(highscore100);
+                }
+            }
+        }
+        
+        private void OnEnable()
+        {
+            // triggered by setActive
+            ReadLevelHighscores();
+        }
+
+        private void ClearLevelPanelContainer()
+        {
+            foreach (Transform child in levelPanelContainer.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        
         private void CreateMixedLevelItems()
         {
             ClearLevelPanelContainer();
@@ -944,54 +993,6 @@ namespace Games.Pairs.UI
             );
             
             ReadLevelHighscores();
-        }
-
-        private LevelListItem createLevel(string levelName, PairsGameInitData gameInitData)
-        {
-            LevelData[levelName] = gameInitData;
-
-            var levelPanel = Instantiate(levelListItemPrefab, levelPanelContainer.transform);
-
-            levelPanel.LevelNameText.text = levelName;
-            foreach (var pair in gameInitData.Pairs)
-            {
-                levelPanel.AddPairDetail(pair.Key, pair.Value);
-            }
-
-            levelPanel.PlayClicked += () =>
-            {
-                menuManager.ShowMenu(menuManager.playerHud.gameObject);
-                pairsGame.Initialize(gameInitData);
-            };
-
-            return levelPanel;
-        }
-
-        private void ReadLevelHighscores()
-        {
-            pairsSaveData.ReadFromFile();
-            foreach (var ldata in LevelData)
-            {
-                if (pairsSaveData.LevelHighscores100.ContainsKey(ldata.Key))
-                {
-                    var highscore100 = pairsSaveData.LevelHighscores100[ldata.Key];
-                    LevelPanels[ldata.Key].SetHighscoreText(highscore100 + "%");
-                }
-            }
-        }
-        
-        private void OnEnable()
-        {
-            // triggered by setActive
-            ReadLevelHighscores();
-        }
-
-        private void ClearLevelPanelContainer()
-        {
-            foreach (Transform child in levelPanelContainer.transform)
-            {
-                Destroy(child.gameObject);
-            }
         }
     }
 }
