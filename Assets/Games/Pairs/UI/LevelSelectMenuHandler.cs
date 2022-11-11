@@ -315,12 +315,12 @@ namespace Games.Pairs.UI
                     new Dictionary<string, string>()
                     {
                         { "タ", "Ta" },
-                        { "チ", "Ti" },
+                        { "チ", "Chi" },
                         { "ツ", "Tsu" },
                         { "テ", "Te" },
                         { "ト", "To" },
                         { "た", "Ta" },
-                        { "ち", "Ti" },
+                        { "ち", "Chi" },
                         { "つ", "Tsu" },
                         { "て", "Te" },
                         { "と", "To" },
@@ -387,12 +387,12 @@ namespace Games.Pairs.UI
                     {
                         { "ハ", "Ha" },
                         { "ヒ", "Hi" },
-                        { "フ", "Hu" },
+                        { "フ", "Fu" },
                         { "ヘ", "He" },
                         { "ホ", "Ho" },
                         { "は", "Ha" },
                         { "ひ", "Hi" },
-                        { "ふ", "Hu" },
+                        { "ふ", "Fu" },
                         { "へ", "He" },
                         { "ほ", "Ho" },
                     }
@@ -668,7 +668,7 @@ namespace Games.Pairs.UI
                     new Dictionary<string, string>()
                     {
                         { "タ", "Ta" },
-                        { "チ", "Ti" },
+                        { "チ", "Chi" },
                         { "ツ", "Tsu" },
                         { "テ", "Te" },
                         { "ト", "To" },
@@ -724,7 +724,7 @@ namespace Games.Pairs.UI
                     {
                         { "ハ", "Ha" },
                         { "ヒ", "Hi" },
-                        { "フ", "Hu" },
+                        { "フ", "Fu" },
                         { "ヘ", "He" },
                         { "ホ", "Ho" },
                     }
@@ -965,7 +965,7 @@ namespace Games.Pairs.UI
                     new Dictionary<string, string>()
                     {
                         { "た", "Ta" },
-                        { "ち", "Ti" },
+                        { "ち", "Chi" },
                         { "つ", "Tsu" },
                         { "て", "Te" },
                         { "と", "To" },
@@ -1021,7 +1021,7 @@ namespace Games.Pairs.UI
                     {
                         { "は", "Ha" },
                         { "ひ", "Hi" },
-                        { "ふ", "Hu" },
+                        { "ふ", "Fu" },
                         { "へ", "He" },
                         { "ほ", "Ho" },
                     }

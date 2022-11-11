@@ -44,4 +44,5 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _DissolveEdgeColor: {r: 1, g: 0.30218887, b: 0, a: 0}
+    - _DissolveEdgeColorHDR: {r: 4, g: 0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
