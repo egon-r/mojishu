@@ -3647,6 +3647,7 @@ MonoBehaviour:
   levelSelect: {fileID: 1754231111}
   scoreText: {fileID: 1099022426}
   titleText: {fileID: 911229309}
+  CurrentLevelName: unknown_level
 --- !u!225 &1375031150
 CanvasGroup:
   m_ObjectHideFlags: 0
