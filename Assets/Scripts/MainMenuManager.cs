@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuHandler : MonoBehaviour
+public class MainMenuManager : MonoBehaviour
 {
     public List<CanvasGroup> childMenus = new List<CanvasGroup>();
     public CanvasGroup settingsMenu;
@@ -168,7 +168,7 @@ public class MenuHandler : MonoBehaviour
             scaleMainMenu,
             reverse ? scaleEnd : scaleStart,
             reverse ? scaleStart : scaleEnd,
-            0.5f,
+            0.7f,
             TweenScaleFunctions.CubicEaseInOut,
             scaleMainMenu
         );

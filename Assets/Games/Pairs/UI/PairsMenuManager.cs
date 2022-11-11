@@ -31,7 +31,7 @@ namespace Games.Pairs.UI
                 HideMenu(pauseMenu.gameObject);
                 HideMenu(gameFinishedMenu.gameObject);
             }
-
+            
             menu.gameObject.SetActive(true);
         }
     }

@@ -39,7 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Dissolve: 1
-    - _DissolveNoiseScale: 40
+    - _DissolveNoiseScale: 30
     m_Colors:
     - _DissolveEdgeColor: {r: 1, g: 0.3019608, b: 0, a: 0}
   m_BuildTextureStacks: []

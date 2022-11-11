@@ -143,7 +143,8 @@ namespace Games.Pairs
             }
             
             // show finished menu
-            menuManager.gameFinishedMenu.setScoreText(score100.ToString());
+            menuManager.gameFinishedMenu.setScoreText(score100);
+            menuManager.gameFinishedMenu.SlideInFromTop();
             menuManager.ShowMenu(menuManager.gameFinishedMenu.gameObject);
         }
         

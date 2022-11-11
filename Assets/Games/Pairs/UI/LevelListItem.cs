@@ -47,20 +47,7 @@ namespace Games.Pairs.UI
         public void SetHighscore(int score100)
         {
             HighscoreText.text = score100 + "%";
-            if (score100 == 100)
-            {
-                HighscoreText.color = new Color(0.0745f, 0.041f, 0.976f);
-            } else if (score100 > 80)
-            {
-                HighscoreText.color = new Color(0.0745f, 0.741f, 0.176f);
-            } else if (score100 > 40)
-            {
-                HighscoreText.color = new Color(0.741f, 0.682f, 0.094f);
-            }
-            else
-            {
-                HighscoreText.color = new Color(1.0f, 0.182f, 0.094f);
-            }
+            HighscoreText.color = PairsUtils.getHighscoreColor(score100);
         }
 
         private void info_clicked()
