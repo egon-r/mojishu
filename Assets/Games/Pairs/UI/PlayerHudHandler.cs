@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,19 +9,20 @@ namespace Games.Pairs.UI
     /// </summary>
     public class PlayerHudHandler : MonoBehaviour
     {
-        public PairsMenuManager menuManager;
-        public Button pause;
+        public TextMeshProUGUI LevelText;
+        public PairsMenuManager MenuManager;
+        public Button Pause;
 
         // Start is called before the first frame update
         void Start()
         {
-            pause.onClick.AddListener(pause_clicked);
+            Pause.onClick.AddListener(pause_clicked);
         }
     
         private void pause_clicked()
         {
             Time.timeScale = 0;
-            menuManager.ShowMenu(menuManager.pauseMenu.gameObject);
+            MenuManager.ShowMenu(MenuManager.pauseMenu.gameObject);
         }
     }
 }

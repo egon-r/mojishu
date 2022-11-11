@@ -29,6 +29,9 @@ namespace Games.Pairs
 
         public void Initialize(PairsGameInitData pairsGameInitData)
         {
+            Debug.Log($"Initializing '{pairsGameInitData.levelName}'...");
+            Debug.Log($"Next Level: '{menuManager.levelSelectMenuHandler.GetNextLevel(pairsGameInitData.levelName)?.GameInitData.levelName}'");
+            
             if ((pairsGameInitData.boardCols * pairsGameInitData.boardRows) % 2 != 0)
             {
                 throw new Exception("Invalid board size, number of cards is not even!");
@@ -144,6 +147,7 @@ namespace Games.Pairs
             
             // show finished menu
             menuManager.gameFinishedMenu.setScoreText(score100);
+            menuManager.gameFinishedMenu.CurrentLevelName = levelName;
             menuManager.gameFinishedMenu.SlideInFromTop();
             menuManager.ShowMenu(menuManager.gameFinishedMenu.gameObject);
         }

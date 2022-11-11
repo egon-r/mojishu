@@ -1,3 +1,4 @@
+using System;
 using DigitalRuby.Tween;
 using TMPro;
 using UnityEngine;
@@ -16,11 +17,26 @@ namespace Games.Pairs.UI
         public Button levelSelect;
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI titleText;
+        public string CurrentLevelName = "unknown_level";
+        private LevelListItem nextLevelItem = null;
 
         void Start()
         {
             levelSelect.onClick.AddListener(levelSelect_clicked);
             nextLevel.onClick.AddListener(nextLevel_clicked);
+        }
+        
+        private void OnEnable()
+        {
+            nextLevelItem = menuManager.levelSelectMenuHandler.GetNextLevel(CurrentLevelName);
+            if (nextLevelItem == null)
+            {
+                nextLevel.gameObject.SetActive(false);
+            }
+            else
+            {
+                nextLevel.gameObject.SetActive(true);
+            }
         }
 
         public void setScoreText(int score100)
@@ -36,7 +52,7 @@ namespace Games.Pairs.UI
 
         private void nextLevel_clicked()
         {
-            Debug.Log("Next Level...");
+            menuManager.levelSelectMenuHandler.PlayLevel(nextLevelItem.GameInitData);
         }
 
         private void levelSelect_clicked()
