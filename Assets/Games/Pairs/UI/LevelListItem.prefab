@@ -894,7 +894,6 @@ GameObject:
   - component: {fileID: 9098160236890282201}
   - component: {fileID: 9098160236890282206}
   - component: {fileID: 9098160236890282204}
-  - component: {fileID: 9098160236890282200}
   - component: {fileID: 3899714555841245229}
   - component: {fileID: 323783881194678626}
   m_Layer: 0
@@ -924,7 +923,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 980, y: 500}
+  m_SizeDelta: {x: 980, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9098160236890282201
 CanvasRenderer:
@@ -976,8 +975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059b4da2afa833e4ca49014d650a5fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExpandedHeight: 500
-  ShrinkedHeight: 190
   Info: {fileID: 9098160237925838462}
   Play: {fileID: 9098160238730430695}
   PairDetails: {fileID: 4931376265920406243}
@@ -985,32 +982,6 @@ MonoBehaviour:
   LevelNameText: {fileID: 9098160236960285367}
   DetailTitleText: {fileID: 9098160237120692718}
   HighscoreText: {fileID: 5149969615295770461}
---- !u!114 &9098160236890282200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9098160236890282178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 20
-    m_Right: 20
-    m_Top: 20
-    m_Bottom: 20
-  m_ChildAlignment: 1
-  m_Spacing: 20
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!114 &3899714555841245229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,8 +994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059b4da2afa833e4ca49014d650a5fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExpandedHeight: 500
-  ShrinkedHeight: 190
   Info: {fileID: 9098160237925838462}
   Play: {fileID: 9098160238730430695}
   PairDetails: {fileID: 4931376265920406243}
@@ -1213,9 +1182,9 @@ RectTransform:
   m_Father: {fileID: 9098160238312708471}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -20}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -40, y: -20}
   m_SizeDelta: {x: 800, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9098160237120692713
@@ -1473,10 +1442,10 @@ RectTransform:
   m_Father: {fileID: 9098160236890282205}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 950, y: 150}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -95}
+  m_SizeDelta: {x: -30, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9098160238025616139
 MonoBehaviour:
@@ -1538,10 +1507,10 @@ RectTransform:
   m_Father: {fileID: 9098160236890282205}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 880, y: 300}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -450}
+  m_SizeDelta: {x: -100, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9098160238312708470
 CanvasRenderer:
