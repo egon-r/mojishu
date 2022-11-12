@@ -1,3 +1,5 @@
+using System;
+using DigitalRuby.Tween;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,6 +12,7 @@ namespace Games.Pairs.UI
     public class PauseMenuHandler : MonoBehaviour
     {
         public PairsMenuManager menuManager;
+        public RectTransform rootPanel;
         public Button resume;
         public Button levelSelect;
         public Button mainMenu;
@@ -25,20 +28,44 @@ namespace Games.Pairs.UI
         private void mainMenu_clicked()
         {
             Time.timeScale = 1;
-            SceneManager.LoadScene("Scenes/MainMenu");
+            SlideInFromTop(_ =>
+            {
+                SceneManager.LoadScene("Scenes/MainMenu");
+            }, true);
         }
 
         private void levelSelect_clicked()
         {
             Time.timeScale = 1;
-            menuManager.levelSelectMenuHandler.GetComponent<LevelSelectMenuHandler>().pairsGame.Board.ClearBoard();
-            menuManager.ShowMenu(menuManager.levelSelectMenuHandler.gameObject);
+            SlideInFromTop(_ =>
+            {
+                menuManager.levelSelectMenuHandler.GetComponent<LevelSelectMenuHandler>().pairsGame.Board.ClearBoard();
+                menuManager.ShowMenu(menuManager.levelSelectMenuHandler.gameObject);
+            }, true);
         }
 
         private void resume_clicked()
         {
             Time.timeScale = 1;
-            menuManager.ShowMenu(menuManager.playerHud.gameObject);
+            SlideInFromTop(_ => menuManager.ShowMenu(menuManager.playerHud.gameObject), true);
+        }
+
+        public void SlideInFromTop(Action<ITween> onComplete, bool reverse = false)
+        {
+            System.Action<ITween<Vector3>> slideIn = t =>
+            {
+                rootPanel.GetComponent<RectTransform>().localPosition = t.CurrentValue;
+            };
+            var slideStart = new Vector3(0, 1700, 0);
+            var slideEnd = Vector3.zero;
+            rootPanel.gameObject.Tween(
+                slideIn,
+                reverse ? slideEnd : slideStart, 
+                reverse ? slideStart : slideEnd,
+                0.4f, TweenScaleFunctions.CubicEaseOut,
+                slideIn,
+                onComplete
+            );
         }
     }
 }

@@ -32,6 +32,12 @@ namespace Games.Pairs.UI
                 HideMenu(gameFinishedMenu.gameObject);
             }
             
+            Component component;
+            if (menu.TryGetComponent(typeof(PauseMenuHandler), out component))
+            {
+                pauseMenu.SlideInFromTop(_ => Time.timeScale = 0);
+            }
+            
             menu.gameObject.SetActive(true);
         }
     }

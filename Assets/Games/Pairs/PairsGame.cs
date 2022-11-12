@@ -130,12 +130,14 @@ namespace Games.Pairs
                 if (score100 > currentHighscore100)
                 {
                     menuManager.gameFinishedMenu.setTitleText("New Highscore!");
+                    menuManager.gameFinishedMenu.highscoreParticles.gameObject.SetActive(true);
                     saveData.LevelHighscores100[levelName] = score100;
                     saveData.WriteToFile();
                 }
                 else
                 {
                     menuManager.gameFinishedMenu.setTitleText("- Your Score -");
+                    menuManager.gameFinishedMenu.highscoreParticles.gameObject.SetActive(false);
                 }
             }
             else

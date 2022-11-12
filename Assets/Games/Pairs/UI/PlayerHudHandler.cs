@@ -21,7 +21,7 @@ namespace Games.Pairs.UI
     
         private void pause_clicked()
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             MenuManager.ShowMenu(MenuManager.pauseMenu.gameObject);
         }
     }

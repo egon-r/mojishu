@@ -11,6 +11,7 @@ namespace Games.Pairs.UI
     /// </summary>
     public class GameFinishedMenuHandler : MonoBehaviour
     {
+        public ParticleSystem highscoreParticles;
         public RectTransform rootPanel;
         public PairsMenuManager menuManager;
         public Button nextLevel;
