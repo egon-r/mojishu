@@ -17,7 +17,7 @@ namespace Games.Pairs
 
         private PairsSaveData saveData = new PairsSaveData();
         private float initialBoardRevealDuration = 3;
-        private float revealDuration = 2;
+        private float revealDuration = 1.5f;
         private bool ignoreClickEvents = false;
         private PairsCard firstCardRevealed = null;
         private PairsCard secondCardRevealed = null;
@@ -154,9 +154,11 @@ namespace Games.Pairs
             menuManager.ShowMenu(menuManager.gameFinishedMenu.gameObject);
         }
         
-        private IEnumerator ConcealCards()
+        private IEnumerator ConcealMismatchedCards()
         {
             ignoreClickEvents = true;
+            firstCardRevealed.PlayMismatchedAnimation();
+            secondCardRevealed.PlayMismatchedAnimation();
             yield return new WaitForSeconds(revealDuration);
             firstCardRevealed.Conceal();
             secondCardRevealed.Conceal();
@@ -233,7 +235,7 @@ namespace Games.Pairs
                         else
                         {
                             // else conceal them, then allow the player to select another pair
-                            StartCoroutine(ConcealCards());
+                            StartCoroutine(ConcealMismatchedCards());
                             secondCard.RevealAnimFinished -= revealFinished;
                         }
                     };
