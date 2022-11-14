@@ -125,7 +125,10 @@ public class MainMenuManager : MonoBehaviour
     {
         System.Action<ITween<Vector3>> scaleInBackground = (t) =>
         {
-            backgroundImage.transform.localScale = t.CurrentValue;
+            if (backgroundImage != null)
+            {
+                backgroundImage.transform.localScale = t.CurrentValue;
+            }
         };
         var backgroundTargetScale = backgroundInitialScale + new Vector3(0.4f, 0.4f, 0.4f);
         backgroundImage.gameObject.Tween(
@@ -183,7 +186,10 @@ public class MainMenuManager : MonoBehaviour
         
         System.Action<ITween<float>> fadeInPlayMenu = (t) =>
         {
-            playMenuRoot.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+            if (playMenuRoot != null)
+            {
+                playMenuRoot.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+            }
         };
         var fadeStart = 0.0f;
         var fadeEnd = 1.0f;

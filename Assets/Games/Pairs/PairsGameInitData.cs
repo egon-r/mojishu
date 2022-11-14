@@ -1,16 +1,18 @@
 ﻿using System.Collections.Generic;
+using DefaultNamespace;
 
 namespace Games.Pairs
 {
     public class PairsGameInitData
     {
-        public Dictionary<string, string> Pairs;
+        public Dictionary<string, KanaInfo> Pairs;
         public int boardCols;
         public int boardRows;
         public float initialBoardRevealDuration;
         public string levelName;
 
-        public PairsGameInitData(string levelName, int boardRows, int boardCols, float initialBoardRevealDuration, Dictionary<string, string> Pairs)
+        public PairsGameInitData(string levelName, int boardRows, int boardCols, float initialBoardRevealDuration,
+            Dictionary<string, KanaInfo> Pairs)
         {
             this.initialBoardRevealDuration = initialBoardRevealDuration;
             this.boardRows = boardRows;

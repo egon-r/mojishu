@@ -23,7 +23,7 @@ namespace Games.Pairs
         private PairsCard secondCardRevealed = null;
         private int matches = 0;
         private int attempts = 0;
-        private Dictionary<string, string> pairsDict;
+        private Dictionary<string, KanaInfo> pairsDict;
         private List<PairsCard> matchedCards = new List<PairsCard>();
         private string levelName = "unknown_level";
 
@@ -64,7 +64,7 @@ namespace Games.Pairs
             {
                 var rndPair = allPairs[rng.Next(allPairs.Count)];
                 pairItems.Add(rndPair.Key);
-                pairItems.Add(rndPair.Value);
+                pairItems.Add(rndPair.Value.Latin);
                 allPairs.Remove(rndPair);
             }
 
@@ -167,18 +167,33 @@ namespace Games.Pairs
             ignoreClickEvents = false;
         }
 
-        private IEnumerator HideMatchedCards(PairsCard firstCard, PairsCard secondCard)
+        private IEnumerator HideMatchedCards(PairsCard first, PairsCard second)
         {
             yield return new WaitForSeconds(1);
             try
             {
-                firstCard.gameObject.SetActive(false);
-                secondCard.gameObject.SetActive(false);
+                first.gameObject.SetActive(false);
+                second.gameObject.SetActive(false);
             }
             catch
             {
                 // cards might have been destroyed already because the player switched to another screen
             }
+        }
+
+        private bool DoCardsMatch(PairsCard first, PairsCard second)
+        {
+            if (pairsDict.ContainsKey(first.TextContent))
+            {
+                return pairsDict[first.TextContent].Latin == second.TextContent;
+            } 
+            
+            if (pairsDict.ContainsKey(second.TextContent))
+            {
+                return pairsDict[second.TextContent].Latin == first.TextContent;
+            }
+
+            return false;
         }
 
         private void BoardOnCardClicked(PairsCard card)
@@ -206,7 +221,9 @@ namespace Games.Pairs
                     var secondCard = secondCardRevealed;
 
                     // if cards match disable collision and allow the player to immediately select another pair
-                    var cardsMatch = pairsDict.ContainsPair(firstCard.TextContent, secondCard.TextContent);
+                    // var cardsMatch = pairsDict.ContainsPair(firstCard.TextContent, secondCard.TextContent);
+                    var cardsMatch = DoCardsMatch(firstCard, secondCard);
+
                     Debug.Log($"Match? '{cardsMatch}' for '{firstCard.TextContent}' -> '{secondCard.TextContent}'");
                     if (cardsMatch)
                     {
