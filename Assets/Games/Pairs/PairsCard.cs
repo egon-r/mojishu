@@ -77,7 +77,7 @@ namespace Games.Pairs
             gameObject.Tween(
                 rotateAnim,
                 start, end, 0.6f,
-                TweenScaleFunctions.CubicEaseInOut,
+                TweenScaleFunctions.CubicEaseOut,
                 rotateAnim,
                 _ => RaiseRevealAnimFinished()
             );
