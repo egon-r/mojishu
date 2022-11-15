@@ -520,7 +520,7 @@ namespace Games.Pairs.UI
             var levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.VOWEL_ROW)
                 )
             );
@@ -531,7 +531,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.Y_ROW, KanaRow.W_ROW)
                 )
             );
@@ -542,7 +542,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.K_ROW)
                 )
             );
@@ -553,7 +553,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.K_ROW, KanaRow.K_ROW_DIAGRAPH)
                 )
             );
@@ -564,7 +564,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.G_ROW)
                 )
             );
@@ -575,7 +575,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.G_ROW, KanaRow.G_ROW_DIAGRAPH)
                 )
             );
@@ -586,7 +586,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.S_ROW)
                 )
             );
@@ -597,7 +597,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.S_ROW, KanaRow.S_ROW_DIAGRAPH)
                 )
             );
@@ -608,7 +608,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.Z_ROW)
                 )
             );
@@ -619,7 +619,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.Z_ROW, KanaRow.Z_ROW_DIAGRAPH)
                 )
             );
@@ -630,7 +630,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.T_ROW)
                 )
             );
@@ -641,7 +641,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.T_ROW, KanaRow.T_ROW_DIAGRAPH)
                 )
             );
@@ -652,7 +652,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.D_ROW)
                 )
             );
@@ -663,7 +663,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.D_ROW, KanaRow.D_ROW_DIAGRAPH)
                 )
             );
@@ -685,7 +685,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.N_ROW, KanaRow.N_ROW_DIAGRAPH)
                 )
             );
@@ -696,7 +696,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.H_ROW)
                 )
             );
@@ -707,7 +707,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.H_ROW, KanaRow.H_ROW_DIAGRAPH)
                 )
             );
@@ -718,7 +718,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.B_ROW)
                 )
             );
@@ -729,7 +729,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.B_ROW, KanaRow.B_ROW_DIAGRAPH)
                 )
             );
@@ -740,7 +740,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.P_ROW)
                 )
             );
@@ -751,7 +751,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.P_ROW, KanaRow.P_ROW_DIAGRAPH)
                 )
             );
@@ -762,7 +762,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.M_ROW)
                 )
             );
@@ -773,7 +773,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.M_ROW, KanaRow.M_ROW_DIAGRAPH)
                 )
             );
@@ -784,7 +784,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.R_ROW)
                 )
             );
@@ -795,7 +795,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA, KanaRow.R_ROW, KanaRow.R_ROW_DIAGRAPH)
                 )
             );
@@ -806,7 +806,7 @@ namespace Games.Pairs.UI
             levelName = $"Katakana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 6, 3, 3,
+                new PairsGameInitData(levelName, 6, 3, 6,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA,
                         KanaRow.K_ROW_DIAGRAPH,
                         KanaRow.S_ROW_DIAGRAPH,
@@ -829,7 +829,7 @@ namespace Games.Pairs.UI
             levelName = "All Katakana";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 6, 4, 3, KanaDictionary.GetKanaBy(KanaType.KATAKANA))
+                new PairsGameInitData(levelName, 6, 4, 6, KanaDictionary.GetKanaBy(KanaType.KATAKANA))
             );
             katakanaLevelPanels[levelName] = currentLevelListItem;
             currentLevelLinksNode = levelLinks.AddAfter(currentLevelLinksNode, currentLevelListItem);
@@ -843,7 +843,7 @@ namespace Games.Pairs.UI
             var levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.VOWEL_ROW)
                 )
             );
@@ -854,7 +854,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.Y_ROW, KanaRow.W_ROW)
                 )
             );
@@ -865,7 +865,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.K_ROW)
                 )
             );
@@ -876,7 +876,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.K_ROW, KanaRow.K_ROW_DIAGRAPH)
                 )
             );
@@ -887,7 +887,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.G_ROW)
                 )
             );
@@ -898,7 +898,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.G_ROW, KanaRow.G_ROW_DIAGRAPH)
                 )
             );
@@ -909,7 +909,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.S_ROW)
                 )
             );
@@ -920,7 +920,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.S_ROW, KanaRow.S_ROW_DIAGRAPH)
                 )
             );
@@ -931,7 +931,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.Z_ROW)
                 )
             );
@@ -942,7 +942,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.Z_ROW, KanaRow.Z_ROW_DIAGRAPH)
                 )
             );
@@ -953,7 +953,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.T_ROW)
                 )
             );
@@ -964,7 +964,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.T_ROW, KanaRow.T_ROW_DIAGRAPH)
                 )
             );
@@ -975,7 +975,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.D_ROW)
                 )
             );
@@ -986,7 +986,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.D_ROW, KanaRow.D_ROW_DIAGRAPH)
                 )
             );
@@ -1008,7 +1008,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.N_ROW, KanaRow.N_ROW_DIAGRAPH)
                 )
             );
@@ -1019,7 +1019,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.H_ROW)
                 )
             );
@@ -1030,7 +1030,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.H_ROW, KanaRow.H_ROW_DIAGRAPH)
                 )
             );
@@ -1041,7 +1041,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.B_ROW)
                 )
             );
@@ -1052,7 +1052,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.B_ROW, KanaRow.B_ROW_DIAGRAPH)
                 )
             );
@@ -1063,7 +1063,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.P_ROW)
                 )
             );
@@ -1074,7 +1074,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.P_ROW, KanaRow.P_ROW_DIAGRAPH)
                 )
             );
@@ -1085,7 +1085,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.M_ROW)
                 )
             );
@@ -1096,7 +1096,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.M_ROW, KanaRow.M_ROW_DIAGRAPH)
                 )
             );
@@ -1107,7 +1107,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 2, 3,
+                new PairsGameInitData(levelName, 5, 2, 4,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.R_ROW)
                 )
             );
@@ -1118,7 +1118,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 5, 3, 3,
+                new PairsGameInitData(levelName, 4, 4, 5,
                     KanaDictionary.GetKanaBy(KanaType.HIRAGANA, KanaRow.R_ROW, KanaRow.R_ROW_DIAGRAPH)
                 )
             );
@@ -1129,7 +1129,7 @@ namespace Games.Pairs.UI
             levelName = $"Hiragana {levelCounter}";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 6, 3, 3,
+                new PairsGameInitData(levelName, 6, 3, 5,
                     KanaDictionary.GetKanaBy(KanaType.KATAKANA,
                         KanaRow.K_ROW_DIAGRAPH,
                         KanaRow.S_ROW_DIAGRAPH,
@@ -1152,7 +1152,7 @@ namespace Games.Pairs.UI
             levelName = "All Hiragana";
             currentLevelListItem = createLevelListItem(
                 levelName,
-                new PairsGameInitData(levelName, 6, 4, 3, KanaDictionary.GetKanaBy(KanaType.HIRAGANA))
+                new PairsGameInitData(levelName, 6, 4, 5, KanaDictionary.GetKanaBy(KanaType.HIRAGANA))
             );
             hiraganaLevelPanels[levelName] = currentLevelListItem;
             currentLevelLinksNode = levelLinks.AddAfter(currentLevelLinksNode, currentLevelListItem);
