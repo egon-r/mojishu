@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Games.Pairs.Savegame;
 using Games.Shared.Data;
+using Games.Shared.Util.Menu;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,8 +13,9 @@ namespace Games.Pairs.UI
     /// <summary>
     /// Contains all functions of the level select UI
     /// </summary>
-    public class LevelSelectMenuHandler : MonoBehaviour
+    public class LevelSelectMenu : AnimatedMenu
     {
+        private MenuManager menuManager;
         public Sprite buttonHighlightSprite;
         public Sprite buttonDefaultSprite;
         public Button katakanaButton;
@@ -22,7 +24,6 @@ namespace Games.Pairs.UI
 
         public Button mainMenuButton;
 
-        public PairsMenuManager menuManager;
         public LevelListItem levelListItemPrefab;
         public GameObject levelPanelContainer;
         public PairsGame pairsGame;
@@ -38,6 +39,8 @@ namespace Games.Pairs.UI
         // Start is called before the first frame update
         void Start()
         {
+            menuManager = gameObject.GetComponentInParent<MenuManager>();
+
             hiraganaButton.onClick.AddListener(hiraganaButton_clicked);
             katakanaButton.onClick.AddListener(katakanaButton_clicked);
             mixedButton.onClick.AddListener(mixedButton_clicked);
@@ -122,9 +125,12 @@ namespace Games.Pairs.UI
 
         public void PlayLevel(PairsGameInitData gameInitData)
         {
-            menuManager.playerHud.LevelText.text = gameInitData.levelName;
-            menuManager.ShowMenu(menuManager.playerHud.gameObject);
+            var playerHudMenu = menuManager.GetMenuByType<PlayerHud>(hud =>
+            {
+                hud.LevelText.text = gameInitData.levelName;
+            });
             pairsGame.Initialize(gameInitData);
+            menuManager.HideCurrentAndShow(playerHudMenu, parallel: true);
         }
 
         private LevelListItem createLevelListItem(string levelName, PairsGameInitData gameInitData)

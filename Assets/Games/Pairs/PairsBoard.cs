@@ -74,6 +74,14 @@ namespace Games.Pairs
             }
         }
 
+        public void HideBoard()
+        {
+            foreach (var card in _cards)
+            {
+                card.gameObject.SetActive(false);
+            }
+        }
+        
         public void ClearBoard()
         {
             foreach (var card in _cards)

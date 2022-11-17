@@ -5,6 +5,7 @@ using System.Linq;
 using Games.Pairs.Savegame;
 using Games.Pairs.UI;
 using Games.Shared.Data;
+using Games.Shared.Util.Menu;
 using UnityEngine;
 using Random = System.Random;
 
@@ -13,8 +14,8 @@ namespace Games.Pairs
     public class PairsGame : MonoBehaviour
     {
         public PairsBoard Board;
-        public PairsMenuManager menuManager;
 
+        public MenuManager menuManager;
         private PairsSaveData saveData = new PairsSaveData();
         private float initialBoardRevealDuration = 3;
         private float revealDuration = 1.5f;
@@ -30,13 +31,16 @@ namespace Games.Pairs
         public void Initialize(PairsGameInitData pairsGameInitData)
         {
             Debug.Log($"Initializing '{pairsGameInitData.levelName}'...");
-            Debug.Log($"Next Level: '{menuManager.levelSelectMenuHandler.GetNextLevel(pairsGameInitData.levelName)?.GameInitData.levelName}'");
-            
+            menuManager.GetMenuByType<LevelSelectMenu>(menu =>
+            {
+                Debug.Log($"Next Level: '{menu.GetNextLevel(pairsGameInitData.levelName)?.GameInitData.levelName}'");
+            });
+
             if ((pairsGameInitData.boardCols * pairsGameInitData.boardRows) % 2 != 0)
             {
                 throw new Exception("Invalid board size, number of cards is not even!");
             }
-                
+
             // set variables
             initialBoardRevealDuration = pairsGameInitData.initialBoardRevealDuration;
             Board.boardCols = pairsGameInitData.boardCols;
@@ -46,7 +50,7 @@ namespace Games.Pairs
             matchedCards.Clear();
             matches = 0;
             attempts = 0;
-            
+
             // check if enough pairs are available
             var minPairCount = (Board.boardRows * Board.boardCols) / 2;
             if (pairsGameInitData.Pairs.Count < minPairCount)
@@ -77,6 +81,7 @@ namespace Games.Pairs
                     pairItems.Remove(rndItem);
                 }
             }
+
             Board.Initialize(boardData);
 
             // bind click
@@ -88,7 +93,7 @@ namespace Games.Pairs
                 StartCoroutine(InitialBoardReveal());
             }
         }
-        
+
         private IEnumerator InitialBoardReveal()
         {
             ignoreClickEvents = true;
@@ -110,7 +115,7 @@ namespace Games.Pairs
         private void GameFinished()
         {
             saveData.ReadFromFile();
-            
+
             // calc score
             int score = (matches * 10) - ((attempts - matches) * 3);
             int maxScore = matches * 10;
@@ -118,42 +123,53 @@ namespace Games.Pairs
             {
                 score = 0;
             }
+
             int score100 = (int)(((float)score / maxScore) * 100.0f);
             Debug.Log($"Game Finished! Guesses: {attempts}, Matches: {matches}");
             Debug.Log($"Score: {score}/{maxScore}");
             Debug.Log($"Score: {score100}%");
-            
+
             // save it
             if (saveData.LevelHighscores100.ContainsKey(levelName))
             {
                 var currentHighscore100 = saveData.LevelHighscores100[levelName];
                 if (score100 > currentHighscore100)
                 {
-                    menuManager.gameFinishedMenu.setTitleText("New Highscore!");
-                    menuManager.gameFinishedMenu.highscoreParticles.gameObject.SetActive(true);
+                    menuManager.GetMenuByType<GameFinishedMenu>(menu => 
+                    {
+                        menu.setTitleText("New Highscore!");
+                        menu.highscoreParticles.gameObject.SetActive(true);
+                    });
                     saveData.LevelHighscores100[levelName] = score100;
                     saveData.WriteToFile();
                 }
                 else
                 {
-                    menuManager.gameFinishedMenu.setTitleText("- Your Score -");
-                    menuManager.gameFinishedMenu.highscoreParticles.gameObject.SetActive(false);
+                    menuManager.GetMenuByType<GameFinishedMenu>(menu => 
+                    {
+                        menu.setTitleText("- Your Score -");
+                        menu.highscoreParticles.gameObject.SetActive(false);
+                    });
                 }
             }
             else
             {
-                menuManager.gameFinishedMenu.setTitleText("New Highscore!");
+                menuManager.GetMenuByType<GameFinishedMenu>(menu =>
+                {
+                    menu.setTitleText("New Highscore!");
+                });
                 saveData.LevelHighscores100[levelName] = score100;
                 saveData.WriteToFile();
             }
-            
+
             // show finished menu
-            menuManager.gameFinishedMenu.setScoreText(score100);
-            menuManager.gameFinishedMenu.CurrentLevelName = levelName;
-            menuManager.gameFinishedMenu.SlideInFromTop();
-            menuManager.ShowMenu(menuManager.gameFinishedMenu.gameObject);
+            menuManager.GetMenuByType<GameFinishedMenu>(menu =>
+            {
+                menu.setScoreText(score100);
+            });
+            menuManager.HideCurrentAndShow(menuManager.GetMenuByType<GameFinishedMenu>(), parallel: true);
         }
-        
+
         private IEnumerator ConcealMismatchedCards()
         {
             ignoreClickEvents = true;
@@ -186,8 +202,8 @@ namespace Games.Pairs
             if (pairsDict.ContainsKey(first.TextContent))
             {
                 return pairsDict[first.TextContent].Latin == second.TextContent;
-            } 
-            
+            }
+
             if (pairsDict.ContainsKey(second.TextContent))
             {
                 return pairsDict[second.TextContent].Latin == first.TextContent;
@@ -205,7 +221,7 @@ namespace Games.Pairs
                     // reveal first card
                     firstCardRevealed = card;
                     firstCardRevealed.Reveal();
-                    
+
                     Debug.Log($"First card: {firstCardRevealed.TextContent}");
                 }
                 else if (secondCardRevealed == null && card != firstCardRevealed)

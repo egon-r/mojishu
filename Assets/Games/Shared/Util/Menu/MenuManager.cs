@@ -6,14 +6,18 @@ namespace Games.Shared.Util.Menu
 {
     public class MenuManager: MonoBehaviour
     {
-        public CanvasGroup DefaultMenu;
+        public CanvasGroup InitialMenu;
         public List<CanvasGroup> Menus;
         private CanvasGroup CurrentMenu;
 
         private void Start()
         {
-            Menus.ForEach(m => m.gameObject.SetActive(false));
-            ShowMenu(DefaultMenu);
+            ShowMenu(InitialMenu);
+        }
+
+        public void HideCurrentMenu(Action onComplete = null)
+        {
+            HideMenu(CurrentMenu, onComplete);
         }
 
         public void HideCurrentAndShow(CanvasGroup menu, Action onComplete = null, bool parallel = false)
@@ -53,26 +57,37 @@ namespace Games.Shared.Util.Menu
             }
         }
         
-        public CanvasGroup GetMenuByType<T>()
-        {
-            return GetMenuByType(typeof(T));
-        }
-        
-        public CanvasGroup GetMenuByType(Type menuType)
+        public CanvasGroup GetMenuByType<T>(Action<T> withMenu = null)
         {
             foreach (var menu in Menus)
             {
-                if (menu.TryGetComponent(menuType, out _))
+                Component comp = null;
+                if (menu.TryGetComponent(typeof(T), out comp))
                 {
+                    if (comp is T compT)
+                    {
+                        withMenu?.Invoke(compT);
+                        //component = compT;
+                    }
                     return menu;
                 }
             }
-
             return null;
         }
 
         public void ShowMenu(CanvasGroup menu, Action onComplete = null, bool hideOthers = true)
         {
+            if (hideOthers)
+            {
+                foreach (var m in Menus)
+                {
+                    if (m != CurrentMenu)
+                    {
+                        m.gameObject.SetActive(false);
+                    }
+                }
+            }
+            
             AnimatedMenu animMenu = menu.gameObject.GetComponent<AnimatedMenu>();
             menu.gameObject.SetActive(true);
             CurrentMenu = menu;
