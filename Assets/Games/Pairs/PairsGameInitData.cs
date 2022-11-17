@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using DefaultNamespace;
+using Games.Shared.Data;
 
 namespace Games.Pairs
 {
