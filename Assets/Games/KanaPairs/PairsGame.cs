@@ -90,6 +90,7 @@ namespace Games.Pairs
 
         public void AsyncInitialBoardReveal(float delayS = 0.0f)
         {
+            StopCoroutine(InitialBoardReveal(delayS));
             StartCoroutine(InitialBoardReveal(delayS));
         }
         
