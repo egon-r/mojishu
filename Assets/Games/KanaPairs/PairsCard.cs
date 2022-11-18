@@ -63,9 +63,14 @@ namespace Games.Pairs
             }
         }
 
-        public void Reveal()
+        public void Reveal(bool skipAnim = false)
         {
             isRevealed = true;
+
+            if (skipAnim)
+            {
+                gameObject.transform.rotation = revealedRotation;
+            }
             
             System.Action<ITween<Quaternion>> rotateAnim = (t) =>
             {
@@ -83,9 +88,14 @@ namespace Games.Pairs
             );
         }
 
-        public void Conceal()
+        public void Conceal(bool skipAnim = false)
         {
             isRevealed = false;
+            
+            if (skipAnim)
+            {
+                gameObject.transform.rotation = concealedRotation;
+            }
             
             System.Action<ITween<Quaternion>> rotateAnim = (t) =>
             {

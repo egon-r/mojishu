@@ -24,6 +24,7 @@ public class MainMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("App version: " + Application.version);
         Application.targetFrameRate = 60;
 
         playButton.onClick.AddListener(Play_clicked);

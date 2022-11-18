@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using DigitalRuby.Tween;
 using Games.Pairs.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
@@ -21,6 +23,7 @@ namespace Games.Pairs.UI
         public Button katakanaButton;
         public Button hiraganaButton;
         public Button mixedButton;
+        public GameObject levelBackground;
 
         public Button mainMenuButton;
 
@@ -130,7 +133,11 @@ namespace Games.Pairs.UI
                 hud.LevelText.text = gameInitData.levelName;
             });
             pairsGame.Initialize(gameInitData);
-            menuManager.HideCurrentAndShow(playerHudMenu, parallel: true);
+            menuManager.HideCurrentAndShow(playerHudMenu, () =>
+            {
+                pairsGame.Board.ShowBoard();
+                pairsGame.AsyncInitialBoardReveal(0.5f);
+            }, parallel: true);
         }
 
         private LevelListItem createLevelListItem(string levelName, PairsGameInitData gameInitData)
@@ -193,6 +200,50 @@ namespace Games.Pairs.UI
             {
                 child.gameObject.SetActive(false);
             }
+        }
+        
+        public override void PlayHideAnimation(Action onComplete = null)
+        {
+            base.PlayHideAnimation(onComplete);
+            
+            System.Action<ITween<Vector3>> slideIn = t =>
+            {
+                levelBackground.transform.position = t.CurrentValue;
+            };
+            
+            var slideStart = new Vector3(1.5f, 0.57f, 1);
+            var slideEnd = new Vector3(0, 0.57f, 1);
+            
+            levelBackground.gameObject.Tween(
+                slideIn,
+                slideStart, 
+                slideEnd,
+                AnimationDuration * 2, 
+                TweenScaleFunctions.CubicEaseOut,
+                slideIn
+            );
+        }
+
+        public override void PlayShowAnimation(Action onComplete = null)
+        {
+            base.PlayShowAnimation(onComplete);
+            
+            System.Action<ITween<Vector3>> slideIn = t =>
+            {
+                levelBackground.transform.position = t.CurrentValue;
+            };
+            
+            var slideStart = new Vector3(0, 0.57f, 1);
+            var slideEnd = new Vector3(1.5f, 0.57f, 1);
+            
+            levelBackground.gameObject.Tween(
+                slideIn,
+                slideStart, 
+                slideEnd,
+                AnimationDuration * 2, 
+                TweenScaleFunctions.CubicEaseOut,
+                slideIn
+            );
         }
 
         private void CreateMixedLevelItems()

@@ -13,13 +13,14 @@ namespace Games.Pairs
         public float boardRowSpacing = 0.1f;
         public string[,] cardTextData;
         private List<PairsCard> _cards = new List<PairsCard>();
+        private List<GameObject> _tmpCards = new List<GameObject>(); // store temporary cards, destroy later (destroy is expensive and causes lag)
 
         public delegate void CardClickedHandler(PairsCard card);
         public event CardClickedHandler CardClicked;
 
         public void Initialize(string[,] cardData)
         {
-            ClearBoard();
+            Clear();
             
             // check data array size
             if (cardData.GetLength(0) == boardRows && cardData.GetLength(1) == boardCols)
@@ -39,7 +40,8 @@ namespace Games.Pairs
             // create temporary card to determine size
             var tmpCard = Instantiate(pairsCard, Vector3.zero, Quaternion.identity);
             var cardSize = tmpCard.GetComponentInChildren<BoxCollider2D>().bounds.size;
-            Destroy(tmpCard);
+            tmpCard.gameObject.SetActive(false);
+            _tmpCards.Add(tmpCard);
 
             // calculate total board size
             float boardWidth = (cardSize.x * boardCols) + (boardColSpacing * (boardCols - 1));
@@ -61,6 +63,7 @@ namespace Games.Pairs
                 {
                     var cardGameObject = Instantiate(pairsCard, nextPosition, Quaternion.identity, transform);
                     var card = cardGameObject.GetComponent<PairsCard>();
+                    card.Conceal(true);
                     card.TextContent = cardTextData[row, col];
                     card.Clicked += () =>
                     {
@@ -81,13 +84,22 @@ namespace Games.Pairs
                 card.gameObject.SetActive(false);
             }
         }
+
+        public void ShowBoard()
+        {
+            foreach (var card in _cards)
+            {
+                card.gameObject.SetActive(true);
+            }
+        }
         
-        public void ClearBoard()
+        public void Clear()
         {
             foreach (var card in _cards)
             {
                 Destroy(card.gameObject);
             }
+            _tmpCards.ForEach(Destroy);
             _cards.Clear();
         }
         

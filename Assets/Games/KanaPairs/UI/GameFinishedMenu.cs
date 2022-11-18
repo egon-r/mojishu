@@ -65,7 +65,7 @@ namespace Games.Pairs.UI
             Time.timeScale = 1;
             var levelSelectMenu = menuManager.GetMenuByType<LevelSelectMenu>(menu =>
             {
-                menu.pairsGame.Board.ClearBoard();
+                menu.pairsGame.Board.Clear();
             });
             menuManager.HideCurrentAndShow(levelSelectMenu);
         }

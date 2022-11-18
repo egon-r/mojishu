@@ -13056,7 +13056,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247246384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.57, z: 1}
+  m_LocalPosition: {x: 0, y: 0.57, z: 1}
   m_LocalScale: {x: 0.31727704, y: 0.2799167, z: 1.2921267}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15100,6 +15100,7 @@ MonoBehaviour:
   katakanaButton: {fileID: 1943804450}
   hiraganaButton: {fileID: 1032596412}
   mixedButton: {fileID: 245022631}
+  levelBackground: {fileID: 1247246384}
   mainMenuButton: {fileID: 417117893}
   levelListItemPrefab: {fileID: 9098160236890282204, guid: 2f5c4500cefbc3c4596911d1934bb9ad, type: 3}
   levelPanelContainer: {fileID: 894240828}

@@ -86,17 +86,24 @@ namespace Games.Pairs
 
             // bind click
             Board.CardClicked += BoardOnCardClicked;
-
-            // initial reveal
-            if (initialBoardRevealDuration > 0)
-            {
-                StartCoroutine(InitialBoardReveal());
-            }
         }
 
-        private IEnumerator InitialBoardReveal()
+        public void AsyncInitialBoardReveal(float delayS = 0.0f)
         {
+            StartCoroutine(InitialBoardReveal(delayS));
+        }
+        
+        private IEnumerator InitialBoardReveal(float delayS = 0.0f)
+        {
+            if (initialBoardRevealDuration <= 0)
+            {
+                yield break;
+            }
+            
             ignoreClickEvents = true;
+
+            yield return new WaitForSeconds(delayS);
+            
             foreach (var card in Board.GetCards())
             {
                 card.Reveal();

@@ -35,7 +35,7 @@ namespace Games.Shared.Util.Menu
             }
         }
 
-        public void PlayShowAnimation(Action onComplete = null)
+        public virtual void PlayShowAnimation(Action onComplete = null)
         {
             System.Action<ITween<Vector3>> slideIn = t =>
             {
@@ -56,7 +56,7 @@ namespace Games.Shared.Util.Menu
             );
         }
         
-        public void PlayHideAnimation(Action onComplete = null)
+        public virtual void PlayHideAnimation(Action onComplete = null)
         {
             System.Action<ITween<Vector3>> slideIn = t =>
             {
