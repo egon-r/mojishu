@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Games.Shared.Util
 {
@@ -17,6 +18,22 @@ namespace Games.Shared.Util
             {
                 return false;
             }
+        }
+        
+        /// <summary>
+        /// Shuffle list based on Fisher-Yates
+        /// </summary>
+        /// <param name="list"></param>
+        /// <typeparam name="T"></typeparam>
+        public static IList<T> Shuffle<T>(this IList<T> list)  
+        {  
+            int n = list.Count;  
+            while (n > 1) {  
+                n--;  
+                int k = Random.Range(0, n + 1);  
+                (list[k], list[n]) = (list[n], list[k]);
+            }
+            return list;
         }
     }
 }
