@@ -60,7 +60,7 @@ namespace Games.Pairs.UI
         }
 
         [CanBeNull]
-        public LevelListItem GetNextLevel(string levelName)
+        public LinkedListNode<LevelListItem> GetLevelLinkedListNode(string levelName)
         {
             LevelListItem current = null;
             if (hiraganaLevelPanels.ContainsKey(levelName))
@@ -80,9 +80,9 @@ namespace Games.Pairs.UI
                 return null;
             }
 
-            return levelLinks.Find(current)?.Next?.Value;
+            return levelLinks.Find(current);
         }
-
+        
         private void mainMenuButton_clicked()
         {
             SceneManager.LoadScene("Scenes/MainMenu");

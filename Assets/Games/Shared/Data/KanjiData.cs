@@ -99,12 +99,66 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "年",
-                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT },
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
                 new string[] { "ネン" },
                 new string[] { "nen" },
                 new string[] { "とし" },
                 new string[] { "toshi" },
                 new string[] { "year", "counter for years" }
+            ),
+            new KanjiInfo(
+                "大",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "ダイ", "タイ" },
+                new string[] { "dai", "tai" },
+                new string[] { "おお(きい)" },
+                new string[] { "oo(kii)" },
+                new string[] { "large", "big"  }
+            ),
+            new KanjiInfo(
+                "十",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "ジュウ" },
+                new string[] { "juu" },
+                new string[] { "とお", "と" },
+                new string[] { "tou", "to" },
+                new string[] { "ten", "10" }
+            ),
+            new KanjiInfo(
+                "二",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "ニ", "ジ" },
+                new string[] { "ni", "ji" },
+                new string[] { "ふた(つ)" },
+                new string[] { "futa(tsu)" },
+                new string[] { "two", "2" }
+            ),
+            new KanjiInfo(
+                "本",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "ホン" },
+                new string[] { "hon" },
+                new string[] { "もと" },
+                new string[] { "moto" },
+                new string[] { "book", "present", "true", "counter for long cylindrical things" }
+            ),
+            new KanjiInfo(
+                "中",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "チュウ" },
+                new string[] { "chuu" },
+                new string[] { "なか", "うち", "あた(る)" },
+                new string[] { "naka", "uchi", "ata(ru)" },
+                new string[] { "in", "inside", "middle", "mean", "center" }
+            ),
+            new KanjiInfo(
+                "長",
+                new KanjiClass[] { KanjiClass.TOP_100_MOST_FREQUENT, KanjiClass.JLPT_N5 },
+                new string[] { "チョウ" },
+                new string[] { "chou" },
+                new string[] { "なが(い)", "おさ" },
+                new string[] { "naga(i)", "osa" },
+                new string[] { "long", "leader", "superior", "senior" }
             ),
         };
     }

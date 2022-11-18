@@ -33,7 +33,7 @@ namespace Games.Pairs
             Debug.Log($"Initializing '{pairsGameInitData.levelName}'...");
             menuManager.GetMenuByType<LevelSelectMenu>(menu =>
             {
-                Debug.Log($"Next Level: '{menu.GetNextLevel(pairsGameInitData.levelName)?.GameInitData.levelName}'");
+                Debug.Log($"Next Level: '{menu.GetLevelLinkedListNode(pairsGameInitData.levelName)?.Next?.Value.GameInitData?.levelName}'");
             });
 
             if ((pairsGameInitData.boardCols * pairsGameInitData.boardRows) % 2 != 0)

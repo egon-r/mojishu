@@ -15,17 +15,20 @@ namespace Games.Pairs.UI
         private MenuManager menuManager;
         public ParticleSystem highscoreParticles;
         public Button nextLevel;
+        public Button retryLevel;
         public Button levelSelect;
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI titleText;
         private LevelListItem nextLevelItem = null;
+        private LevelListItem currentLevelItem = null;
 
         void Start()
         {
             levelSelect.onClick.AddListener(levelSelect_clicked);
+            retryLevel.onClick.AddListener(retryLevel_clicked);
             nextLevel.onClick.AddListener(nextLevel_clicked);
         }
-        
+
         private void OnEnable()
         {
             menuManager = gameObject.GetComponentInParent<MenuManager>();
@@ -34,7 +37,8 @@ namespace Games.Pairs.UI
             {
                 menuManager.GetMenuByType<PlayerHud>(hud =>
                 {
-                    nextLevelItem = menu.GetNextLevel(hud.LevelText.text);
+                    nextLevelItem = menu.GetLevelLinkedListNode(hud.LevelText.text)?.Next?.Value;
+                    currentLevelItem = menu.GetLevelLinkedListNode(hud.LevelText.text)?.Value;
                 });
             });
             
@@ -50,6 +54,14 @@ namespace Games.Pairs.UI
         public void setTitleText(string text)
         {
             titleText.text = text;
+        }
+
+        private void retryLevel_clicked()
+        {
+            menuManager.GetMenuByType<LevelSelectMenu>(menu =>
+            {
+                menu.PlayLevel(currentLevelItem.GameInitData);
+            });
         }
 
         private void nextLevel_clicked()
