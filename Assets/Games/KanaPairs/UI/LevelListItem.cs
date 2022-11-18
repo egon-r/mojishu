@@ -7,8 +7,8 @@ namespace Games.Pairs.UI
     public class LevelListItem : MonoBehaviour
     {
         private bool expanded = false;
-        private int ExpandedHeight = 700;
-        private int ShrinkedHeight = 190;
+        public int ExpandedHeight = 500;
+        public int ShrinkedHeight = 120;
         public Button Info;
         public Button Play;
         public GameObject PairDetails;
