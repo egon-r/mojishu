@@ -8,7 +8,7 @@ namespace Games.Shared.Data
         {
             new KanjiInfo(
                 "党",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "" },
@@ -17,7 +17,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "協",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "" },
@@ -26,7 +26,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "総",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "" },
@@ -35,7 +35,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "区",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ク" },
                 new string[] { "ku" },
                 new string[] { "" },
@@ -44,7 +44,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "領",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョウ" },
                 new string[] { "ryou" },
                 new string[] { "" },
@@ -53,7 +53,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "県",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケン" },
                 new string[] { "ken" },
                 new string[] { "" },
@@ -62,7 +62,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "設",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セツ" },
                 new string[] { "setsu" },
                 new string[] { "もう(ける)" },
@@ -71,7 +71,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "保",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ホ、ホウ" },
                 new string[] { "ho", "hou" },
                 new string[] { "たも(つ)" },
@@ -80,7 +80,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "改",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "あらた(める)" },
@@ -89,7 +89,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "第",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ダイ" },
                 new string[] { "dai" },
                 new string[] { "" },
@@ -98,7 +98,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "結",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケツ" },
                 new string[] { "ketsu" },
                 new string[] { "むす(ぶ)、ゆ(う)" },
@@ -107,7 +107,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "派",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハ" },
                 new string[] { "ha" },
                 new string[] { "" },
@@ -116,7 +116,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "府",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フ" },
                 new string[] { "fu" },
                 new string[] { "" },
@@ -125,7 +125,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "査",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サ" },
                 new string[] { "sa" },
                 new string[] { "" },
@@ -134,7 +134,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "委",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ" },
                 new string[] { "i" },
                 new string[] { "ゆだ(ねる)" },
@@ -143,7 +143,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "軍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "グン" },
                 new string[] { "gun" },
                 new string[] { "" },
@@ -152,7 +152,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "案",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "アン" },
                 new string[] { "an" },
                 new string[] { "" },
@@ -161,7 +161,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "策",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サク" },
                 new string[] { "saku" },
                 new string[] { "" },
@@ -170,7 +170,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "団",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ダン、トン" },
                 new string[] { "dan", "ton" },
                 new string[] { "" },
@@ -179,7 +179,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "各",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カク" },
                 new string[] { "kaku" },
                 new string[] { "おのおの" },
@@ -188,7 +188,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "島",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "しま" },
@@ -197,7 +197,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "革",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カク" },
                 new string[] { "kaku" },
                 new string[] { "かわ" },
@@ -206,7 +206,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "村",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソン" },
                 new string[] { "son" },
                 new string[] { "むら" },
@@ -215,7 +215,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "勢",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セイ" },
                 new string[] { "sei" },
                 new string[] { "いきお(い)" },
@@ -224,7 +224,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "減",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゲン" },
                 new string[] { "gen" },
                 new string[] { "へ(る)" },
@@ -233,7 +233,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "再",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サイ、 サ" },
                 new string[] { "sai", "sa" },
                 new string[] { "ふたた(び)" },
@@ -242,7 +242,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "税",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゼイ" },
                 new string[] { "zei" },
                 new string[] { "" },
@@ -251,7 +251,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "営",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エイ" },
                 new string[] { "ei" },
                 new string[] { "いとな(む)" },
@@ -260,7 +260,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "比",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒ" },
                 new string[] { "hi" },
                 new string[] { "くら(べる)" },
@@ -269,7 +269,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "防",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ" },
                 new string[] { "bou" },
                 new string[] { "ふせ(ぐ)" },
@@ -278,7 +278,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "補",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ホ" },
                 new string[] { "ho" },
                 new string[] { "おぎな(う)" },
@@ -287,7 +287,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "境",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "さかい" },
@@ -296,7 +296,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "導",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドウ" },
                 new string[] { "dou" },
                 new string[] { "みちび(く)" },
@@ -305,7 +305,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "副",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フク" },
                 new string[] { "fuku" },
                 new string[] { "" },
@@ -314,7 +314,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "算",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サン" },
                 new string[] { "san" },
                 new string[] { "そろ" },
@@ -323,7 +323,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "輸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ユ、 シュ" },
                 new string[] { "yu", "shu" },
                 new string[] { "" },
@@ -332,7 +332,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "述",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジュツ" },
                 new string[] { "jutsu" },
                 new string[] { "の(べる)" },
@@ -341,7 +341,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "線",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セン" },
                 new string[] { "sen" },
                 new string[] { "" },
@@ -350,7 +350,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "農",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ノウ" },
                 new string[] { "nou" },
                 new string[] { "" },
@@ -359,7 +359,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "州",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シュウ" },
                 new string[] { "shuu" },
                 new string[] { "す" },
@@ -368,7 +368,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "武",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ブ、 ム" },
                 new string[] { "bu", "mu" },
                 new string[] { "たけ(し)" },
@@ -377,7 +377,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "象",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ、 ゾウ" },
                 new string[] { "shou", "zou" },
                 new string[] { "かたど(る)" },
@@ -386,7 +386,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "域",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イキ" },
                 new string[] { "iki" },
                 new string[] { "" },
@@ -395,7 +395,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "額",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ガク" },
                 new string[] { "gaku" },
                 new string[] { "ひたい" },
@@ -404,7 +404,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "欧",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オウ" },
                 new string[] { "ou" },
                 new string[] { "" },
@@ -413,7 +413,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "担",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タン" },
                 new string[] { "tan" },
                 new string[] { "かつ(ぐ)、 にな(う)" },
@@ -422,7 +422,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "準",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジュン" },
                 new string[] { "jun" },
                 new string[] { "じゅん(じる)、 なぞら(える)" },
@@ -431,7 +431,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "賞",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "ほ(める)" },
@@ -440,7 +440,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "辺",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヘン" },
                 new string[] { "hen" },
                 new string[] { "あた(り)、 ほと(り)" },
@@ -449,7 +449,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "造",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "つく(る)" },
@@ -458,7 +458,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "被",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒ" },
                 new string[] { "hi" },
                 new string[] { "こうむ(る)、  かぶ(る)" },
@@ -467,7 +467,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "技",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ギ" },
                 new string[] { "gi" },
                 new string[] { "わざ" },
@@ -476,7 +476,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "低",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "テイ" },
                 new string[] { "tei" },
                 new string[] { "ひく(い)" },
@@ -485,7 +485,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "復",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フク" },
                 new string[] { "fuku" },
                 new string[] { "また" },
@@ -494,7 +494,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "移",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ" },
                 new string[] { "i" },
                 new string[] { "うつ(る)" },
@@ -503,7 +503,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "個",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "" },
@@ -512,7 +512,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "門",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "モン" },
                 new string[] { "mon" },
                 new string[] { "かど、 と" },
@@ -521,7 +521,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "課",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カ" },
                 new string[] { "ka" },
                 new string[] { "" },
@@ -530,7 +530,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "脳",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ノウ" },
                 new string[] { "nou" },
                 new string[] { "" },
@@ -539,7 +539,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "極",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョク、 ゴク" },
                 new string[] { "kyoku", "goku" },
                 new string[] { "きわ(める)" },
@@ -548,7 +548,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "含",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ガン" },
                 new string[] { "gan" },
                 new string[] { "ふく(む)" },
@@ -557,7 +557,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "蔵",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "くら" },
@@ -566,7 +566,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "量",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョウ" },
                 new string[] { "ryou" },
                 new string[] { "はか(る)" },
@@ -575,7 +575,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "型",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケイ" },
                 new string[] { "kei" },
                 new string[] { "かた" },
@@ -584,7 +584,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "況",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "まし(て)" },
@@ -593,7 +593,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "針",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン" },
                 new string[] { "shin" },
                 new string[] { "はり" },
@@ -602,7 +602,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "専",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セン" },
                 new string[] { "sen" },
                 new string[] { "もっぱ(ら)" },
@@ -611,7 +611,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "谷",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コク" },
                 new string[] { "koku" },
                 new string[] { "たに、 きわ(まる)" },
@@ -620,7 +620,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "史",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "" },
@@ -629,7 +629,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "階",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "" },
@@ -638,7 +638,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "管",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "くだ" },
@@ -647,7 +647,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "兵",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヘイ、 ヒョウ" },
                 new string[] { "hei", "hyou" },
                 new string[] { "つわもの" },
@@ -656,7 +656,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "接",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セツ" },
                 new string[] { "setsu" },
                 new string[] { "つ(ぐ)" },
@@ -665,7 +665,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "細",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サイ" },
                 new string[] { "sei" },
                 new string[] { "ほそ(い)、 こま(かい)" },
@@ -674,7 +674,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "効",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "き(く)" },
@@ -683,7 +683,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "丸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ガン" },
                 new string[] { "gan" },
                 new string[] { "まる、まる(い)" },
@@ -692,7 +692,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "湾",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ワン" },
                 new string[] { "wan" },
                 new string[] { "いりえ" },
@@ -701,7 +701,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "録",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ロク" },
                 new string[] { "roku" },
                 new string[] { "と(る)" },
@@ -710,7 +710,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "省",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セイ、 ショウ" },
                 new string[] { "sei", "shou" },
                 new string[] { "かえり(みる)、 はぶ(く)" },
@@ -719,7 +719,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "旧",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キュウ" },
                 new string[] { "kyuu" },
                 new string[] { "ふる(い)、 もと" },
@@ -728,7 +728,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "橋",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "はし" },
@@ -737,7 +737,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "岸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ガン" },
                 new string[] { "gan" },
                 new string[] { "きし" },
@@ -746,7 +746,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "周",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シュウ" },
                 new string[] { "shuu" },
                 new string[] { "まわ(り)" },
@@ -755,7 +755,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "材",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ザイ" },
                 new string[] { "zai" },
                 new string[] { "" },
@@ -764,7 +764,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "戸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "と" },
@@ -773,7 +773,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "央",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オウ" },
                 new string[] { "ou" },
                 new string[] { "" },
@@ -782,7 +782,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "券",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケン" },
                 new string[] { "ken" },
                 new string[] { "" },
@@ -791,7 +791,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "編",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヘン" },
                 new string[] { "hen" },
                 new string[] { "あ(む)" },
@@ -800,7 +800,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "捜",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "さが(す)" },
@@ -809,7 +809,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "竹",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チク" },
                 new string[] { "chiku" },
                 new string[] { "たけ" },
@@ -818,7 +818,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "超",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チョウ" },
                 new string[] { "chou" },
                 new string[] { "こ(える)" },
@@ -827,7 +827,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "並",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヘイ" },
                 new string[] { "hei" },
                 new string[] { "な(み)、なみ、なら(べる)" },
@@ -836,7 +836,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "療",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョウ" },
                 new string[] { "ryou" },
                 new string[] { "" },
@@ -845,7 +845,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "採",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サイ" },
                 new string[] { "sai" },
                 new string[] { "と(る)" },
@@ -854,7 +854,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "森",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン" },
                 new string[] { "shin" },
                 new string[] { "もり" },
@@ -863,7 +863,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "競",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ、 ケイ" },
                 new string[] { "kyou", "kei" },
                 new string[] { "きそ(う)、 せ(る)" },
@@ -872,7 +872,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "介",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "" },
@@ -881,7 +881,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "根",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コン" },
                 new string[] { "kon" },
                 new string[] { "ね" },
@@ -890,7 +890,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "販",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハン" },
                 new string[] { "han" },
                 new string[] { "" },
@@ -899,7 +899,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "歴",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レキ" },
                 new string[] { "reki" },
                 new string[] { "" },
@@ -908,7 +908,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "将",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "まさ(に)、 はた" },
@@ -917,7 +917,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "幅",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フク" },
                 new string[] { "fuku" },
                 new string[] { "はば" },
@@ -926,7 +926,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "般",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハン" },
                 new string[] { "han" },
                 new string[] { "" },
@@ -935,7 +935,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "貿",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ" },
                 new string[] { "bou" },
                 new string[] { "" },
@@ -944,7 +944,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "講",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "" },
@@ -953,7 +953,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "林",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リン" },
                 new string[] { "rin" },
                 new string[] { "はやし" },
@@ -962,7 +962,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "装",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ、 ショウ" },
                 new string[] { "sou", "shou" },
                 new string[] { "よそお(う)" },
@@ -971,7 +971,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "諸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショ" },
                 new string[] { "sho" },
                 new string[] { "もろ" },
@@ -980,7 +980,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "劇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゲキ" },
                 new string[] { "geki" },
                 new string[] { "" },
@@ -989,7 +989,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "河",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カ" },
                 new string[] { "ka" },
                 new string[] { "かわ" },
@@ -998,7 +998,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "航",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "" },
@@ -1007,7 +1007,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "鉄",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "テツ" },
                 new string[] { "tetsu" },
                 new string[] { "くろがね" },
@@ -1016,7 +1016,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "児",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジ" },
                 new string[] { "ji" },
                 new string[] { "こ" },
@@ -1025,7 +1025,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "禁",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キン" },
                 new string[] { "kin" },
                 new string[] { "" },
@@ -1034,7 +1034,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "印",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イン" },
                 new string[] { "in" },
                 new string[] { "しるし" },
@@ -1043,7 +1043,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "逆",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ギャク" },
                 new string[] { "gyaku" },
                 new string[] { "さか(らう)" },
@@ -1052,7 +1052,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "換",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "か(える)" },
@@ -1061,7 +1061,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "久",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キュウ、 ク" },
                 new string[] { "kyuu", "ku" },
                 new string[] { "ひさ(しい)" },
@@ -1070,7 +1070,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "短",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タン" },
                 new string[] { "tan" },
                 new string[] { "みじか(い)" },
@@ -1079,7 +1079,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "油",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ユ" },
                 new string[] { "yu" },
                 new string[] { "あぶら" },
@@ -1088,7 +1088,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "暴",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ、 バク" },
                 new string[] { "bou", "baku" },
                 new string[] { "あば(く)" },
@@ -1097,7 +1097,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "輪",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リン" },
                 new string[] { "rin" },
                 new string[] { "わ" },
@@ -1106,7 +1106,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "占",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セン" },
                 new string[] { "sen" },
                 new string[] { "し(める)、 うらな(う)" },
@@ -1115,7 +1115,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "植",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショク" },
                 new string[] { "shoku" },
                 new string[] { "う(える)" },
@@ -1124,7 +1124,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "清",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セイ" },
                 new string[] { "sei" },
                 new string[] { "きよ(い)" },
@@ -1133,7 +1133,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "倍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "バイ" },
                 new string[] { "bai" },
                 new string[] { "" },
@@ -1142,7 +1142,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "均",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キン" },
                 new string[] { "kin" },
                 new string[] { "なら(す)" },
@@ -1151,7 +1151,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "億",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オク" },
                 new string[] { "oku" },
                 new string[] { "" },
@@ -1160,7 +1160,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "圧",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "アツ" },
                 new string[] { "atsu" },
                 new string[] { "お(す)" },
@@ -1169,7 +1169,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "芸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゲイ" },
                 new string[] { "gei" },
                 new string[] { "" },
@@ -1178,7 +1178,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "署",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショ" },
                 new string[] { "sho" },
                 new string[] { "" },
@@ -1187,7 +1187,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "伸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン" },
                 new string[] { "shin" },
                 new string[] { "の(びる)" },
@@ -1196,7 +1196,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "停",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "テイ" },
                 new string[] { "tei" },
                 new string[] { "と(める)" },
@@ -1205,7 +1205,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "爆",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "バク" },
                 new string[] { "baku" },
                 new string[] { "は(ぜる)" },
@@ -1214,7 +1214,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "陸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リク、 ロク" },
                 new string[] { "riku", "roku" },
                 new string[] { "おか" },
@@ -1223,7 +1223,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "玉",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ギョク" },
                 new string[] { "gyoku" },
                 new string[] { "たま" },
@@ -1232,7 +1232,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "波",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハ" },
                 new string[] { "ha" },
                 new string[] { "なみ" },
@@ -1241,7 +1241,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "帯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タイ" },
                 new string[] { "tai" },
                 new string[] { "お(びる)" },
@@ -1250,7 +1250,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "延",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エン" },
                 new string[] { "en" },
                 new string[] { "の(びる)" },
@@ -1259,7 +1259,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "羽",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ウ" },
                 new string[] { "u" },
                 new string[] { "は、 わ、 はね" },
@@ -1268,7 +1268,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "固",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "かた(める)" },
@@ -1277,7 +1277,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "則",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソク" },
                 new string[] { "soku" },
                 new string[] { "のっと(る)" },
@@ -1286,7 +1286,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "乱",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ラン" },
                 new string[] { "ran" },
                 new string[] { "みだ(れる)" },
@@ -1295,7 +1295,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "普",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フ" },
                 new string[] { "fu" },
                 new string[] { "あまね(く)" },
@@ -1304,7 +1304,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "測",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソク" },
                 new string[] { "soku" },
                 new string[] { "はか(る)" },
@@ -1313,7 +1313,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "豊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ホウ、 ブ" },
                 new string[] { "hou", "bu" },
                 new string[] { "ゆた(か)、 とよ" },
@@ -1322,7 +1322,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "厚",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "あつ(い)" },
@@ -1331,7 +1331,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "齢",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レイ" },
                 new string[] { "rei" },
                 new string[] { "よわい、 とし" },
@@ -1340,7 +1340,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "囲",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ" },
                 new string[] { "i" },
                 new string[] { "かこ(む)" },
@@ -1349,7 +1349,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "卒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソツ" },
                 new string[] { "sotsu" },
                 new string[] { "そっ(する)" },
@@ -1358,7 +1358,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "略",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リャク" },
                 new string[] { "ryaku" },
                 new string[] { "ほぼ" },
@@ -1367,7 +1367,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "承",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "うけたまわ(る)" },
@@ -1376,7 +1376,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "順",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジュン" },
                 new string[] { "jun" },
                 new string[] { "" },
@@ -1385,7 +1385,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "岩",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ガン" },
                 new string[] { "gan" },
                 new string[] { "いわ" },
@@ -1394,7 +1394,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "練",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レン" },
                 new string[] { "ren" },
                 new string[] { "ね(る)" },
@@ -1403,7 +1403,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "軽",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケイ" },
                 new string[] { "kei" },
                 new string[] { "かる(い)" },
@@ -1412,7 +1412,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "了",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョウ" },
                 new string[] { "ryou" },
                 new string[] { "" },
@@ -1421,7 +1421,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "庁",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チョウ" },
                 new string[] { "chou" },
                 new string[] { "やくしょ" },
@@ -1430,7 +1430,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "城",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジョウ、 セイ" },
                 new string[] { "jou", "sei" },
                 new string[] { "しろ" },
@@ -1439,7 +1439,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "患",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "わずら(う)" },
@@ -1448,7 +1448,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "層",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "" },
@@ -1457,7 +1457,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "版",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハン" },
                 new string[] { "han" },
                 new string[] { "" },
@@ -1466,7 +1466,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "令",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レイ" },
                 new string[] { "rei" },
                 new string[] { "" },
@@ -1475,7 +1475,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "角",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カク" },
                 new string[] { "kaku" },
                 new string[] { "かど、 つの" },
@@ -1484,7 +1484,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "絡",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ラク" },
                 new string[] { "raku" },
                 new string[] { "から(む)" },
@@ -1493,7 +1493,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "損",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソン" },
                 new string[] { "son" },
                 new string[] { "そこ(なう)" },
@@ -1502,7 +1502,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "募",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボ" },
                 new string[] { "bo" },
                 new string[] { "つの(る)" },
@@ -1511,7 +1511,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "裏",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リ" },
                 new string[] { "ri" },
                 new string[] { "うら" },
@@ -1520,7 +1520,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "仏",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ブツ" },
                 new string[] { "butsu" },
                 new string[] { "ほとけ" },
@@ -1529,7 +1529,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "績",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セキ" },
                 new string[] { "seki" },
                 new string[] { "" },
@@ -1538,7 +1538,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "築",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チク" },
                 new string[] { "chiku" },
                 new string[] { "きず(く)" },
@@ -1547,7 +1547,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "貨",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カ" },
                 new string[] { "ka" },
                 new string[] { "" },
@@ -1556,7 +1556,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "混",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コン" },
                 new string[] { "kon" },
                 new string[] { "ま(じる)" },
@@ -1565,7 +1565,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "昇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "のぼ(る)" },
@@ -1574,7 +1574,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "池",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チ" },
                 new string[] { "chi" },
                 new string[] { "いけ" },
@@ -1583,7 +1583,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "血",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケツ" },
                 new string[] { "ketsu" },
                 new string[] { "ち" },
@@ -1592,7 +1592,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "温",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オン" },
                 new string[] { "on" },
                 new string[] { "あたた(かい)、ぬく" },
@@ -1601,7 +1601,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "季",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キ" },
                 new string[] { "ki" },
                 new string[] { "" },
@@ -1610,7 +1610,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "星",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セイ" },
                 new string[] { "sei" },
                 new string[] { "ほし" },
@@ -1619,7 +1619,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "永",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エイ" },
                 new string[] { "ei" },
                 new string[] { "なが(い)" },
@@ -1628,7 +1628,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "著",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チョ、 チャク" },
                 new string[] { "cho", "chaku" },
                 new string[] { "あらわ(す)、 いちじる(しい)" },
@@ -1637,7 +1637,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "誌",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "" },
@@ -1646,7 +1646,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "庫",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ、 ク" },
                 new string[] { "ko", "ku" },
                 new string[] { "くら" },
@@ -1655,7 +1655,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "刊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "" },
@@ -1664,7 +1664,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "像",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "" },
@@ -1673,7 +1673,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "香",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ、 キョウ" },
                 new string[] { "kou", "kyou" },
                 new string[] { "かお(り)" },
@@ -1682,7 +1682,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "坂",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハン" },
                 new string[] { "han" },
                 new string[] { "さか" },
@@ -1691,7 +1691,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "底",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "テイ" },
                 new string[] { "tei" },
                 new string[] { "そこ" },
@@ -1700,7 +1700,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "布",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フ" },
                 new string[] { "fu" },
                 new string[] { "ぬの、 し(く)" },
@@ -1709,7 +1709,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "寺",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジ" },
                 new string[] { "ji" },
                 new string[] { "てら" },
@@ -1718,7 +1718,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "宇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ウ" },
                 new string[] { "u" },
                 new string[] { "" },
@@ -1727,7 +1727,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "巨",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョ" },
                 new string[] { "kyo" },
                 new string[] { "" },
@@ -1736,7 +1736,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "震",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン" },
                 new string[] { "shin" },
                 new string[] { "ふる(う)" },
@@ -1745,7 +1745,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "希",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キ" },
                 new string[] { "ki" },
                 new string[] { "まれ、 こいねが(う)" },
@@ -1754,7 +1754,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "触",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショク" },
                 new string[] { "shoku" },
                 new string[] { "ふ(れる)、 さわ(る)" },
@@ -1763,7 +1763,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "依",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ、 エ" },
                 new string[] { "i", "e" },
                 new string[] { "よ(る)" },
@@ -1772,7 +1772,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "籍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セキ" },
                 new string[] { "seki" },
                 new string[] { "" },
@@ -1781,7 +1781,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "汚",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オ" },
                 new string[] { "o" },
                 new string[] { "よご(す)、 きたな(い)、 けが(す)" },
@@ -1790,7 +1790,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "枚",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "マイ、 バイ" },
                 new string[] { "mai", "bai" },
                 new string[] { "" },
@@ -1799,7 +1799,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "複",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フク" },
                 new string[] { "fuku" },
                 new string[] { "" },
@@ -1808,7 +1808,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "郵",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ユウ" },
                 new string[] { "yuu" },
                 new string[] { "" },
@@ -1817,7 +1817,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "仲",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チュウ" },
                 new string[] { "chuu" },
                 new string[] { "なか" },
@@ -1826,7 +1826,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "栄",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エイ" },
                 new string[] { "ei" },
                 new string[] { "さか(える)" },
@@ -1835,7 +1835,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "札",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サツ" },
                 new string[] { "satsu" },
                 new string[] { "ふだ" },
@@ -1844,7 +1844,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "板",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハン、 バン" },
                 new string[] { "han", "ban" },
                 new string[] { "いた" },
@@ -1853,7 +1853,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "骨",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コツ" },
                 new string[] { "kotsu" },
                 new string[] { "ほね" },
@@ -1862,7 +1862,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "傾",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケイ" },
                 new string[] { "kei" },
                 new string[] { "かたむ(く)" },
@@ -1871,7 +1871,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "届",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "とど(ける)" },
@@ -1880,7 +1880,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "巻",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "ま(く)、 まき" },
@@ -1890,7 +1890,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "燃",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ネン" },
                 new string[] { "nen" },
                 new string[] { "も(える)" },
@@ -1899,7 +1899,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "跡",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セキ" },
                 new string[] { "seki" },
                 new string[] { "あと" },
@@ -1908,7 +1908,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "包",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ホウ" },
                 new string[] { "hou" },
                 new string[] { "つつ(む)、 くる(む)" },
@@ -1917,7 +1917,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "駐",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チュウ" },
                 new string[] { "chuu" },
                 new string[] { "" },
@@ -1926,7 +1926,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "弱",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジャク" },
                 new string[] { "jaku" },
                 new string[] { "よわ(い)" },
@@ -1935,7 +1935,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "紹",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "" },
@@ -1944,7 +1944,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "雇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "やと(う)" },
@@ -1953,7 +1953,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "替",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タイ" },
                 new string[] { "tai" },
                 new string[] { "か(わる)" },
@@ -1962,7 +1962,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "預",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨ" },
                 new string[] { "yo" },
                 new string[] { "あず(ける)" },
@@ -1971,7 +1971,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "焼",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "や(く)" },
@@ -1980,7 +1980,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "簡",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "えら(ぶ)" },
@@ -1989,7 +1989,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "章",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "" },
@@ -1998,7 +1998,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "臓",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "はらわた" },
@@ -2007,7 +2007,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "律",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リツ、 リチ" },
                 new string[] { "ritsu", "richi" },
                 new string[] { "" },
@@ -2016,7 +2016,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "贈",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "おく(る)" },
@@ -2025,7 +2025,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "照",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "て(る)" },
@@ -2034,7 +2034,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "薄",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハク" },
                 new string[] { "haku" },
                 new string[] { "うす(い)" },
@@ -2043,7 +2043,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "群",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "グン" },
                 new string[] { "gun" },
                 new string[] { "む(れる)、 むら(がる)" },
@@ -2052,7 +2052,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "秒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ビョウ" },
                 new string[] { "byou" },
                 new string[] { "" },
@@ -2061,7 +2061,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "奥",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "オウ" },
                 new string[] { "ou" },
                 new string[] { "おく" },
@@ -2070,7 +2070,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "詰",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キツ" },
                 new string[] { "kitsu" },
                 new string[] { "つ(める)" },
@@ -2079,7 +2079,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "双",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "ふた" },
@@ -2088,7 +2088,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "刺",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "さ(す)、 さし、 とげ" },
@@ -2097,7 +2097,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "純",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジュン" },
                 new string[] { "jun" },
                 new string[] { "" },
@@ -2106,7 +2106,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "翌",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨク" },
                 new string[] { "yoku" },
                 new string[] { "" },
@@ -2115,7 +2115,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "快",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "こころよ(い)" },
@@ -2124,7 +2124,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "片",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヘン" },
                 new string[] { "hen" },
                 new string[] { "かた" },
@@ -2133,7 +2133,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "敬",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケイ" },
                 new string[] { "kei" },
                 new string[] { "うやま(う)" },
@@ -2142,7 +2142,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "悩",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ノウ" },
                 new string[] { "nou" },
                 new string[] { "なや(む)" },
@@ -2151,7 +2151,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "泉",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セン" },
                 new string[] { "sen" },
                 new string[] { "いずみ" },
@@ -2160,7 +2160,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "皮",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒ" },
                 new string[] { "hi" },
                 new string[] { "かわ" },
@@ -2169,7 +2169,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "漁",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ギョ、 リョウ" },
                 new string[] { "gyo", "ryou" },
                 new string[] { "あさ(る)" },
@@ -2178,7 +2178,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "荒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "あら(い)、あ(れる)" },
@@ -2187,7 +2187,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "貯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チョ" },
                 new string[] { "cho" },
                 new string[] { "た(める)" },
@@ -2196,7 +2196,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "硬",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "かた(い)" },
@@ -2205,7 +2205,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "埋",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "マイ" },
                 new string[] { "mai" },
                 new string[] { "う(める)" },
@@ -2214,7 +2214,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "柱",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チュウ" },
                 new string[] { "chuu" },
                 new string[] { "はしら" },
@@ -2223,7 +2223,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "祭",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サイ" },
                 new string[] { "sai" },
                 new string[] { "まつり" },
@@ -2232,7 +2232,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "袋",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タイ" },
                 new string[] { "tai" },
                 new string[] { "ふくろ" },
@@ -2241,7 +2241,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "筆",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒツ" },
                 new string[] { "hitsu" },
                 new string[] { "ふで" },
@@ -2250,7 +2250,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "訓",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "クン" },
                 new string[] { "kun" },
                 new string[] { "よ(む)、くん(ずる)" },
@@ -2259,7 +2259,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "浴",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨク" },
                 new string[] { "yoku" },
                 new string[] { "あ(びる)" },
@@ -2268,7 +2268,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "童",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドウ" },
                 new string[] { "dou" },
                 new string[] { "わらべ" },
@@ -2277,7 +2277,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "宝",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ホウ" },
                 new string[] { "hou" },
                 new string[] { "たから" },
@@ -2286,7 +2286,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "封",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フウ、 ホウ" },
                 new string[] { "fuu", "hou" },
                 new string[] { "" },
@@ -2295,7 +2295,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "胸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "むね" },
@@ -2304,7 +2304,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "砂",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サ、 シャ" },
                 new string[] { "sa", "sha" },
                 new string[] { "すな" },
@@ -2313,7 +2313,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "塩",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エン" },
                 new string[] { "en" },
                 new string[] { "しお" },
@@ -2322,7 +2322,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "賢",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケン" },
                 new string[] { "ken" },
                 new string[] { "かしこ(い)" },
@@ -2331,7 +2331,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "腕",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ワン" },
                 new string[] { "wan" },
                 new string[] { "うで" },
@@ -2340,7 +2340,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "兆",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チョウ" },
                 new string[] { "chou" },
                 new string[] { "きざ(す)" },
@@ -2349,7 +2349,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "床",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "とこ、 ゆか" },
@@ -2358,7 +2358,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "毛",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "モウ" },
                 new string[] { "mou" },
                 new string[] { "け" },
@@ -2367,7 +2367,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "緑",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョク、 ロク" },
                 new string[] { "ryoku", "roku" },
                 new string[] { "みどり" },
@@ -2376,7 +2376,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "尊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソン" },
                 new string[] { "son" },
                 new string[] { "とうと(い)" },
@@ -2385,7 +2385,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "祝",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シュク" },
                 new string[] { "shuku" },
                 new string[] { "いわ(う)" },
@@ -2394,7 +2394,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "柔",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジュウ、 ニュウ" },
                 new string[] { "juu", "nyuu" },
                 new string[] { "やわ(らかい)" },
@@ -2403,7 +2403,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "殿",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "デン" },
                 new string[] { "den" },
                 new string[] { "との、 どの" },
@@ -2412,7 +2412,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "濃",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ノウ" },
                 new string[] { "nou" },
                 new string[] { "こ(い)" },
@@ -2421,7 +2421,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "液",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エキ" },
                 new string[] { "eki" },
                 new string[] { "" },
@@ -2430,7 +2430,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "衣",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ、 エ" },
                 new string[] { "i", "e" },
                 new string[] { "ころも、 きぬ" },
@@ -2439,7 +2439,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "肩",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケン" },
                 new string[] { "ken" },
                 new string[] { "かた" },
@@ -2448,7 +2448,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "零",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レイ" },
                 new string[] { "rei" },
                 new string[] { "ぜろ" },
@@ -2457,7 +2457,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "幼",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨウ" },
                 new string[] { "you" },
                 new string[] { "おさな(い)" },
@@ -2466,7 +2466,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "荷",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カ" },
                 new string[] { "ka" },
                 new string[] { "に" },
@@ -2475,7 +2475,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "泊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハク" },
                 new string[] { "haku" },
                 new string[] { "と(まる)" },
@@ -2484,7 +2484,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "黄",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ、 オウ" },
                 new string[] { "kou", "ou" },
                 new string[] { "き" },
@@ -2493,7 +2493,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "甘",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "あま(い)" },
@@ -2502,7 +2502,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "臣",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン、 ジン" },
                 new string[] { "shin", "jin" },
                 new string[] { "" },
@@ -2511,7 +2511,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "浅",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セン" },
                 new string[] { "sen" },
                 new string[] { "あさ(い)" },
@@ -2520,7 +2520,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "掃",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "は(く)" },
@@ -2529,7 +2529,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "雲",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ウン" },
                 new string[] { "un" },
                 new string[] { "くも" },
@@ -2538,7 +2538,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "掘",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "クツ" },
                 new string[] { "kutsu" },
                 new string[] { "ほ(る)" },
@@ -2547,7 +2547,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "捨",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シャ" },
                 new string[] { "sha" },
                 new string[] { "す(てる)" },
@@ -2556,7 +2556,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "軟",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ナン" },
                 new string[] { "nan" },
                 new string[] { "やわ(らかい)" },
@@ -2565,7 +2565,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "沈",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チン、 ジン" },
                 new string[] { "chin", "jin" },
                 new string[] { "しず(む)" },
@@ -2574,7 +2574,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "凍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "こお(る)、 こご(える)" },
@@ -2583,7 +2583,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "乳",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ニュウ" },
                 new string[] { "nyuu" },
                 new string[] { "ちち、ち" },
@@ -2592,7 +2592,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "恋",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "レン" },
                 new string[] { "ren" },
                 new string[] { "こい(しい)" },
@@ -2601,7 +2601,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "紅",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ、 ク" },
                 new string[] { "kou", "ku" },
                 new string[] { "べに、 くれない" },
@@ -2610,7 +2610,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "郊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "" },
@@ -2619,7 +2619,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "腰",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨウ" },
                 new string[] { "you" },
                 new string[] { "こし" },
@@ -2628,7 +2628,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "炭",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タン" },
                 new string[] { "tan" },
                 new string[] { "すみ" },
@@ -2637,7 +2637,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "踊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨウ" },
                 new string[] { "you" },
                 new string[] { "おど(る)" },
@@ -2646,7 +2646,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "冊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サツ" },
                 new string[] { "satsu" },
                 new string[] { "" },
@@ -2655,7 +2655,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "勇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ユウ" },
                 new string[] { "yuu" },
                 new string[] { "いさ(む)" },
@@ -2664,7 +2664,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "械",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "" },
@@ -2673,7 +2673,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "菜",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サイ" },
                 new string[] { "sai" },
                 new string[] { "な" },
@@ -2682,7 +2682,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "珍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チン" },
                 new string[] { "chin" },
                 new string[] { "めずら(しい)" },
@@ -2691,7 +2691,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "卵",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ラン" },
                 new string[] { "ran" },
                 new string[] { "たまご" },
@@ -2700,7 +2700,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "湖",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "みずうみ" },
@@ -2709,7 +2709,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "喫",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キツ" },
                 new string[] { "kitsu" },
                 new string[] { "の(む)" },
@@ -2718,7 +2718,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "干",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "ほ(す)、 ひ(る)" },
@@ -2727,7 +2727,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "虫",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チュウ、 キ" },
                 new string[] { "chuu", "ki" },
                 new string[] { "むし" },
@@ -2736,7 +2736,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "刷",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "サツ" },
                 new string[] { "satsu" },
                 new string[] { "す(る)、 は(く)" },
@@ -2745,7 +2745,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "湯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "ゆ" },
@@ -2754,7 +2754,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "溶",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヨウ" },
                 new string[] { "you" },
                 new string[] { "と(ける)" },
@@ -2763,7 +2763,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "鉱",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "あらがね" },
@@ -2772,7 +2772,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "涙",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ルイ" },
                 new string[] { "rui" },
                 new string[] { "なみだ" },
@@ -2781,7 +2781,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "匹",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒツ" },
                 new string[] { "hitsu" },
                 new string[] { "ひき" },
@@ -2790,7 +2790,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "孫",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソン" },
                 new string[] { "son" },
                 new string[] { "まご" },
@@ -2799,7 +2799,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "鋭",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "エイ" },
                 new string[] { "ei" },
                 new string[] { "するど(い)" },
@@ -2808,7 +2808,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "枝",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "えだ" },
@@ -2817,7 +2817,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "塗",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ト" },
                 new string[] { "to" },
                 new string[] { "ぬ(る)、 ぬ(り)" },
@@ -2826,7 +2826,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "軒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ケン" },
                 new string[] { "ken" },
                 new string[] { "のき" },
@@ -2835,7 +2835,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "毒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドク" },
                 new string[] { "doku" },
                 new string[] { "" },
@@ -2844,7 +2844,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "叫",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "さけ(ぶ)" },
@@ -2853,7 +2853,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "拝",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ハイ" },
                 new string[] { "hai" },
                 new string[] { "おが(む)" },
@@ -2862,7 +2862,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "氷",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ヒョウ" },
                 new string[] { "hyou" },
                 new string[] { "こおり、 ひ" },
@@ -2871,7 +2871,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "乾",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "かわ(く)" },
@@ -2880,7 +2880,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "棒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ" },
                 new string[] { "bou" },
                 new string[] { "" },
@@ -2889,7 +2889,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "祈",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キ" },
                 new string[] { "ki" },
                 new string[] { "いの(る)" },
@@ -2898,7 +2898,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "拾",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シュウ" },
                 new string[] { "shuu" },
                 new string[] { "ひろ(う)" },
@@ -2907,7 +2907,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "粉",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フン" },
                 new string[] { "fun" },
                 new string[] { "こな" },
@@ -2916,7 +2916,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "糸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "いと" },
@@ -2925,7 +2925,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "綿",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "メン" },
                 new string[] { "men" },
                 new string[] { "わた" },
@@ -2934,7 +2934,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "汗",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "あせ" },
@@ -2943,7 +2943,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "銅",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドウ" },
                 new string[] { "dou" },
                 new string[] { "あかがね" },
@@ -2952,7 +2952,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "湿",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シツ" },
                 new string[] { "shitsu" },
                 new string[] { "しめ(る)" },
@@ -2961,7 +2961,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "瓶",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ビン" },
                 new string[] { "bin" },
                 new string[] { "かめ、 へい" },
@@ -2970,7 +2970,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "咲",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "さ(く)" },
@@ -2979,7 +2979,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "召",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ショウ" },
                 new string[] { "shou" },
                 new string[] { "め(す)" },
@@ -2988,7 +2988,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "缶",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カン" },
                 new string[] { "kan" },
                 new string[] { "かま" },
@@ -2997,7 +2997,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "隻",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セキ" },
                 new string[] { "seki" },
                 new string[] { "" },
@@ -3006,7 +3006,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "脂",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "あぶら" },
@@ -3015,7 +3015,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "蒸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジョウ、 セイ" },
                 new string[] { "jou", "sei" },
                 new string[] { "む(す)" },
@@ -3024,7 +3024,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "肌",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キ" },
                 new string[] { "ki" },
                 new string[] { "はだ" },
@@ -3033,7 +3033,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "耕",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "たがや(す)" },
@@ -3042,7 +3042,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "鈍",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドン" },
                 new string[] { "don" },
                 new string[] { "にぶ(い)、 なまく(ら)" },
@@ -3051,7 +3051,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "泥",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "デイ" },
                 new string[] { "dei" },
                 new string[] { "どろ" },
@@ -3060,7 +3060,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "隅",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "グウ" },
                 new string[] { "guu" },
                 new string[] { "すみ" },
@@ -3069,7 +3069,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "灯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "ひ、とも(す)" },
@@ -3078,7 +3078,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "辛",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シン" },
                 new string[] { "shin" },
                 new string[] { "から(い)、 つら(い)" },
@@ -3087,7 +3087,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "磨",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "マ" },
                 new string[] { "ma" },
                 new string[] { "みが(く)" },
@@ -3096,7 +3096,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "麦",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "バク" },
                 new string[] { "baku" },
                 new string[] { "むぎ" },
@@ -3105,7 +3105,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "姓",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "セイ、 ショウ" },
                 new string[] { "sei", "shou" },
                 new string[] { "" },
@@ -3114,7 +3114,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "筒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "つつ" },
@@ -3123,7 +3123,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "鼻",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ビ" },
                 new string[] { "bi" },
                 new string[] { "はな" },
@@ -3132,7 +3132,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "粒",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リュウ" },
                 new string[] { "ryuu" },
                 new string[] { "つぶ" },
@@ -3141,7 +3141,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "詞",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "" },
@@ -3150,7 +3150,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "胃",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "イ" },
                 new string[] { "i" },
                 new string[] { "" },
@@ -3159,7 +3159,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "畳",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ジョウ、 チョウ" },
                 new string[] { "jou", "chou" },
                 new string[] { "たたみ" },
@@ -3168,7 +3168,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "机",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キ" },
                 new string[] { "ki" },
                 new string[] { "つくえ" },
@@ -3177,7 +3177,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "膚",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フ" },
                 new string[] { "fu" },
                 new string[] { "はだ" },
@@ -3186,7 +3186,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "濯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "タク" },
                 new string[] { "taku" },
                 new string[] { "すす(ぐ)" },
@@ -3195,7 +3195,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "塔",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
                 new string[] { "tou" },
                 new string[] { "" },
@@ -3204,7 +3204,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "沸",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フツ" },
                 new string[] { "futsu" },
                 new string[] { "わ(く)" },
@@ -3213,7 +3213,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "灰",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カイ" },
                 new string[] { "kai" },
                 new string[] { "はい" },
@@ -3222,7 +3222,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "菓",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "カ" },
                 new string[] { "ka" },
                 new string[] { "" },
@@ -3231,7 +3231,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "帽",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ" },
                 new string[] { "bou" },
                 new string[] { "" },
@@ -3240,7 +3240,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "枯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コ" },
                 new string[] { "ko" },
                 new string[] { "か(れる)" },
@@ -3249,7 +3249,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "涼",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "リョウ" },
                 new string[] { "ryou" },
                 new string[] { "すず(しい)" },
@@ -3258,7 +3258,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "舟",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シュウ" },
                 new string[] { "shuu" },
                 new string[] { "ふね" },
@@ -3267,7 +3267,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "貝",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "バイ" },
                 new string[] { "bai" },
                 new string[] { "かい" },
@@ -3276,7 +3276,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "符",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "フ" },
                 new string[] { "fu" },
                 new string[] { "" },
@@ -3285,7 +3285,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "憎",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ゾウ" },
                 new string[] { "zou" },
                 new string[] { "にく(む)" },
@@ -3294,7 +3294,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "皿",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ベイ" },
                 new string[] { "bei" },
                 new string[] { "さら、 ざら" },
@@ -3303,7 +3303,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "肯",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "コウ" },
                 new string[] { "kou" },
                 new string[] { "がえんじ(る)" },
@@ -3312,7 +3312,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "燥",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ソウ" },
                 new string[] { "sou" },
                 new string[] { "はしゃ(ぐ)" },
@@ -3321,7 +3321,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "畜",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "チク" },
                 new string[] { "chiku" },
                 new string[] { "" },
@@ -3330,7 +3330,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "坊",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ボウ、 ボッ" },
                 new string[] { "bou", "bo" },
                 new string[] { "" },
@@ -3339,7 +3339,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "挟",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "キョウ" },
                 new string[] { "kyou" },
                 new string[] { "はさ(む)" },
@@ -3348,7 +3348,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "曇",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "ドン" },
                 new string[] { "don" },
                 new string[] { "くも(る)" },
@@ -3357,7 +3357,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "滴",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "テキ" },
                 new string[] { "teki" },
                 new string[] { "しずく、 したた(る)" },
@@ -3366,7 +3366,7 @@ namespace Games.Shared.Data
             ),
             new KanjiInfo(
                 "伺",
-                new KanjiClass[] { KanjiClass.JLPT_N2 },
+                new KanjiSet[] { KanjiSet.JLPT_N2 },
                 new string[] { "シ" },
                 new string[] { "shi" },
                 new string[] { "うかが(う)" },

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Games.Shared.Data
 {
-    public enum KanjiClass
+    public enum KanjiSet
     {
         JLPT_N1,
         JLPT_N2,
@@ -22,15 +22,15 @@ namespace Games.Shared.Data
         public List<string> kunyomiReadingsKana;
         public List<string> kunyomiReadingsLatin;
         public List<string> englishTranslations;
-        public List<KanjiClass> classes;
+        public List<KanjiSet> classes;
 
-        public KanjiInfo(string kanjiSymbol, KanjiClass[] classes,
+        public KanjiInfo(string kanjiSymbol, KanjiSet[] classes,
             string[] onyomiReadingsKana, string[] onyomiReadingsLatin,
             string[] kunyomiReadingsKana, string[] kunyomiReadingsLatin,
             string[] englishTranslations)
         {
             this.kanjiSymbol = kanjiSymbol;
-            this.classes = new List<KanjiClass>(classes);
+            this.classes = new List<KanjiSet>(classes);
             this.onyomiReadingsKana = new List<string>(onyomiReadingsKana);
             this.kunyomiReadingsKana = new List<string>(kunyomiReadingsKana);
             this.englishTranslations = new List<string>(englishTranslations);
@@ -60,6 +60,41 @@ namespace Games.Shared.Data
 
     public static class KanjiData
     {
+        public static List<KanjiInfo> getKanjiSet(KanjiSet selectedSet)
+        {
+            switch (selectedSet)
+            {
+                case KanjiSet.JLPT_N1:
+                    return JLPT_N1;
+                case KanjiSet.JLPT_N2:
+                    return JLPT_N2;
+                case KanjiSet.JLPT_N3:
+                    return JLPT_N3;
+                case KanjiSet.JLPT_N4:
+                    return JLPT_N4;
+                case KanjiSet.JLPT_N5:
+                    return JLPT_N5;
+                case KanjiSet.TOP_100_MOST_FREQUENT:
+                    return Top100_MostFrequent;
+                default:
+                    return new List<KanjiInfo>();
+            }
+        }
+        
+        public static List<KanjiInfo> getKanjiSet(params KanjiSet[] selectedSets)
+        {
+            // use a set because there might be duplicates
+            var tmpSet = new HashSet<KanjiInfo>();
+            foreach (var set in selectedSets)
+            {
+                foreach (var kanji in getKanjiSet(set))
+                {
+                    tmpSet.Add(kanji);
+                }
+            }
+            return tmpSet.ToList();
+        }
+
         public static List<KanjiInfo> JLPT_N5_to_N1
         {
             get

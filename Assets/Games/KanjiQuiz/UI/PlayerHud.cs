@@ -1,9 +1,8 @@
-using Games.KanjiQuiz;
 using Games.Shared.Util.Menu;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Games.KanjiPairs
+namespace Games.KanjiQuiz.UI
 {
     public class PlayerHud : AnimatedMenu
     {

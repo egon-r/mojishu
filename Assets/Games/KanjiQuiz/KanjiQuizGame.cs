@@ -7,6 +7,18 @@ using Random = UnityEngine.Random;
 
 namespace Games.KanjiQuiz
 {
+    public class KanjiQuizGameInitData
+    {
+        public int numAnswers;
+        public KanjiSet[] kanjiSets;
+
+        public KanjiQuizGameInitData(int numAnswers = 6, params KanjiSet[] kanjiSets)
+        {
+            this.numAnswers = numAnswers;
+            this.kanjiSets = kanjiSets;
+        }
+    }
+    
     public class KanjiQuizGame: MonoBehaviour
     {
         private KanjiInfo _currentKanji;
@@ -17,20 +29,36 @@ namespace Games.KanjiQuiz
         
         public KanjiQuizAnswers AnswerGrid;
         public KanjiQuizQuestionPanel QuestionPanel;
-        
-        private void Start()
-        {
-            StartGame();
-        }
+        private KanjiQuizGameInitData currentGameInitData;
 
-        private void StartGame(int numAnswers = 6)
+        public void Hide()
         {
-            // randomly pick answer/option kanji
-            _currentKanji = KanjiData.Top100_MostFrequent[Random.Range(0, KanjiData_Top100MostFrequent.Kanji.Count)];
-            var answerOptionSet = new HashSet<KanjiInfo>() { _currentKanji };
-            while (answerOptionSet.Count < numAnswers)
+            gameObject.SetActive(false);
+        }
+        
+        public void Show()
+        {
+            gameObject.SetActive(true);
+        }
+        
+        public void StartGame(KanjiQuizGameInitData initData)
+        {
+            currentGameInitData = initData;
+            
+            // get kanji list
+            var kanjiList = KanjiData.getKanjiSet(currentGameInitData.kanjiSets);
+            if (kanjiList.Count < currentGameInitData.numAnswers)
             {
-                var randomKanji = KanjiData.Top100_MostFrequent[Random.Range(0, KanjiData_Top100MostFrequent.Kanji.Count)];
+                Debug.LogError("selected kanji list is too small!");
+                return;
+            }
+            
+            // randomly pick answer/option kanji
+            _currentKanji = kanjiList[Random.Range(0, kanjiList.Count)];
+            var answerOptionSet = new HashSet<KanjiInfo>() { _currentKanji };
+            while (answerOptionSet.Count < currentGameInitData.numAnswers)
+            {
+                var randomKanji = kanjiList[Random.Range(0, kanjiList.Count)];
                 answerOptionSet.Add(randomKanji);
             }
             
@@ -53,6 +81,8 @@ namespace Games.KanjiQuiz
             {
                 Debug.Log("\t" + option);
             }
+            
+            Show();
         }
 
         private void OnAnswerClicked(KanjiQuizAnswerCard card)
@@ -61,7 +91,7 @@ namespace Games.KanjiQuiz
             if (card.Kanji == _currentKanji)
             {
                 Debug.Log("Correct!");
-                StartGame();
+                StartGame(currentGameInitData);
             }
             else
             {
