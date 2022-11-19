@@ -41,23 +41,9 @@ namespace Games.Pairs
 
         public event ConcealAnimFinishedEvent ConcealAnimFinished;
 
-        public bool debugMode = false;
-
-        private void OnMouseDown()
+        private void OnMouseUpAsButton()
         {
-            if (debugMode)
-            {
-                if (isRevealed)
-                {
-                    Conceal();
-                }
-                else
-                {
-                    Reveal();
-                }
-            }
-
-            if (!revealing && !concealing)
+            if (!revealing && !concealing && Time.timeScale != 0)
             {
                 RaiseClickedEvent();
             }

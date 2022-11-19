@@ -35,14 +35,23 @@ public class KanjiQuizAnswerCard : MonoBehaviour
     
     public delegate void ClickedEvent(KanjiQuizAnswerCard card);
     public event ClickedEvent Clicked;
-    
+
+    private void OnMouseUpAsButton()
+    {
+        if (Time.timeScale != 0)
+        {
+            state = CardState.DEFAULT;
+            CardBackground.sprite = PressedBackground;
+            RaiseClickedEvent(this);
+        }
+    }
+
     private void OnMouseDown()
     {
         if (state == CardState.DEFAULT && Time.timeScale != 0)
         {
             state = CardState.PRESSED;
             CardBackground.sprite = PressedBackground;
-            RaiseClickedEvent(this);
         }
     }
 

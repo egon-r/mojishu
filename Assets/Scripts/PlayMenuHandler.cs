@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,13 +16,31 @@ public class PlayMenuHandler : MonoBehaviour
         KanjiQuizGame.onClick.AddListener(KanjiQuizGame_clicked);
     }
 
+    private IEnumerator LoadGameAsync(string scene, Action onComplete = null)
+    {
+        var asyncOp = SceneManager.LoadSceneAsync(scene);
+        asyncOp.completed += _ => onComplete?.Invoke();
+        yield return null;
+    }
+
+    private void LoadGameButtonClicked(Button button, string scene)
+    {
+        StopAllCoroutines();
+        var loadingButton = button.GetComponent<LoadingButton>();
+        loadingButton.Loading = true;
+        StartCoroutine(LoadGameAsync(scene, () =>
+        {
+            loadingButton.Loading = false;
+        }));
+    }
+    
     private void KanjiQuizGame_clicked()
     {
-        SceneManager.LoadScene("Scenes/KanjiQuiz");
+        LoadGameButtonClicked(KanjiQuizGame, "Scenes/KanjiQuiz");
     }
 
     private void KanaPairsGame_clicked()
     {
-        SceneManager.LoadScene("Scenes/PairsGame");
+        LoadGameButtonClicked(KanaPairsGame, "Scenes/PairsGame");
     }
 }
