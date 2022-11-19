@@ -14,9 +14,97 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="icons_inkscape.svg">
+   sodipodi:docname="icons_inkscape.svg"
+   inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_432_foreground.png"
+   inkscape:export-xdpi="322.72873"
+   inkscape:export-ydpi="322.72873">
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1363"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8.333"
+       chamfer_steps="1"
+       flexible="true"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1336"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8.333"
+       chamfer_steps="1"
+       flexible="true"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1300"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8.333"
+       chamfer_steps="1"
+       flexible="true"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1246"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1 @ F,1,0,1,0,0.08333,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8.333"
+       chamfer_steps="1"
+       flexible="true"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1239"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,1,0,1,0,0.0833,0,1 @ F,1,0,1,0,0.0833,0,1 @ F,1,0,1,0,0.0833,0,1 @ F,1,0,1,0,0.0833,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8.33"
+       chamfer_steps="1"
+       flexible="true"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
     <linearGradient
        id="linearGradient2797"
        osb:paint="solid">
@@ -57,6 +145,17 @@
          values="2 -0.5 -0.5 0 0 -0.5 2 -0.5 0 0 -0.5 -0.5 2 0 0 0 0 0 1 0 "
          id="feColorMatrix1064" />
     </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1198">
+      <ellipse
+         style="fill:#bc002d;fill-opacity:1;stroke:#bc002d;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="ellipse1200"
+         cx="85.780113"
+         cy="166.50893"
+         rx="11.767703"
+         ry="11.7677" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -65,23 +164,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="255.62281"
-     inkscape:cy="502.85936"
+     inkscape:zoom="2"
+     inkscape:cx="576.38537"
+     inkscape:cy="499.78791"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1781"
-     inkscape:window-height="1401"
-     inkscape:window-x="2768"
-     inkscape:window-y="0"
+     inkscape:window-width="1522"
+     inkscape:window-height="1331"
+     inkscape:window-x="3783"
+     inkscape:window-y="45"
      inkscape:window-maximized="0"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
-     showguides="false" />
+     showguides="false"
+     inkscape:bbox-nodes="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -278,5 +378,216 @@
            y="115.82619"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">i</tspan></text>
     </g>
+    <g
+       id="g1262"
+       transform="matrix(1.5452066,0,0,1.5452066,-55.604197,-100.38958)"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_25_192_circle.png"
+       inkscape:export-xdpi="322.72873"
+       inkscape:export-ydpi="322.72873">
+      <ellipse
+         style="fill:#bc002d;fill-opacity:1;stroke:#bc002d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path1158-8"
+         cx="52.104191"
+         cy="162.20587"
+         rx="11.767704"
+         ry="11.7677" />
+      <g
+         id="g1165"
+         style="stroke:none;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none"
+         clip-path="url(#clipPath1198)"
+         transform="translate(-33.675943,-4.30305)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           id="rect1113-1"
+           width="23.535406"
+           height="23.535406"
+           x="74.012451"
+           y="154.74121"
+           inkscape:export-filename="C:\Users\skynet\Desktop\rect1113.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <circle
+           style="fill:#bc002d;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           id="path1115-5"
+           cx="85.530144"
+           cy="166.25891"
+           r="5.2255206"
+           inkscape:export-filename="C:\Users\skynet\Desktop\rect1113.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:11.2338px;line-height:0;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="76.665955"
+           y="161.04419"
+           id="text1105-8"
+           transform="scale(0.97606847,1.0245183)"
+           inkscape:export-filename="C:\Users\skynet\Desktop\rect1113.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"><tspan
+             sodipodi:role="line"
+             id="tspan1103-6"
+             x="76.665955"
+             y="161.04419"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">文字</tspan><tspan
+             sodipodi:role="line"
+             x="76.665955"
+             y="171.71629"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="tspan1107-3">練習</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.96889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149223"
+       x="12.850702"
+       y="119.50195"
+       id="text1266"><tspan
+         sodipodi:role="line"
+         id="tspan1264"
+         x="12.850702"
+         y="119.50195"
+         style="stroke-width:0.149223">Android rounded/square</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#bc002d;stroke-width:1.53276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1113-2"
+       width="37.398075"
+       height="37.398075"
+       x="56.931637"
+       y="131.46046"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_legacy_192.png"
+       inkscape:export-xdpi="281.85364"
+       inkscape:export-ydpi="281.85364"
+       inkscape:path-effect="#path-effect1300"
+       sodipodi:type="rect"
+       d="M 60.048018,131.46046 H 91.21333 a 3.1163816,3.1163816 45 0 1 3.116382,3.11639 v 31.16531 a 3.1163816,3.1163816 135 0 1 -3.116382,3.11638 H 60.048018 a 3.1163816,3.1163816 45 0 1 -3.116381,-3.11638 v -31.16531 a 3.1163816,3.1163816 135 0 1 3.116381,-3.11639 z" />
+    <circle
+       style="fill:#bc002d;fill-opacity:1;stroke:#bc002d;stroke-width:1.58901;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1115-2"
+       cx="75.233406"
+       cy="149.76224"
+       r="8.3034229"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_legacy_192.png"
+       inkscape:export-xdpi="281.85364"
+       inkscape:export-ydpi="281.85364" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.6473px;line-height:0;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="59.080025"
+       y="145.73836"
+       id="text1105-4"
+       transform="scale(0.98603935,1.0141583)"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_legacy_192.png"
+       inkscape:export-xdpi="281.85364"
+       inkscape:export-ydpi="281.85364"><tspan
+         sodipodi:role="line"
+         id="tspan1103-9"
+         x="59.080025"
+         y="145.73836"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">文字</tspan><tspan
+         sodipodi:role="line"
+         x="59.080025"
+         y="162.5033"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan1107-6">練習</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.53276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1113-2-5"
+       width="37.398075"
+       height="37.398075"
+       x="107.07017"
+       y="131.32817"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_324_background.png"
+       inkscape:export-xdpi="211.39023"
+       inkscape:export-ydpi="211.39023"
+       sodipodi:type="rect"
+       d="m 107.07017,131.32817 h 37.39807 v 37.39808 h -37.39807 z" />
+    <g
+       id="g1377"
+       inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_324_foreground.png"
+       inkscape:export-xdpi="322.72873"
+       inkscape:export-ydpi="322.72873"
+       transform="translate(9.7089386,-60.978012)">
+      <g
+         id="g1369"
+         inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_81_foreground.png"
+         inkscape:export-xdpi="60.509998"
+         inkscape:export-ydpi="60.509998"
+         transform="matrix(0.70588223,0,0,0.70588105,45.134832,62.06064)">
+        <circle
+           style="fill:#bc002d;fill-opacity:1;stroke:#bc002d;stroke-width:1.58901;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           id="path1115-2-3"
+           cx="153.45834"
+           cy="211.00522"
+           r="8.3034229"
+           inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_324_background.png"
+           inkscape:export-xdpi="211.39023"
+           inkscape:export-ydpi="211.39023" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:17.6473px;line-height:0;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="138.0096"
+           y="205.73462"
+           id="text1105-4-8"
+           transform="scale(0.98603935,1.0141583)"
+           inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_324_foreground.png"
+           inkscape:export-xdpi="242.04689"
+           inkscape:export-ydpi="242.04689"><tspan
+             sodipodi:role="line"
+             id="tspan1103-9-1"
+             x="138.0096"
+             y="205.73462"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">文字</tspan><tspan
+             sodipodi:role="line"
+             x="138.0096"
+             y="222.49956"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.95;font-family:XANO-mincho-U32;-inkscape-font-specification:XANO-mincho-U32;fill:#ffffff;fill-opacity:1;stroke:#bc002d;stroke-width:0.166747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="tspan1107-6-3">練習</tspan></text>
+      </g>
+      <path
+         style="fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1.53276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect1113-2-5-2"
+         width="37.398075"
+         height="37.398075"
+         x="134.75931"
+         y="192.30618"
+         inkscape:export-filename="E:\projects\unity\mojishu\Assets\Sprites\logo\android\api_26_324_background.png"
+         inkscape:export-xdpi="293.40549"
+         inkscape:export-ydpi="293.40549"
+         sodipodi:type="rect"
+         d="m 134.75931,192.30618 h 37.39807 v 37.39808 h -37.39807 z" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.96889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149223"
+       x="108.06835"
+       y="118.2245"
+       id="text1266-8"><tspan
+         sodipodi:role="line"
+         id="tspan1264-5"
+         x="108.06835"
+         y="118.2245"
+         style="stroke-width:0.149223">Adaptive</tspan><tspan
+         sodipodi:role="line"
+         x="108.06835"
+         y="125.68561"
+         style="stroke-width:0.149223"
+         id="tspan1397">Background</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.96889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149223"
+       x="146.79741"
+       y="118.96738"
+       id="text1266-8-5"><tspan
+         sodipodi:role="line"
+         id="tspan1264-5-6"
+         x="146.79741"
+         y="118.96738"
+         style="stroke-width:0.149223">Adaptive</tspan><tspan
+         sodipodi:role="line"
+         x="146.79741"
+         y="126.42849"
+         style="stroke-width:0.149223"
+         id="tspan1397-7">Foreground</tspan></text>
   </g>
 </svg>
