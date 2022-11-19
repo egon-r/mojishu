@@ -1292,7 +1292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea818a01c4b886245a7f85c02f4ab1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memoryGame: {fileID: 1088408937}
+  KanaPairsGame: {fileID: 1088408937}
+  KanjiQuizGame: {fileID: 2141722016}
 --- !u!1 &702146877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,7 +3645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kanji Pairs \n(Work In Progress)"
+  m_text: Kanji Quiz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8664a1078deb4b64a832ef802b1c3d9b, type: 2}
   m_sharedMaterial: {fileID: 6995055764243475641, guid: 8664a1078deb4b64a832ef802b1c3d9b, type: 2}
@@ -3653,8 +3654,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1694498815
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3671,7 +3672,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.25
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3869,7 +3870,7 @@ GameObject:
   - component: {fileID: 2141722017}
   - component: {fileID: 2141722016}
   m_Layer: 5
-  m_Name: KanjiPairsGame
+  m_Name: KanjiQuizGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3960,7 +3961,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fab99c6ec8ac6eb48a71a32412d072e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb086526fd75ef340a289f081dbd8246, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

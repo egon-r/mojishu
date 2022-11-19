@@ -6,17 +6,23 @@ using UnityEngine.UI;
 
 public class PlayMenuHandler : MonoBehaviour
 {
-    public Button memoryGame;
+    public Button KanaPairsGame;
+    public Button KanjiQuizGame;
     
     // Start is called before the first frame update
     void Start()
     {
-        memoryGame.onClick.AddListener(memoryGame_clicked);
+        KanaPairsGame.onClick.AddListener(KanaPairsGame_clicked);
+        KanjiQuizGame.onClick.AddListener(KanjiQuizGame_clicked);
     }
 
-    private void memoryGame_clicked()
+    private void KanjiQuizGame_clicked()
     {
-        Debug.Log("memory game");
+        SceneManager.LoadScene("Scenes/KanjiQuiz");
+    }
+
+    private void KanaPairsGame_clicked()
+    {
         SceneManager.LoadScene("Scenes/PairsGame");
     }
 }

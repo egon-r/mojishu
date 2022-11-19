@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PairsGame.unity
     guid: 68fd8dcf8970c5b47a7d6c6f1445048c
+  - enabled: 1
+    path: Assets/Scenes/KanjiQuiz.unity
+    guid: af23a72d93ff1494489f7444bfbc7cf9
   m_configObjects: {}

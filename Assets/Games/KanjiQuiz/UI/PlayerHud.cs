@@ -1,3 +1,4 @@
+using Games.KanjiQuiz;
 using Games.Shared.Util.Menu;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,13 +8,21 @@ namespace Games.KanjiPairs
     public class PlayerHud : AnimatedMenu
     {
         private MenuManager menuManager;
+        public KanjiQuizGame Game;
         public Button PauseButton;
+        public Button JishoButton;
         
         // Start is called before the first frame update
         void Start()
         {
             menuManager = gameObject.GetComponentInParent<MenuManager>();
             PauseButton.onClick.AddListener(PauseButton_clicked);
+            JishoButton.onClick.AddListener(JishoButton_clicked);
+        }
+
+        private void JishoButton_clicked()
+        {
+            Application.OpenURL("https://jisho.org/search/%23kanji%20" + Game.CurrentKanji);
         }
 
         private void PauseButton_clicked()
@@ -24,12 +33,6 @@ namespace Games.KanjiPairs
                 PauseButton.enabled = true;
                 Time.timeScale = 0;
             }, parallel: true);
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
     }
 }
