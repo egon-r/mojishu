@@ -1292,6 +1292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea818a01c4b886245a7f85c02f4ab1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainMenu: {fileID: 1615988945}
+  BackButton: {fileID: 527015557}
   KanaPairsGame: {fileID: 1088408941}
   KanjiQuizGame: {fileID: 1539973165}
 --- !u!1 &702146877
@@ -3043,7 +3045,6 @@ MonoBehaviour:
   playMenu: {fileID: 585544576}
   mainMenu: {fileID: 940814748}
   playButton: {fileID: 343169021}
-  playMenuBackButton: {fileID: 527015557}
   settingsButton: {fileID: 1981947968}
   exitButton: {fileID: 266728250}
   backgroundImage: {fileID: 484370309}

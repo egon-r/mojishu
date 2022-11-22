@@ -2,12 +2,13 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 0 1 2 3 4 5 6 7 8 9 _ . , ! % ( ) : - ? / \
 『　』 「 」 【 】 〜 ♪ 。 、 ，゠ ＝ = … ‥ ~
+・ 	ー 	ヽ 	ヾ 	ヿ
 
-あ　ア　a
-い　イ　i
-う　ウ　u
-え　エ　e
-お　オ　o
+ぁ　あ　ア　ァ　a
+ぃ　い　イ　ィ　i
+ぅ　う　ウ　ゥ　u
+ぇ　え　エ　ェ　e
+ぉ　お　オ　ォ　o
 
 か　カ　ka
 き　キ　ki
@@ -23,7 +24,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 た　タ　ta
 ち　チ　chi
-つ　ツ　tsu
+っ　つ　ツ　ッ　tsu
 て　テ　te
 と　ト　to
 	
@@ -51,9 +52,9 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 れ　レ　re	
 ろ　ロ　ro
 
-や　ヤ　ya
-ゆ　ユ　yu
-よ　ヨ　yo
+ゃ　や　ヤ　ャ　ya
+ゅ　ゆ　ユ　ュ　yu
+ょ　よ　ヨ　ョ　yo
 
 わ　ワ　wa
 ゑ　ヱ　we

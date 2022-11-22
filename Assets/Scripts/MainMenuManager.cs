@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DigitalRuby.Tween;
 using UnityEngine;
@@ -6,13 +7,20 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
+    public enum MainMenuEntryPoint
+    {
+        MAIN, PLAY
+    }
+
+    // instantly jumps to a specific menu, used f.e. when clicking "back" from a different scene
+    public static MainMenuEntryPoint EntryPoint = MainMenuEntryPoint.MAIN; 
+    
     public List<CanvasGroup> childMenus = new List<CanvasGroup>();
     public CanvasGroup settingsMenu;
     public CanvasGroup playMenu;
     public CanvasGroup mainMenu;
 
     public Button playButton;
-    public Button playMenuBackButton;
     public Button settingsButton;
     public Button exitButton;
 
@@ -24,30 +32,26 @@ public class MainMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        backgroundInitialScale = backgroundImage.transform.localScale;
+        
         Debug.Log("App version: " + Application.version);
         Application.targetFrameRate = 60;
 
         playButton.onClick.AddListener(Play_clicked);
-        playMenuBackButton.onClick.AddListener(playMenuBackButton_clicked);
         settingsButton.onClick.AddListener(Settings_clicked);
         exitButton.onClick.AddListener(exitButton_clicked);
 
         childMenus.AddRange(GetChildMenus());
         ShowMenu(mainMenu);
-
-        backgroundInitialScale = backgroundImage.transform.localScale;
-    }
-
-    private void playMenuBackButton_clicked()
-    {
-        playMenuBackButton.interactable = false;
-        AnimateInPlayMenu(_ =>
+        
+        Debug.Log("MainMenu Entry: " + Enum.GetName(typeof(MainMenuEntryPoint), EntryPoint));
+        if (EntryPoint == MainMenuEntryPoint.PLAY)
         {
-            playMenuBackButton.interactable = true;
-            HideMenu(playMenu);
-            AnimateOutMainMenu(_ => {}, reverse: true);
-            ShowMenu(mainMenu);
-        }, reverse: true);
+            ScaleInBackground();
+            HideMenu(mainMenu);
+            ShowMenu(playMenu);
+            EntryPoint = MainMenuEntryPoint.MAIN;
+        }
     }
 
     private void exitButton_clicked()
@@ -70,7 +74,6 @@ public class MainMenuManager : MonoBehaviour
 
     void Play_clicked()
     {
-        Debug.Log("Play");
         playButton.interactable = false;
         AnimateOutMainMenu(_ =>
         {
@@ -105,13 +108,13 @@ public class MainMenuManager : MonoBehaviour
         */
     }
 
-    private void HideMenu(CanvasGroup menu)
+    public void HideMenu(CanvasGroup menu)
     {
         menu.alpha = 0.0f;
         menu.gameObject.SetActive(false);
     }
 
-    private void ShowMenu(CanvasGroup menu)
+    public void ShowMenu(CanvasGroup menu)
     {
         foreach (var childMenu in childMenus)
         {
@@ -142,7 +145,7 @@ public class MainMenuManager : MonoBehaviour
         );
     }
     
-    private void AnimateOutMainMenu(System.Action<ITween> onAnimFinished, bool reverse = false)
+    public void AnimateOutMainMenu(System.Action<ITween> onAnimFinished, bool reverse = false)
     {
         if (!reverse)
         {
@@ -178,7 +181,7 @@ public class MainMenuManager : MonoBehaviour
         );
     }
 
-    private void AnimateInPlayMenu(System.Action<ITween> onAnimFinished, bool reverse = false)
+    public void AnimateInPlayMenu(System.Action<ITween> onAnimFinished, bool reverse = false)
     {
         if (reverse)
         {

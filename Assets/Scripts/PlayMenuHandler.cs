@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class PlayMenuHandler : MonoBehaviour
 {
+    public MainMenuManager MainMenu;
+    public Button BackButton;
     public Button KanaPairsGame;
     public Button KanjiQuizGame;
     
@@ -14,6 +16,33 @@ public class PlayMenuHandler : MonoBehaviour
     {
         KanaPairsGame.onClick.AddListener(KanaPairsGame_clicked);
         KanjiQuizGame.onClick.AddListener(KanjiQuizGame_clicked);
+        BackButton.onClick.AddListener(BackButton_clicked);
+    }
+
+    private void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape)) // android "back" button
+            {
+                if (BackButton.interactable)
+                {
+                    BackButton_clicked();
+                }
+            }
+        }
+    }
+
+    private void BackButton_clicked()
+    {
+        BackButton.interactable = false;
+        MainMenu.AnimateInPlayMenu(_ =>
+        {
+            BackButton.interactable = true;
+            MainMenu.HideMenu(MainMenu.playMenu);
+            MainMenu.AnimateOutMainMenu(_ => {}, reverse: true);
+            MainMenu.ShowMenu(MainMenu.mainMenu);
+        }, reverse: true);
     }
 
     private IEnumerator LoadGameAsync(string scene, Action onComplete = null)

@@ -97,7 +97,15 @@ namespace Games.Shared.Util.Menu
             }
             else
             {
-                animMenu.PlayShowAnimation(onComplete);
+                try
+                {
+                    animMenu.PlayShowAnimation(onComplete);
+                }
+                catch 
+                {
+                    // menu object was probably destroyed by a scene switch
+                    onComplete?.Invoke();
+                }
             }
         }
         

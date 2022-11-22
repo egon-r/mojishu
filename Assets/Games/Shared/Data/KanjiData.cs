@@ -4,62 +4,28 @@ using System.Linq;
 
 namespace Games.Shared.Data
 {
-    public enum KanjiSet
-    {
-        JLPT_N1,
-        JLPT_N2,
-        JLPT_N3,
-        JLPT_N4,
-        JLPT_N5,
-        TOP_100_MOST_FREQUENT,
-    }
-
-    public class KanjiInfo: IEqualityComparer<KanjiInfo>
-    {
-        public string kanjiSymbol;
-        public List<string> onyomiReadingsKana;
-        public List<string> onyomiReadingsLatin;
-        public List<string> kunyomiReadingsKana;
-        public List<string> kunyomiReadingsLatin;
-        public List<string> englishTranslations;
-        public List<KanjiSet> classes;
-
-        public KanjiInfo(string kanjiSymbol, KanjiSet[] classes,
-            string[] onyomiReadingsKana, string[] onyomiReadingsLatin,
-            string[] kunyomiReadingsKana, string[] kunyomiReadingsLatin,
-            string[] englishTranslations)
-        {
-            this.kanjiSymbol = kanjiSymbol;
-            this.classes = new List<KanjiSet>(classes);
-            this.onyomiReadingsKana = new List<string>(onyomiReadingsKana);
-            this.kunyomiReadingsKana = new List<string>(kunyomiReadingsKana);
-            this.englishTranslations = new List<string>(englishTranslations);
-            this.onyomiReadingsLatin = new List<string>(onyomiReadingsLatin);
-            this.kunyomiReadingsLatin = new List<string>(kunyomiReadingsLatin);
-        }
-
-        public bool Equals(KanjiInfo x, KanjiInfo y)
-        {
-            if (ReferenceEquals(x, y)) return true;
-            if (ReferenceEquals(x, null)) return false;
-            if (ReferenceEquals(y, null)) return false;
-            if (x.GetType() != y.GetType()) return false;
-            return x.kanjiSymbol == y.kanjiSymbol;
-        }
-
-        public int GetHashCode(KanjiInfo obj)
-        {
-            return (obj.kanjiSymbol != null ? obj.kanjiSymbol.GetHashCode() : 0);
-        }
-
-        public override string ToString()
-        {
-            return $"{kanjiSymbol}";
-        }
-    }
-
     public static class KanjiData
     {
+        public enum KanjiSet
+        {
+            JLPT_N1,
+            JLPT_N2,
+            JLPT_N3,
+            JLPT_N4,
+            JLPT_N5,
+            TOP_100_MOST_FREQUENT,
+        }
+
+        public static Dictionary<KanjiSet, string> KanjiSetFriendlyNames = new()
+        {
+            { KanjiSet.JLPT_N1, "JLPT N1" },
+            { KanjiSet.JLPT_N2, "JLPT N2" },
+            { KanjiSet.JLPT_N3, "JLPT N3" },
+            { KanjiSet.JLPT_N4, "JLPT N4" },
+            { KanjiSet.JLPT_N5, "JLPT N5" },
+            { KanjiSet.TOP_100_MOST_FREQUENT, "Top 100 Most Frequent" },
+        };
+
         public static List<KanjiInfo> getKanjiSet(KanjiSet selectedSet)
         {
             switch (selectedSet)

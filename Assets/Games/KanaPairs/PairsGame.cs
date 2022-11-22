@@ -147,6 +147,7 @@ namespace Games.Pairs
                     {
                         menu.setTitleText("New Highscore!");
                         menu.highscoreParticles.gameObject.SetActive(true);
+                        menu.highscoreParticles.Play();
                     });
                     saveData.LevelHighscores100[levelName] = score100;
                     saveData.WriteToFile();
@@ -157,6 +158,7 @@ namespace Games.Pairs
                     {
                         menu.setTitleText("- Your Score -");
                         menu.highscoreParticles.gameObject.SetActive(false);
+                        menu.highscoreParticles.Stop();
                     });
                 }
             }

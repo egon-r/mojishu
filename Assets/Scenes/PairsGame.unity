@@ -14275,7 +14275,7 @@ MonoBehaviour:
   hiraganaButton: {fileID: 1032596412}
   mixedButton: {fileID: 245022631}
   levelBackground: {fileID: 1247246384}
-  mainMenuButton: {fileID: 1646508996}
+  backButton: {fileID: 1646508996}
   levelListItemPrefab: {fileID: 9098160236890282204, guid: 2f5c4500cefbc3c4596911d1934bb9ad, type: 3}
   levelPanelContainer: {fileID: 894240828}
   pairsGame: {fileID: 2049758697}

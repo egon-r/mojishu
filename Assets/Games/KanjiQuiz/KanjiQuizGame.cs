@@ -10,9 +10,9 @@ namespace Games.KanjiQuiz
     public class KanjiQuizGameInitData
     {
         public int numAnswers;
-        public KanjiSet[] kanjiSets;
+        public KanjiData.KanjiSet[] kanjiSets;
 
-        public KanjiQuizGameInitData(int numAnswers = 6, params KanjiSet[] kanjiSets)
+        public KanjiQuizGameInitData(int numAnswers = 6, params KanjiData.KanjiSet[] kanjiSets)
         {
             this.numAnswers = numAnswers;
             this.kanjiSets = kanjiSets;

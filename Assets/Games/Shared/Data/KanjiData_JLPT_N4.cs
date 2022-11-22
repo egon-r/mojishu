@@ -8,1506 +8,1506 @@ namespace Games.Shared.Data
         {
             new KanjiInfo(
                 "会",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カイ" },
-                new string[] { "kai" },
-                new string[] { "あ(う)" },
-                new string[] { "a(u)" },
-                new string[] { "meeting; meet" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カイ" },
+                new[] { "kai" },
+                new[] { "あ(う)" },
+                new[] { "a(u)" },
+                new[] { "meeting; meet" }
             ),
             new KanjiInfo(
                 "同",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ドウ" },
-                new string[] { "dou" },
-                new string[] { "おな(じ)" },
-                new string[] { "onaji" },
-                new string[] { "same", "agree", "equal" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ドウ" },
+                new[] { "dou" },
+                new[] { "おな(じ)" },
+                new[] { "onaji" },
+                new[] { "same", "agree", "equal" }
             ),
             new KanjiInfo(
                 "事",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジ" },
-                new string[] { "ji" },
-                new string[] { "こと" },
-                new string[] { "koto" },
-                new string[] { "matter", "thing", "fact", "business", "reason", "possibly" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジ" },
+                new[] { "ji" },
+                new[] { "こと" },
+                new[] { "koto" },
+                new[] { "matter", "thing", "fact", "business", "reason", "possibly" }
             ),
             new KanjiInfo(
                 "自",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジ、 シ" },
-                new string[] { "ji", "shi" },
-                new string[] { "みずか(ら)" },
-                new string[] { "mizuka(ra)" },
-                new string[] { "oneself" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジ、 シ" },
+                new[] { "ji", "shi" },
+                new[] { "みずか(ら)" },
+                new[] { "mizuka(ra)" },
+                new[] { "oneself" }
             ),
             new KanjiInfo(
                 "社",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シャ" },
-                new string[] { "sha" },
-                new string[] { "やしろ" },
-                new string[] { "yashiro" },
-                new string[] { "company", "firm", "office", "association", "shrine" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シャ" },
+                new[] { "sha" },
+                new[] { "やしろ" },
+                new[] { "yashiro" },
+                new[] { "company", "firm", "office", "association", "shrine" }
             ),
             new KanjiInfo(
                 "発",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ハツ、 ホツ" },
-                new string[] { "hatsu", "hotsu" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "departure", "discharge", "emit", "start from" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ハツ、 ホツ" },
+                new[] { "hatsu", "hotsu" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "departure", "discharge", "emit", "start from" }
             ),
             new KanjiInfo(
                 "者",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シャ" },
-                new string[] { "sha" },
-                new string[] { "もの" },
-                new string[] { "mono" },
-                new string[] { "someone", "person" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シャ" },
+                new[] { "sha" },
+                new[] { "もの" },
+                new[] { "mono" },
+                new[] { "someone", "person" }
             ),
             new KanjiInfo(
                 "地",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チ、 ジ" },
-                new string[] { "chi", "ji" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "ground", "earth" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チ、 ジ" },
+                new[] { "chi", "ji" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "ground", "earth" }
             ),
             new KanjiInfo(
                 "業",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ギョウ" },
-                new string[] { "gyou" },
-                new string[] { "わざ" },
-                new string[] { "waza" },
-                new string[] { "business", "vocation", "arts", "performance" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ギョウ" },
+                new[] { "gyou" },
+                new[] { "わざ" },
+                new[] { "waza" },
+                new[] { "business", "vocation", "arts", "performance" }
             ),
             new KanjiInfo(
                 "方",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ホウ" },
-                new string[] { "hou" },
-                new string[] { "かた" },
-                new string[] { "kata" },
-                new string[] { "direction", "person", "alternative" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ホウ" },
+                new[] { "hou" },
+                new[] { "かた" },
+                new[] { "kata" },
+                new[] { "direction", "person", "alternative" }
             ),
             new KanjiInfo(
                 "新",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シン" },
-                new string[] { "shin" },
-                new string[] { "あたら(しい)、 あら(た)" },
-                new string[] { "atara(shii)", "ara(ta)" },
-                new string[] { "new" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シン" },
+                new[] { "shin" },
+                new[] { "あたら(しい)、 あら(た)" },
+                new[] { "atara(shii)", "ara(ta)" },
+                new[] { "new" }
             ),
             new KanjiInfo(
                 "場",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジョウ" },
-                new string[] { "jou" },
-                new string[] { "ば" },
-                new string[] { "ba" },
-                new string[] { "location", "place" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジョウ" },
+                new[] { "jou" },
+                new[] { "ば" },
+                new[] { "ba" },
+                new[] { "location", "place" }
             ),
             new KanjiInfo(
                 "員",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イン" },
-                new string[] { "in" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "employee", "member", "number", "the one in charge" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イン" },
+                new[] { "in" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "employee", "member", "number", "the one in charge" }
             ),
             new KanjiInfo(
                 "立",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "リツ" },
-                new string[] { "ritsu" },
-                new string[] { "た(つ)" },
-                new string[] { "ta(tsu)" },
-                new string[] { "stand up", "rise" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "リツ" },
+                new[] { "ritsu" },
+                new[] { "た(つ)" },
+                new[] { "ta(tsu)" },
+                new[] { "stand up", "rise" }
             ),
             new KanjiInfo(
                 "開",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カイ" },
-                new string[] { "kai" },
-                new string[] { "ひら(く)、 あ(ける)" },
-                new string[] { "hira(ku)", "a(keru)" },
-                new string[] { "open", "unfold", "unseal" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カイ" },
+                new[] { "kai" },
+                new[] { "ひら(く)、 あ(ける)" },
+                new[] { "hira(ku)", "a(keru)" },
+                new[] { "open", "unfold", "unseal" }
             ),
             new KanjiInfo(
                 "手",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュ" },
-                new string[] { "shu" },
-                new string[] { "て" },
-                new string[] { "te" },
-                new string[] { "hand" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュ" },
+                new[] { "shu" },
+                new[] { "て" },
+                new[] { "te" },
+                new[] { "hand" }
             ),
             new KanjiInfo(
                 "力",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "リョク、 リキ" },
-                new string[] { "ryoku", "riki" },
-                new string[] { "ちから" },
-                new string[] { "chikara" },
-                new string[] { "power", "strength", "strong", "strain", "bear up", "exert" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "リョク、 リキ" },
+                new[] { "ryoku", "riki" },
+                new[] { "ちから" },
+                new[] { "chikara" },
+                new[] { "power", "strength", "strong", "strain", "bear up", "exert" }
             ),
             new KanjiInfo(
                 "問",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "モン" },
-                new string[] { "mon" },
-                new string[] { "と(う)" },
-                new string[] { "to(u)" },
-                new string[] { "question", "ask", "problem" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "モン" },
+                new[] { "mon" },
+                new[] { "と(う)" },
+                new[] { "to(u)" },
+                new[] { "question", "ask", "problem" }
             ),
             new KanjiInfo(
                 "代",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ダイ" },
-                new string[] { "dai" },
-                new string[] { "か(わり)" },
-                new string[] { "ka(wari)" },
-                new string[] { "substitute", "change", "convert", "replace", "period" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ダイ" },
+                new[] { "dai" },
+                new[] { "か(わり)" },
+                new[] { "ka(wari)" },
+                new[] { "substitute", "change", "convert", "replace", "period" }
             ),
             new KanjiInfo(
                 "明",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "メイ、 ミョウ" },
-                new string[] { "mei", "myou" },
-                new string[] { "あか(るい)" },
-                new string[] { "aka(rui)" },
-                new string[] { "bright", "light" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "メイ、 ミョウ" },
+                new[] { "mei", "myou" },
+                new[] { "あか(るい)" },
+                new[] { "aka(rui)" },
+                new[] { "bright", "light" }
             ),
             new KanjiInfo(
                 "動",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ドウ" },
-                new string[] { "dou" },
-                new string[] { "うご(く)" },
-                new string[] { "ugo(ku)" },
-                new string[] { "move", "motion", "change" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ドウ" },
+                new[] { "dou" },
+                new[] { "うご(く)" },
+                new[] { "ugo(ku)" },
+                new[] { "move", "motion", "change" }
             ),
             new KanjiInfo(
                 "京",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キョウ、 ケイ、 キン" },
-                new string[] { "kyou", "kei", "kin" },
-                new string[] { "みやこ" },
-                new string[] { "miyako" },
-                new string[] { "capital" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キョウ、 ケイ、 キン" },
+                new[] { "kyou", "kei", "kin" },
+                new[] { "みやこ" },
+                new[] { "miyako" },
+                new[] { "capital" }
             ),
             new KanjiInfo(
                 "目",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "モク、 ボク" },
-                new string[] { "moku", "boku" },
-                new string[] { "め" },
-                new string[] { "me" },
-                new string[] { "eye", "class", "look", "insight", "experience" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "モク、 ボク" },
+                new[] { "moku", "boku" },
+                new[] { "め" },
+                new[] { "me" },
+                new[] { "eye", "class", "look", "insight", "experience" }
             ),
             new KanjiInfo(
                 "通",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ツウ" },
-                new string[] { "tsuu" },
-                new string[] { "とお(る)、かよ(う)" },
-                new string[] { "too(ru)", "kayo(u)" },
-                new string[] { "traffic", "pass through", "avenue", "commute" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ツウ" },
+                new[] { "tsuu" },
+                new[] { "とお(る)、かよ(う)" },
+                new[] { "too(ru)", "kayo(u)" },
+                new[] { "traffic", "pass through", "avenue", "commute" }
             ),
             new KanjiInfo(
                 "言",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ゲン、 ゴン" },
-                new string[] { "gen", "gon" },
-                new string[] { "い（う）、 こと" },
-                new string[] { "i(u)", "koto" },
-                new string[] { "say", "word" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ゲン、 ゴン" },
+                new[] { "gen", "gon" },
+                new[] { "い（う）、 こと" },
+                new[] { "i(u)", "koto" },
+                new[] { "say", "word" }
             ),
             new KanjiInfo(
                 "理",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "リ" },
-                new string[] { "ri" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "logic", "arrangement", "reason", "justice", "truth" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "リ" },
+                new[] { "ri" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "logic", "arrangement", "reason", "justice", "truth" }
             ),
             new KanjiInfo(
                 "体",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "タイ" },
-                new string[] { "tai" },
-                new string[] { "からだ" },
-                new string[] { "karada" },
-                new string[] { "body", "substance", "object", "reality" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "タイ" },
+                new[] { "tai" },
+                new[] { "からだ" },
+                new[] { "karada" },
+                new[] { "body", "substance", "object", "reality" }
             ),
             new KanjiInfo(
                 "田",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "デン" },
-                new string[] { "den" },
-                new string[] { "た" },
-                new string[] { "ta" },
-                new string[] { "rice field", "rice paddy" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "デン" },
+                new[] { "den" },
+                new[] { "た" },
+                new[] { "ta" },
+                new[] { "rice field", "rice paddy" }
             ),
             new KanjiInfo(
                 "主",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュ" },
-                new string[] { "shu" },
-                new string[] { "ぬし、 おも" },
-                new string[] { "nushi", "omo" },
-                new string[] { "lord", "chief", "master", "main thing", "principal" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュ" },
+                new[] { "shu" },
+                new[] { "ぬし、 おも" },
+                new[] { "nushi", "omo" },
+                new[] { "lord", "chief", "master", "main thing", "principal" }
             ),
             new KanjiInfo(
                 "題",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ダイ" },
-                new string[] { "dai" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "topic", "subject" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ダイ" },
+                new[] { "dai" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "topic", "subject" }
             ),
             new KanjiInfo(
                 "意",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イ" },
-                new string[] { "i" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "idea", "mind", "heart", "taste", "thought" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イ" },
+                new[] { "i" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "idea", "mind", "heart", "taste", "thought" }
             ),
             new KanjiInfo(
                 "不",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "フ、 ブ" },
-                new string[] { "fu", "bu" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "negative", "non-", "bad" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "フ、 ブ" },
+                new[] { "fu", "bu" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "negative", "non-", "bad" }
             ),
             new KanjiInfo(
                 "作",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "サク、 サ" },
-                new string[] { "saku", "sa" },
-                new string[] { "つく(る)" },
-                new string[] { "tsuku(ru)" },
-                new string[] { "make", "production", "prepare", "build" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "サク、 サ" },
+                new[] { "saku", "sa" },
+                new[] { "つく(る)" },
+                new[] { "tsuku(ru)" },
+                new[] { "make", "production", "prepare", "build" }
             ),
             new KanjiInfo(
                 "用",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヨウ" },
-                new string[] { "you" },
-                new string[] { "もち(いる)" },
-                new string[] { "mochi(iru)" },
-                new string[] { "utilize", "business", "service", "use", "employ" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヨウ" },
+                new[] { "you" },
+                new[] { "もち(いる)" },
+                new[] { "mochi(iru)" },
+                new[] { "utilize", "business", "service", "use", "employ" }
             ),
             new KanjiInfo(
                 "度",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ド、 タク" },
-                new string[] { "do", "taku" },
-                new string[] { "たび、 た(い)" },
-                new string[] { "tabi", "ta(i)" },
-                new string[] { "degrees", "occurrence", "time", "counter for occurrences" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ド、 タク" },
+                new[] { "do", "taku" },
+                new[] { "たび、 た(い)" },
+                new[] { "tabi", "ta(i)" },
+                new[] { "degrees", "occurrence", "time", "counter for occurrences" }
             ),
             new KanjiInfo(
                 "強",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キョウ、 ゴウ" },
-                new string[] { "kyou", "gou" },
-                new string[] { "つよ(い)" },
-                new string[] { "tsuyo(i)" },
-                new string[] { "strong" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キョウ、 ゴウ" },
+                new[] { "kyou", "gou" },
+                new[] { "つよ(い)" },
+                new[] { "tsuyo(i)" },
+                new[] { "strong" }
             ),
             new KanjiInfo(
                 "公",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コウ" },
-                new string[] { "kou" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "public", "prince", "official", "governmental" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コウ" },
+                new[] { "kou" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "public", "prince", "official", "governmental" }
             ),
             new KanjiInfo(
                 "持",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジ" },
-                new string[] { "ji" },
-                new string[] { "も(つ)" },
-                new string[] { "mo(tsu)" },
-                new string[] { "hold", "have" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジ" },
+                new[] { "ji" },
+                new[] { "も(つ)" },
+                new[] { "mo(tsu)" },
+                new[] { "hold", "have" }
             ),
             new KanjiInfo(
                 "野",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヤ" },
-                new string[] { "ya" },
-                new string[] { "の" },
-                new string[] { "no" },
-                new string[] { "plains", "field", "rustic", "civilian life" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヤ" },
+                new[] { "ya" },
+                new[] { "の" },
+                new[] { "no" },
+                new[] { "plains", "field", "rustic", "civilian life" }
             ),
             new KanjiInfo(
                 "以",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イ" },
-                new string[] { "i" },
-                new string[] { "もっ(て)" },
-                new string[] { "mo(tte)" },
-                new string[] { "by means of", "because", "in view of", "compared with" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イ" },
+                new[] { "i" },
+                new[] { "もっ(て)" },
+                new[] { "mo(tte)" },
+                new[] { "by means of", "because", "in view of", "compared with" }
             ),
             new KanjiInfo(
                 "思",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "おも(う)" },
-                new string[] { "omo(u)" },
-                new string[] { "think" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "おも(う)" },
+                new[] { "omo(u)" },
+                new[] { "think" }
             ),
             new KanjiInfo(
                 "家",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カ" },
-                new string[] { "ka" },
-                new string[] { "いえ、 や、 うち" },
-                new string[] { "ie", "ya", "uchi" },
-                new string[] { "house", "home", "family", "professional", "expert" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カ" },
+                new[] { "ka" },
+                new[] { "いえ、 や、 うち" },
+                new[] { "ie", "ya", "uchi" },
+                new[] { "house", "home", "family", "professional", "expert" }
             ),
             new KanjiInfo(
                 "世",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "セイ、 セ" },
-                new string[] { "sei", "se" },
-                new string[] { "よ" },
-                new string[] { "yo" },
-                new string[] { "generation", "world", "society", "public" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "セイ、 セ" },
+                new[] { "sei", "se" },
+                new[] { "よ" },
+                new[] { "yo" },
+                new[] { "generation", "world", "society", "public" }
             ),
             new KanjiInfo(
                 "多",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "タ" },
-                new string[] { "ta" },
-                new string[] { "おお(い)" },
-                new string[] { "oo(i)" },
-                new string[] { "many", "frequent", "much" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "タ" },
+                new[] { "ta" },
+                new[] { "おお(い)" },
+                new[] { "oo(i)" },
+                new[] { "many", "frequent", "much" }
             ),
             new KanjiInfo(
                 "正",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "セイ、 ショウ" },
-                new string[] { "sei", "shou" },
-                new string[] { "ただ(しい)、 まさ(に)" },
-                new string[] { "tada(shii)", "masa(ni)" },
-                new string[] { "correct", "justice", "righteous" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "セイ、 ショウ" },
+                new[] { "sei", "shou" },
+                new[] { "ただ(しい)、 まさ(に)" },
+                new[] { "tada(shii)", "masa(ni)" },
+                new[] { "correct", "justice", "righteous" }
             ),
             new KanjiInfo(
                 "安",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "アン" },
-                new string[] { "an" },
-                new string[] { "やす(い)" },
-                new string[] { "yasu(i)" },
-                new string[] { "safe", "peaceful", "cheap" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "アン" },
+                new[] { "an" },
+                new[] { "やす(い)" },
+                new[] { "yasu(i)" },
+                new[] { "safe", "peaceful", "cheap" }
             ),
             new KanjiInfo(
                 "院",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イン" },
-                new string[] { "in" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "institution", "temple", "mansion", "school" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イン" },
+                new[] { "in" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "institution", "temple", "mansion", "school" }
             ),
             new KanjiInfo(
                 "心",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シン" },
-                new string[] { "shin" },
-                new string[] { "こころ" },
-                new string[] { "kokoro" },
-                new string[] { "heart", "mind", "spirit" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シン" },
+                new[] { "shin" },
+                new[] { "こころ" },
+                new[] { "kokoro" },
+                new[] { "heart", "mind", "spirit" }
             ),
             new KanjiInfo(
                 "界",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カイ" },
-                new string[] { "kai" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "world", "boundary" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カイ" },
+                new[] { "kai" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "world", "boundary" }
             ),
             new KanjiInfo(
                 "教",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キョウ" },
-                new string[] { "kyou" },
-                new string[] { "おし(える)、 おそ(わる)" },
-                new string[] { "oshi(eru)", "oso(waru)" },
-                new string[] { "teach", "faith", "doctrine" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キョウ" },
+                new[] { "kyou" },
+                new[] { "おし(える)、 おそ(わる)" },
+                new[] { "oshi(eru)", "oso(waru)" },
+                new[] { "teach", "faith", "doctrine" }
             ),
             new KanjiInfo(
                 "文",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ブン、 モン" },
-                new string[] { "bun", "mon" },
-                new string[] { "ふみ" },
-                new string[] { "fumi" },
-                new string[] { "sentence", "literature", "style", "art" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ブン、 モン" },
+                new[] { "bun", "mon" },
+                new[] { "ふみ" },
+                new[] { "fumi" },
+                new[] { "sentence", "literature", "style", "art" }
             ),
             new KanjiInfo(
                 "元",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ゲン、 ガン" },
-                new string[] { "gen", "gan" },
-                new string[] { "もと" },
-                new string[] { "moto" },
-                new string[] { "beginning", "former time", "origin" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ゲン、 ガン" },
+                new[] { "gen", "gan" },
+                new[] { "もと" },
+                new[] { "moto" },
+                new[] { "beginning", "former time", "origin" }
             ),
             new KanjiInfo(
                 "重",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジュウ、 チョウ" },
-                new string[] { "juu", "chou" },
-                new string[] { "おも(い)、 かさ(ねる)" },
-                new string[] { "omo(i)", "kasa(neru)" },
-                new string[] { "heavy", "important", "esteem", "respect" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジュウ、 チョウ" },
+                new[] { "juu", "chou" },
+                new[] { "おも(い)、 かさ(ねる)" },
+                new[] { "omo(i)", "kasa(neru)" },
+                new[] { "heavy", "important", "esteem", "respect" }
             ),
             new KanjiInfo(
                 "近",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キン" },
-                new string[] { "kin" },
-                new string[] { "ちか(い)" },
-                new string[] { "chika(i)" },
-                new string[] { "near", "early", "akin", "tantamount" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キン" },
+                new[] { "kin" },
+                new[] { "ちか(い)" },
+                new[] { "chika(i)" },
+                new[] { "near", "early", "akin", "tantamount" }
             ),
             new KanjiInfo(
                 "考",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コウ" },
-                new string[] { "kou" },
-                new string[] { "かんが(える)" },
-                new string[] { "kanga(eru)" },
-                new string[] { "consider", "think over" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コウ" },
+                new[] { "kou" },
+                new[] { "かんが(える)" },
+                new[] { "kanga(eru)" },
+                new[] { "consider", "think over" }
             ),
             new KanjiInfo(
                 "画",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ガ、 カク" },
-                new string[] { "ga", "kaku" },
-                new string[] { "かく(する)" },
-                new string[] { "kaku(suru)" },
-                new string[] { "brush-stroke", "picture" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ガ、 カク" },
+                new[] { "ga", "kaku" },
+                new[] { "かく(する)" },
+                new[] { "kaku(suru)" },
+                new[] { "brush-stroke", "picture" }
             ),
             new KanjiInfo(
                 "海",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カイ" },
-                new string[] { "kai" },
-                new string[] { "うみ" },
-                new string[] { "umi" },
-                new string[] { "sea", "ocean" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カイ" },
+                new[] { "kai" },
+                new[] { "うみ" },
+                new[] { "umi" },
+                new[] { "sea", "ocean" }
             ),
             new KanjiInfo(
                 "売",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "バイ" },
-                new string[] { "bai" },
-                new string[] { "う(る)" },
-                new string[] { "u(ru)" },
-                new string[] { "sell" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "バイ" },
+                new[] { "bai" },
+                new[] { "う(る)" },
+                new[] { "u(ru)" },
+                new[] { "sell" }
             ),
             new KanjiInfo(
                 "知",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チ" },
-                new string[] { "chi" },
-                new string[] { "し(る)" },
-                new string[] { "shi(ru)" },
-                new string[] { "know", "wisdom" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チ" },
+                new[] { "chi" },
+                new[] { "し(る)" },
+                new[] { "shi(ru)" },
+                new[] { "know", "wisdom" }
             ),
             new KanjiInfo(
                 "道",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ドウ" },
-                new string[] { "dou" },
-                new string[] { "みち" },
-                new string[] { "michi" },
-                new string[] { "road-way", "street", "district", "journey", "course" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ドウ" },
+                new[] { "dou" },
+                new[] { "みち" },
+                new[] { "michi" },
+                new[] { "road-way", "street", "district", "journey", "course" }
             ),
             new KanjiInfo(
                 "集",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュウ" },
-                new string[] { "shuu" },
-                new string[] { "あつ(める)" },
-                new string[] { "atsu(meru)" },
-                new string[] { "gather", "meet" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュウ" },
+                new[] { "shuu" },
+                new[] { "あつ(める)" },
+                new[] { "atsu(meru)" },
+                new[] { "gather", "meet" }
             ),
             new KanjiInfo(
                 "別",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ベツ" },
-                new string[] { "betsu" },
-                new string[] { "わか(れる)、 わ(ける)" },
-                new string[] { "waka(reru)", "wa(keru)" },
-                new string[] { "separate", "branch off", "diverge" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ベツ" },
+                new[] { "betsu" },
+                new[] { "わか(れる)、 わ(ける)" },
+                new[] { "waka(reru)", "wa(keru)" },
+                new[] { "separate", "branch off", "diverge" }
             ),
             new KanjiInfo(
                 "物",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ブツ、 モツ" },
-                new string[] { "butsu", "motsu" },
-                new string[] { "もの" },
-                new string[] { "mono" },
-                new string[] { "thing", "object", "matter" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ブツ、 モツ" },
+                new[] { "butsu", "motsu" },
+                new[] { "もの" },
+                new[] { "mono" },
+                new[] { "thing", "object", "matter" }
             ),
             new KanjiInfo(
                 "使",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "つか(う)" },
-                new string[] { "tsuka(u)" },
-                new string[] { "use", "order", "messenger", "ambassador" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "つか(う)" },
+                new[] { "tsuka(u)" },
+                new[] { "use", "order", "messenger", "ambassador" }
             ),
             new KanjiInfo(
                 "品",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヒン" },
-                new string[] { "hin" },
-                new string[] { "しな" },
-                new string[] { "shina" },
-                new string[] { "goods", "refinement", "dignity", "article" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヒン" },
+                new[] { "hin" },
+                new[] { "しな" },
+                new[] { "shina" },
+                new[] { "goods", "refinement", "dignity", "article" }
             ),
             new KanjiInfo(
                 "計",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ケイ" },
-                new string[] { "kei" },
-                new string[] { "はか(る)" },
-                new string[] { "haka(ru)" },
-                new string[] { "plot", "plan", "scheme", "measure" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ケイ" },
+                new[] { "kei" },
+                new[] { "はか(る)" },
+                new[] { "haka(ru)" },
+                new[] { "plot", "plan", "scheme", "measure" }
             ),
             new KanjiInfo(
                 "死",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "し(ぬ)" },
-                new string[] { "shi(nu)" },
-                new string[] { "death", "die" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "し(ぬ)" },
+                new[] { "shi(nu)" },
+                new[] { "death", "die" }
             ),
             new KanjiInfo(
                 "特",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "トク" },
-                new string[] { "toku" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "special" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "トク" },
+                new[] { "toku" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "special" }
             ),
             new KanjiInfo(
                 "私",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "わたくし、 わたし" },
-                new string[] { "watakushi", "watashi" },
-                new string[] { "private", "I", "me" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "わたくし、 わたし" },
+                new[] { "watakushi", "watashi" },
+                new[] { "private", "I", "me" }
             ),
             new KanjiInfo(
                 "始",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "はじ(める)" },
-                new string[] { "haji(meru)" },
-                new string[] { "commence", "begin" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "はじ(める)" },
+                new[] { "haji(meru)" },
+                new[] { "commence", "begin" }
             ),
             new KanjiInfo(
                 "朝",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チョウ" },
-                new string[] { "chou" },
-                new string[] { "あさ" },
-                new string[] { "asa" },
-                new string[] { "morning" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チョウ" },
+                new[] { "chou" },
+                new[] { "あさ" },
+                new[] { "asa" },
+                new[] { "morning" }
             ),
             new KanjiInfo(
                 "運",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ウン" },
-                new string[] { "un" },
-                new string[] { "はこ(ぶ)" },
-                new string[] { "hako(bu)" },
-                new string[] { "carry", "luck", "destiny", "fate", "transport" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ウン" },
+                new[] { "un" },
+                new[] { "はこ(ぶ)" },
+                new[] { "hako(bu)" },
+                new[] { "carry", "luck", "destiny", "fate", "transport" }
             ),
             new KanjiInfo(
                 "終",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュウ" },
-                new string[] { "shuu" },
-                new string[] { "お(わる)" },
-                new string[] { "o(waru)" },
-                new string[] { "end", "finish" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュウ" },
+                new[] { "shuu" },
+                new[] { "お(わる)" },
+                new[] { "o(waru)" },
+                new[] { "end", "finish" }
             ),
             new KanjiInfo(
                 "台",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ダイ、 タイ" },
-                new string[] { "dai", "tai" },
-                new string[] { "うてな" },
-                new string[] { "utena" },
-                new string[] { "pedestal", "a stand", "counter for machines and vehicles" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ダイ、 タイ" },
+                new[] { "dai", "tai" },
+                new[] { "うてな" },
+                new[] { "utena" },
+                new[] { "pedestal", "a stand", "counter for machines and vehicles" }
             ),
             new KanjiInfo(
                 "広",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コウ" },
-                new string[] { "kou" },
-                new string[] { "ひろ(い)" },
-                new string[] { "hiro(i)" },
-                new string[] { "wide", "broad", "spacious" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コウ" },
+                new[] { "kou" },
+                new[] { "ひろ(い)" },
+                new[] { "hiro(i)" },
+                new[] { "wide", "broad", "spacious" }
             ),
             new KanjiInfo(
                 "住",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジュウ、 チュウ" },
-                new string[] { "juu", "chuu" },
-                new string[] { "す(む)" },
-                new string[] { "su(mu)" },
-                new string[] { "dwell", "reside", "live", "inhabit" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジュウ、 チュウ" },
+                new[] { "juu", "chuu" },
+                new[] { "す(む)" },
+                new[] { "su(mu)" },
+                new[] { "dwell", "reside", "live", "inhabit" }
             ),
             new KanjiInfo(
                 "無",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ム、 ブ" },
-                new string[] { "mu", "bu" },
-                new string[] { "な(い)" },
-                new string[] { "na(i)" },
-                new string[] { "nothingness", "none", "ain't", "nothing", "nil", "not" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ム、 ブ" },
+                new[] { "mu", "bu" },
+                new[] { "な(い)" },
+                new[] { "na(i)" },
+                new[] { "nothingness", "none", "ain't", "nothing", "nil", "not" }
             ),
             new KanjiInfo(
                 "真",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シン" },
-                new string[] { "shin" },
-                new string[] { "ま、 まこと" },
-                new string[] { "ma", "makoto" },
-                new string[] { "true", "reality", "Buddhist sect" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シン" },
+                new[] { "shin" },
+                new[] { "ま、 まこと" },
+                new[] { "ma", "makoto" },
+                new[] { "true", "reality", "Buddhist sect" }
             ),
             new KanjiInfo(
                 "有",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ユウ、 ウ" },
-                new string[] { "yuu", "u" },
-                new string[] { "あ(る)" },
-                new string[] { "a(ru)" },
-                new string[] { "possess", "have", "exist", "happen" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ユウ、 ウ" },
+                new[] { "yuu", "u" },
+                new[] { "あ(る)" },
+                new[] { "a(ru)" },
+                new[] { "possess", "have", "exist", "happen" }
             ),
             new KanjiInfo(
                 "口",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コウ" },
-                new string[] { "kou" },
-                new string[] { "くち" },
-                new string[] { "kuchi" },
-                new string[] { "mouth" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コウ" },
+                new[] { "kou" },
+                new[] { "くち" },
+                new[] { "kuchi" },
+                new[] { "mouth" }
             ),
             new KanjiInfo(
                 "少",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ショウ" },
-                new string[] { "shou" },
-                new string[] { "すく(ない)、 すこ(し)" },
-                new string[] { "suku(nai)", "suko(shi)" },
-                new string[] { "few", "little" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ショウ" },
+                new[] { "shou" },
+                new[] { "すく(ない)、 すこ(し)" },
+                new[] { "suku(nai)", "suko(shi)" },
+                new[] { "few", "little" }
             ),
             new KanjiInfo(
                 "町",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チョウ" },
-                new string[] { "chou" },
-                new string[] { "まち" },
-                new string[] { "machi" },
-                new string[] { "town", "village", "block", "street" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チョウ" },
+                new[] { "chou" },
+                new[] { "まち" },
+                new[] { "machi" },
+                new[] { "town", "village", "block", "street" }
             ),
             new KanjiInfo(
                 "料",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "リョウ" },
-                new string[] { "ryou" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "fee", "materials" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "リョウ" },
+                new[] { "ryou" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "fee", "materials" }
             ),
             new KanjiInfo(
                 "工",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コウ、 ク、 グ" },
-                new string[] { "kou", "ku", "gu" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "craft", "construction" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コウ、 ク、 グ" },
+                new[] { "kou", "ku", "gu" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "craft", "construction" }
             ),
             new KanjiInfo(
                 "建",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ケン、 コン" },
-                new string[] { "ken", "kon" },
-                new string[] { "た(てる)" },
-                new string[] { "ta(teru)" },
-                new string[] { "build" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ケン、 コン" },
+                new[] { "ken", "kon" },
+                new[] { "た(てる)" },
+                new[] { "ta(teru)" },
+                new[] { "build" }
             ),
             new KanjiInfo(
                 "空",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "クウ" },
-                new string[] { "kuu" },
-                new string[] { "そら、 から、 あ(く)、 す(く)、 むな(しい)" },
-                new string[] { "sora", "kara", "a(ku)", "su(ku)", "muna(shii)" },
-                new string[] { "empty", "sky", "void", "vacant", "vacuum" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "クウ" },
+                new[] { "kuu" },
+                new[] { "そら、 から、 あ(く)、 す(く)、 むな(しい)" },
+                new[] { "sora", "kara", "a(ku)", "su(ku)", "muna(shii)" },
+                new[] { "empty", "sky", "void", "vacant", "vacuum" }
             ),
             new KanjiInfo(
                 "急",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キュウ" },
-                new string[] { "kyuu" },
-                new string[] { "いそ(ぐ)" },
-                new string[] { "iso(gu)" },
-                new string[] { "hurry", "emergency", "sudden", "steep" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キュウ" },
+                new[] { "kyuu" },
+                new[] { "いそ(ぐ)" },
+                new[] { "iso(gu)" },
+                new[] { "hurry", "emergency", "sudden", "steep" }
             ),
             new KanjiInfo(
                 "止",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "と(まる)、 とど(まる)、 や(める)、 よ(す)" },
-                new string[] { "to(maru)", "todo(maru)", "ya(meru)", "yo(su)" },
-                new string[] { "stop", "halt" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "と(まる)、 とど(まる)、 や(める)、 よ(す)" },
+                new[] { "to(maru)", "todo(maru)", "ya(meru)", "yo(su)" },
+                new[] { "stop", "halt" }
             ),
             new KanjiInfo(
                 "送",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ソウ" },
-                new string[] { "sou" },
-                new string[] { "おく(る)" },
-                new string[] { "oku(ru)" },
-                new string[] { "escort", "send" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ソウ" },
+                new[] { "sou" },
+                new[] { "おく(る)" },
+                new[] { "oku(ru)" },
+                new[] { "escort", "send" }
             ),
             new KanjiInfo(
                 "切",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "セツ、 サイ" },
-                new string[] { "setsu", "sai" },
-                new string[] { "き(る)" },
-                new string[] { "ki(ru)" },
-                new string[] { "cut", "cutoff", "be sharp" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "セツ、 サイ" },
+                new[] { "setsu", "sai" },
+                new[] { "き(る)" },
+                new[] { "ki(ru)" },
+                new[] { "cut", "cutoff", "be sharp" }
             ),
             new KanjiInfo(
                 "転",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "テン" },
-                new string[] { "ten" },
-                new string[] { "ころ(がる)" },
-                new string[] { "koro(garu)" },
-                new string[] { "revolve", "turn around", "change" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "テン" },
+                new[] { "ten" },
+                new[] { "ころ(がる)" },
+                new[] { "koro(garu)" },
+                new[] { "revolve", "turn around", "change" }
             ),
             new KanjiInfo(
                 "研",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ケン" },
-                new string[] { "ken" },
-                new string[] { "と(ぐ)" },
-                new string[] { "to(gu)" },
-                new string[] { "polish", "study of", "sharpen" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ケン" },
+                new[] { "ken" },
+                new[] { "と(ぐ)" },
+                new[] { "to(gu)" },
+                new[] { "polish", "study of", "sharpen" }
             ),
             new KanjiInfo(
                 "足",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ソク" },
-                new string[] { "soku" },
-                new string[] { "あし、 た(りる)" },
-                new string[] { "ashi", "ta(riru)" },
-                new string[] { "leg", "foot", "be sufficient" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ソク" },
+                new[] { "soku" },
+                new[] { "あし、 た(りる)" },
+                new[] { "ashi", "ta(riru)" },
+                new[] { "leg", "foot", "be sufficient" }
             ),
             new KanjiInfo(
                 "究",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キュウ" },
-                new string[] { "kyuu" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "research", "study" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キュウ" },
+                new[] { "kyuu" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "research", "study" }
             ),
             new KanjiInfo(
                 "楽",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ガク、 ラク" },
-                new string[] { "gaku", "raku" },
-                new string[] { "たの(しい)" },
-                new string[] { "tano(shii)" },
-                new string[] { "music", "comfort", "ease" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ガク、 ラク" },
+                new[] { "gaku", "raku" },
+                new[] { "たの(しい)" },
+                new[] { "tano(shii)" },
+                new[] { "music", "comfort", "ease" }
             ),
             new KanjiInfo(
                 "起",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キ" },
-                new string[] { "ki" },
-                new string[] { "お(きる)、 おこ(す)" },
-                new string[] { "o(kiru)", "oko(su)" },
-                new string[] { "wake up", "get up; rouse" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キ" },
+                new[] { "ki" },
+                new[] { "お(きる)、 おこ(す)" },
+                new[] { "o(kiru)", "oko(su)" },
+                new[] { "wake up", "get up; rouse" }
             ),
             new KanjiInfo(
                 "着",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チャク" },
-                new string[] { "chaku" },
-                new string[] { "き(る)、つ(く)" },
-                new string[] { "ki(ru)", "tsu(ku)" },
-                new string[] { "arrive", "wear", "counter for suits of clothing" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チャク" },
+                new[] { "chaku" },
+                new[] { "き(る)、つ(く)" },
+                new[] { "ki(ru)", "tsu(ku)" },
+                new[] { "arrive", "wear", "counter for suits of clothing" }
             ),
             new KanjiInfo(
                 "店",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "テン" },
-                new string[] { "ten" },
-                new string[] { "みせ" },
-                new string[] { "mise" },
-                new string[] { "store", "shop" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "テン" },
+                new[] { "ten" },
+                new[] { "みせ" },
+                new[] { "mise" },
+                new[] { "store", "shop" }
             ),
             new KanjiInfo(
                 "病",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ビョウ" },
-                new string[] { "byou" },
-                new string[] { "や(む)" },
-                new string[] { "ya(mu)" },
-                new string[] { "ill", "sick" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ビョウ" },
+                new[] { "byou" },
+                new[] { "や(む)" },
+                new[] { "ya(mu)" },
+                new[] { "ill", "sick" }
             ),
             new KanjiInfo(
                 "質",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シツ、 シチ" },
-                new string[] { "shitsu", "shichi" },
-                new string[] { "たち、 ただ(す)" },
-                new string[] { "tachi", "tada(su)" },
-                new string[] { "substance", "quality", "matter", "temperament" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シツ、 シチ" },
+                new[] { "shitsu", "shichi" },
+                new[] { "たち、 ただ(す)" },
+                new[] { "tachi", "tada(su)" },
+                new[] { "substance", "quality", "matter", "temperament" }
             ),
             new KanjiInfo(
                 "待",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "タイ" },
-                new string[] { "tai" },
-                new string[] { "ま(つ)" },
-                new string[] { "ma(tsu)" },
-                new string[] { "wait", "depend on" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "タイ" },
+                new[] { "tai" },
+                new[] { "ま(つ)" },
+                new[] { "ma(tsu)" },
+                new[] { "wait", "depend on" }
             ),
             new KanjiInfo(
                 "試",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "こころ(みる)、 ため(す)" },
-                new string[] { "kokoro(miru)", "tame(su)" },
-                new string[] { "test", "try", "attempt", "experiment" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "こころ(みる)、 ため(す)" },
+                new[] { "kokoro(miru)", "tame(su)" },
+                new[] { "test", "try", "attempt", "experiment" }
             ),
             new KanjiInfo(
                 "族",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ゾク" },
-                new string[] { "zoku" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "tribe", "family" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ゾク" },
+                new[] { "zoku" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "tribe", "family" }
             ),
             new KanjiInfo(
                 "銀",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ギン" },
-                new string[] { "gin" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "silver" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ギン" },
+                new[] { "gin" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "silver" }
             ),
             new KanjiInfo(
                 "早",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ソウ、 サッ" },
-                new string[] { "sou", "sa" },
-                new string[] { "はや(い)" },
-                new string[] { "haya(i)" },
-                new string[] { "early", "fast" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ソウ、 サッ" },
+                new[] { "sou", "sa" },
+                new[] { "はや(い)" },
+                new[] { "haya(i)" },
+                new[] { "early", "fast" }
             ),
             new KanjiInfo(
                 "映",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "エイ" },
-                new string[] { "ei" },
-                new string[] { "うつ(る)、 は(える)" },
-                new string[] { "utsu(ru)", "ha(eru)" },
-                new string[] { "reflect", "reflection", "projection" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "エイ" },
+                new[] { "ei" },
+                new[] { "うつ(る)、 は(える)" },
+                new[] { "utsu(ru)", "ha(eru)" },
+                new[] { "reflect", "reflection", "projection" }
             ),
             new KanjiInfo(
                 "親",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シン" },
-                new string[] { "shin" },
-                new string[] { "おや、 した(しい)" },
-                new string[] { "oya", "shita(shii)" },
-                new string[] { "parent", "intimacy", "relative", "familiarity" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シン" },
+                new[] { "shin" },
+                new[] { "おや、 した(しい)" },
+                new[] { "oya", "shita(shii)" },
+                new[] { "parent", "intimacy", "relative", "familiarity" }
             ),
             new KanjiInfo(
                 "験",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ケン" },
-                new string[] { "ken" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "verification", "effect", "testing" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ケン" },
+                new[] { "ken" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "verification", "effect", "testing" }
             ),
             new KanjiInfo(
                 "英",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "エイ" },
-                new string[] { "ei" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "England", "English", "hero", "outstanding" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "エイ" },
+                new[] { "ei" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "England", "English", "hero", "outstanding" }
             ),
             new KanjiInfo(
                 "医",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イ" },
-                new string[] { "i" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "doctor", "medicine" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イ" },
+                new[] { "i" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "doctor", "medicine" }
             ),
             new KanjiInfo(
                 "仕",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "attend", "doing", "official", "serve" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "attend", "doing", "official", "serve" }
             ),
             new KanjiInfo(
                 "去",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キョ、 コ" },
-                new string[] { "kyo", "ko" },
-                new string[] { "さ(る)" },
-                new string[] { "sa(ru)" },
-                new string[] { "gone", "past", "quit", "leave", "elapse", "eliminate" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キョ、 コ" },
+                new[] { "kyo", "ko" },
+                new[] { "さ(る)" },
+                new[] { "sa(ru)" },
+                new[] { "gone", "past", "quit", "leave", "elapse", "eliminate" }
             ),
             new KanjiInfo(
                 "味",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ミ" },
-                new string[] { "mi" },
-                new string[] { "あじ" },
-                new string[] { "aji" },
-                new string[] { "flavor", "taste" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ミ" },
+                new[] { "mi" },
+                new[] { "あじ" },
+                new[] { "aji" },
+                new[] { "flavor", "taste" }
             ),
             new KanjiInfo(
                 "写",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シャ" },
-                new string[] { "sha" },
-                new string[] { "うつ(る)" },
-                new string[] { "utsuru" },
-                new string[] { "copy", "be photographed", "describe" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シャ" },
+                new[] { "sha" },
+                new[] { "うつ(る)" },
+                new[] { "utsuru" },
+                new[] { "copy", "be photographed", "describe" }
             ),
             new KanjiInfo(
                 "字",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ジ" },
-                new string[] { "ji" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "character", "letter", "word" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ジ" },
+                new[] { "ji" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "character", "letter", "word" }
             ),
             new KanjiInfo(
                 "答",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "トウ" },
-                new string[] { "tou" },
-                new string[] { "こた(える)" },
-                new string[] { "kota(eru)" },
-                new string[] { "solution", "answer" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "トウ" },
+                new[] { "tou" },
+                new[] { "こた(える)" },
+                new[] { "kota(eru)" },
+                new[] { "solution", "answer" }
             ),
             new KanjiInfo(
                 "夜",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヤ" },
-                new string[] { "ya" },
-                new string[] { "よ、 よる" },
-                new string[] { "yo", "yoru" },
-                new string[] { "night", "evening" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヤ" },
+                new[] { "ya" },
+                new[] { "よ、 よる" },
+                new[] { "yo", "yoru" },
+                new[] { "night", "evening" }
             ),
             new KanjiInfo(
                 "音",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "オン" },
-                new string[] { "on" },
-                new string[] { "おと、 ね" },
-                new string[] { "oto", "ne" },
-                new string[] { "sound", "noise" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "オン" },
+                new[] { "on" },
+                new[] { "おと、 ね" },
+                new[] { "oto", "ne" },
+                new[] { "sound", "noise" }
             ),
             new KanjiInfo(
                 "注",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チュウ" },
-                new string[] { "chuu" },
-                new string[] { "そそ(ぐ)、 さ(す)、 つ(ぐ)" },
-                new string[] { "soso(gu)", "sa(su)", "tsu(gu)" },
-                new string[] { "pour", "irrigate", "shed (tears)", "flow into", "concentrate on" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チュウ" },
+                new[] { "chuu" },
+                new[] { "そそ(ぐ)、 さ(す)、 つ(ぐ)" },
+                new[] { "soso(gu)", "sa(su)", "tsu(gu)" },
+                new[] { "pour", "irrigate", "shed (tears)", "flow into", "concentrate on" }
             ),
             new KanjiInfo(
                 "帰",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キ" },
-                new string[] { "ki" },
-                new string[] { "かえ(る)、 かえ(す)" },
-                new string[] { "kae(ru)", "kae(su)" },
-                new string[] { "homecoming", "arrive at", "lead to", "result in" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キ" },
+                new[] { "ki" },
+                new[] { "かえ(る)、 かえ(す)" },
+                new[] { "kae(ru)", "kae(su)" },
+                new[] { "homecoming", "arrive at", "lead to", "result in" }
             ),
             new KanjiInfo(
                 "古",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コ" },
-                new string[] { "ko" },
-                new string[] { "ふる(い)" },
-                new string[] { "furu(i)" },
-                new string[] { "old" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コ" },
+                new[] { "ko" },
+                new[] { "ふる(い)" },
+                new[] { "furu(i)" },
+                new[] { "old" }
             ),
             new KanjiInfo(
                 "歌",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カ" },
-                new string[] { "ka" },
-                new string[] { "うた、 うた(う)" },
-                new string[] { "uta", "uta(u)" },
-                new string[] { "song", "sing" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カ" },
+                new[] { "ka" },
+                new[] { "うた、 うた(う)" },
+                new[] { "uta", "uta(u)" },
+                new[] { "song", "sing" }
             ),
             new KanjiInfo(
                 "買",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "バイ" },
-                new string[] { "bai" },
-                new string[] { "か(う)" },
-                new string[] { "ka(u)" },
-                new string[] { "buy" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "バイ" },
+                new[] { "bai" },
+                new[] { "か(う)" },
+                new[] { "ka(u)" },
+                new[] { "buy" }
             ),
             new KanjiInfo(
                 "悪",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "アク" },
-                new string[] { "aku" },
-                new string[] { "わる(い)" },
-                new string[] { "waru(i)" },
-                new string[] { "bad", "evil", "wrong" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "アク" },
+                new[] { "aku" },
+                new[] { "わる(い)" },
+                new[] { "waru(i)" },
+                new[] { "bad", "evil", "wrong" }
             ),
             new KanjiInfo(
                 "図",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ズ、 ト" },
-                new string[] { "zu", "to" },
-                new string[] { "はか(る)" },
-                new string[] { "haka(ru)" },
-                new string[] { "map", "drawing", "plan", "extraordinary" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ズ、 ト" },
+                new[] { "zu", "to" },
+                new[] { "はか(る)" },
+                new[] { "haka(ru)" },
+                new[] { "map", "drawing", "plan", "extraordinary" }
             ),
             new KanjiInfo(
                 "週",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュウ" },
-                new string[] { "shuu" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "week" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュウ" },
+                new[] { "shuu" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "week" }
             ),
             new KanjiInfo(
                 "室",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シツ" },
-                new string[] { "shitsu" },
-                new string[] { "むろ" },
-                new string[] { "muro" },
-                new string[] { "room", "apartment", "chamber", "greenhouse", "cellar" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シツ" },
+                new[] { "shitsu" },
+                new[] { "むろ" },
+                new[] { "muro" },
+                new[] { "room", "apartment", "chamber", "greenhouse", "cellar" }
             ),
             new KanjiInfo(
                 "歩",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ホ、 ブ" },
-                new string[] { "ho", "bu" },
-                new string[] { "ある(く)、 あゆ(む)" },
-                new string[] { "aru(ku)", "ayu(mu)" },
-                new string[] { "walk", "counter for steps" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ホ、 ブ" },
+                new[] { "ho", "bu" },
+                new[] { "ある(く)、 あゆ(む)" },
+                new[] { "aru(ku)", "ayu(mu)" },
+                new[] { "walk", "counter for steps" }
             ),
             new KanjiInfo(
                 "風",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "フウ、 フ" },
-                new string[] { "fuu", "fu" },
-                new string[] { "かぜ、 かざ-" },
-                new string[] { "kaze", "kaza-" },
-                new string[] { "wind", "air", "style", "manner" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "フウ、 フ" },
+                new[] { "fuu", "fu" },
+                new[] { "かぜ、 かざ-" },
+                new[] { "kaze", "kaza-" },
+                new[] { "wind", "air", "style", "manner" }
             ),
             new KanjiInfo(
                 "紙",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "かみ" },
-                new string[] { "kami" },
-                new string[] { "paper" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "かみ" },
+                new[] { "kami" },
+                new[] { "paper" }
             ),
             new KanjiInfo(
                 "黒",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "コク" },
-                new string[] { "koku" },
-                new string[] { "くろ" },
-                new string[] { "kuro" },
-                new string[] { "black" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "コク" },
+                new[] { "koku" },
+                new[] { "くろ" },
+                new[] { "kuro" },
+                new[] { "black" }
             ),
             new KanjiInfo(
                 "花",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カ、 ケ" },
-                new string[] { "ka", "ke" },
-                new string[] { "はな" },
-                new string[] { "hana" },
-                new string[] { "flower" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カ、 ケ" },
+                new[] { "ka", "ke" },
+                new[] { "はな" },
+                new[] { "hana" },
+                new[] { "flower" }
             ),
             new KanjiInfo(
                 "春",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュン" },
-                new string[] { "shun" },
-                new string[] { "はる" },
-                new string[] { "haru" },
-                new string[] { "spring" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュン" },
+                new[] { "shun" },
+                new[] { "はる" },
+                new[] { "haru" },
+                new[] { "spring" }
             ),
             new KanjiInfo(
                 "赤",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "セキ、 シャク" },
-                new string[] { "seki", "shaku" },
-                new string[] { "あか(い)" },
-                new string[] { "aka(i)" },
-                new string[] { "red" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "セキ、 シャク" },
+                new[] { "seki", "shaku" },
+                new[] { "あか(い)" },
+                new[] { "aka(i)" },
+                new[] { "red" }
             ),
             new KanjiInfo(
                 "青",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "セイ、 ショウ" },
-                new string[] { "sei", "shou" },
-                new string[] { "あお(い)" },
-                new string[] { "ao(i)" },
-                new string[] { "blue" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "セイ、 ショウ" },
+                new[] { "sei", "shou" },
+                new[] { "あお(い)" },
+                new[] { "ao(i)" },
+                new[] { "blue" }
             ),
             new KanjiInfo(
                 "館",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カン" },
-                new string[] { "kan" },
-                new string[] { "やかた" },
-                new string[] { "yakata" },
-                new string[] { "building", "mansion", "large building", "palace" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カン" },
+                new[] { "kan" },
+                new[] { "やかた" },
+                new[] { "yakata" },
+                new[] { "building", "mansion", "large building", "palace" }
             ),
             new KanjiInfo(
                 "屋",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "オク" },
-                new string[] { "oku" },
-                new string[] { "や" },
-                new string[] { "ya" },
-                new string[] { "roof", "house", "shop", "dealer", "seller" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "オク" },
+                new[] { "oku" },
+                new[] { "や" },
+                new[] { "ya" },
+                new[] { "roof", "house", "shop", "dealer", "seller" }
             ),
             new KanjiInfo(
                 "色",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ショク、 シキ" },
-                new string[] { "shoku", "shiki" },
-                new string[] { "いろ" },
-                new string[] { "iro" },
-                new string[] { "color" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ショク、 シキ" },
+                new[] { "shoku", "shiki" },
+                new[] { "いろ" },
+                new[] { "iro" },
+                new[] { "color" }
             ),
             new KanjiInfo(
                 "走",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ソウ" },
-                new string[] { "sou" },
-                new string[] { "はし(る)" },
-                new string[] { "hashi(ru)" },
-                new string[] { "run" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ソウ" },
+                new[] { "sou" },
+                new[] { "はし(る)" },
+                new[] { "hashi(ru)" },
+                new[] { "run" }
             ),
             new KanjiInfo(
                 "秋",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュウ" },
-                new string[] { "shuu" },
-                new string[] { "あき" },
-                new string[] { "aki" },
-                new string[] { "autumn", "fall" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュウ" },
+                new[] { "shuu" },
+                new[] { "あき" },
+                new[] { "aki" },
+                new[] { "autumn", "fall" }
             ),
             new KanjiInfo(
                 "夏",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カ、 ゲ" },
-                new string[] { "ka", "ge" },
-                new string[] { "なつ" },
-                new string[] { "natsu" },
-                new string[] { "summer" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カ、 ゲ" },
+                new[] { "ka", "ge" },
+                new[] { "なつ" },
+                new[] { "natsu" },
+                new[] { "summer" }
             ),
             new KanjiInfo(
                 "習",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シュウ" },
-                new string[] { "shuu" },
-                new string[] { "なら(う)" },
-                new string[] { "nara(u)" },
-                new string[] { "learn" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シュウ" },
+                new[] { "shuu" },
+                new[] { "なら(う)" },
+                new[] { "nara(u)" },
+                new[] { "learn" }
             ),
             new KanjiInfo(
                 "駅",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "エキ" },
-                new string[] { "eki" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "station" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "エキ" },
+                new[] { "eki" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "station" }
             ),
             new KanjiInfo(
                 "洋",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヨウ" },
-                new string[] { "you" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "ocean", "sea", "foreign", "Western style" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヨウ" },
+                new[] { "you" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "ocean", "sea", "foreign", "Western style" }
             ),
             new KanjiInfo(
                 "旅",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "リョ" },
-                new string[] { "ryo" },
-                new string[] { "たび" },
-                new string[] { "tabi" },
-                new string[] { "trip", "travel" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "リョ" },
+                new[] { "ryo" },
+                new[] { "たび" },
+                new[] { "tabi" },
+                new[] { "trip", "travel" }
             ),
             new KanjiInfo(
                 "服",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "フク" },
-                new string[] { "fuku" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "clothing", "admit", "obey" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "フク" },
+                new[] { "fuku" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "clothing", "admit", "obey" }
             ),
             new KanjiInfo(
                 "夕",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "(none)" },
-                new string[] { "" },
-                new string[] { "ゆう" },
-                new string[] { "yuu" },
-                new string[] { "evening" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "(none)" },
+                new[] { "" },
+                new[] { "ゆう" },
+                new[] { "yuu" },
+                new[] { "evening" }
             ),
             new KanjiInfo(
                 "借",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シャク" },
-                new string[] { "shaku" },
-                new string[] { "か(りる)" },
-                new string[] { "ka(riru)" },
-                new string[] { "borrow", "rent" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シャク" },
+                new[] { "shaku" },
+                new[] { "か(りる)" },
+                new[] { "ka(riru)" },
+                new[] { "borrow", "rent" }
             ),
             new KanjiInfo(
                 "曜",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ヨウ" },
-                new string[] { "you" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "weekday" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ヨウ" },
+                new[] { "you" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "weekday" }
             ),
             new KanjiInfo(
                 "飲",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "イン" },
-                new string[] { "in" },
-                new string[] { "の(む)" },
-                new string[] { "no(mu)" },
-                new string[] { "drink" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "イン" },
+                new[] { "in" },
+                new[] { "の(む)" },
+                new[] { "no(mu)" },
+                new[] { "drink" }
             ),
             new KanjiInfo(
                 "肉",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ニク" },
-                new string[] { "niku" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "meat" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ニク" },
+                new[] { "niku" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "meat" }
             ),
             new KanjiInfo(
                 "貸",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "タイ" },
-                new string[] { "tai" },
-                new string[] { "か(す)、 かし" },
-                new string[] { "ka(su)", "kashi" },
-                new string[] { "lend" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "タイ" },
+                new[] { "tai" },
+                new[] { "か(す)、 かし" },
+                new[] { "ka(su)", "kashi" },
+                new[] { "lend" }
             ),
             new KanjiInfo(
                 "堂",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ドウ" },
-                new string[] { "dou" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "public chamber", "hall" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ドウ" },
+                new[] { "dou" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "public chamber", "hall" }
             ),
             new KanjiInfo(
                 "鳥",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チョウ" },
-                new string[] { "chou" },
-                new string[] { "とり" },
-                new string[] { "tori" },
-                new string[] { "bird", "chicken" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チョウ" },
+                new[] { "chou" },
+                new[] { "とり" },
+                new[] { "tori" },
+                new[] { "bird", "chicken" }
             ),
             new KanjiInfo(
                 "飯",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ハン" },
-                new string[] { "han" },
-                new string[] { "めし" },
-                new string[] { "meshi" },
-                new string[] { "meal", "rice" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ハン" },
+                new[] { "han" },
+                new[] { "めし" },
+                new[] { "meshi" },
+                new[] { "meal", "rice" }
             ),
             new KanjiInfo(
                 "勉",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ベン" },
-                new string[] { "ben" },
-                new string[] { "つと(める)" },
-                new string[] { "tsuto(meru)" },
-                new string[] { "exertion", "endeavor", "effort" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ベン" },
+                new[] { "ben" },
+                new[] { "つと(める)" },
+                new[] { "tsuto(meru)" },
+                new[] { "exertion", "endeavor", "effort" }
             ),
             new KanjiInfo(
                 "冬",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "トウ" },
-                new string[] { "tou" },
-                new string[] { "ふゆ" },
-                new string[] { "fuyu" },
-                new string[] { "winter" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "トウ" },
+                new[] { "tou" },
+                new[] { "ふゆ" },
+                new[] { "fuyu" },
+                new[] { "winter" }
             ),
             new KanjiInfo(
                 "昼",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チュウ" },
-                new string[] { "chuu" },
-                new string[] { "ひる" },
-                new string[] { "hiru" },
-                new string[] { "daytime", "noon" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チュウ" },
+                new[] { "chuu" },
+                new[] { "ひる" },
+                new[] { "hiru" },
+                new[] { "daytime", "noon" }
             ),
             new KanjiInfo(
                 "茶",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "チャ、 サ" },
-                new string[] { "cha", "sa" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "tea" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "チャ、 サ" },
+                new[] { "cha", "sa" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "tea" }
             ),
             new KanjiInfo(
                 "弟",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "テイ、 ダイ、 デ" },
-                new string[] { "tei", "dai", "de" },
-                new string[] { "おとうと" },
-                new string[] { "otouto" },
-                new string[] { "younger brother" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "テイ、 ダイ、 デ" },
+                new[] { "tei", "dai", "de" },
+                new[] { "おとうと" },
+                new[] { "otouto" },
+                new[] { "younger brother" }
             ),
             new KanjiInfo(
                 "牛",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ギュウ" },
-                new string[] { "gyuu" },
-                new string[] { "うし" },
-                new string[] { "ushi" },
-                new string[] { "cow" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ギュウ" },
+                new[] { "gyuu" },
+                new[] { "うし" },
+                new[] { "ushi" },
+                new[] { "cow" }
             ),
             new KanjiInfo(
                 "魚",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ギョ" },
-                new string[] { "gyo" },
-                new string[] { "うお、 さかな" },
-                new string[] { "uo", "sakana" },
-                new string[] { "fish" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ギョ" },
+                new[] { "gyo" },
+                new[] { "うお、 さかな" },
+                new[] { "uo", "sakana" },
+                new[] { "fish" }
             ),
             new KanjiInfo(
                 "兄",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "キョウ、 ケイ" },
-                new string[] { "kyou", "kei" },
-                new string[] { "あに" },
-                new string[] { "ani" },
-                new string[] { "elder brother" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "キョウ、 ケイ" },
+                new[] { "kyou", "kei" },
+                new[] { "あに" },
+                new[] { "ani" },
+                new[] { "elder brother" }
             ),
             new KanjiInfo(
                 "犬",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "ケン" },
-                new string[] { "ken" },
-                new string[] { "いぬ" },
-                new string[] { "inu" },
-                new string[] { "dog" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "ケン" },
+                new[] { "ken" },
+                new[] { "いぬ" },
+                new[] { "inu" },
+                new[] { "dog" }
             ),
             new KanjiInfo(
                 "妹",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "マイ" },
-                new string[] { "mai" },
-                new string[] { "いもうと" },
-                new string[] { "imouto" },
-                new string[] { "younger sister" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "マイ" },
+                new[] { "mai" },
+                new[] { "いもうと" },
+                new[] { "imouto" },
+                new[] { "younger sister" }
             ),
             new KanjiInfo(
                 "姉",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "シ" },
-                new string[] { "shi" },
-                new string[] { "あね" },
-                new string[] { "ane" },
-                new string[] { "elder sister" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "シ" },
+                new[] { "shi" },
+                new[] { "あね" },
+                new[] { "ane" },
+                new[] { "elder sister" }
             ),
             new KanjiInfo(
                 "漢",
-                new KanjiSet[] { KanjiSet.JLPT_N4 },
-                new string[] { "カン" },
-                new string[] { "kan" },
-                new string[] { "" },
-                new string[] { "" },
-                new string[] { "China" }
+                new[] { KanjiData.KanjiSet.JLPT_N4 },
+                new[] { "カン" },
+                new[] { "kan" },
+                new[] { "" },
+                new[] { "" },
+                new[] { "China" }
             ),
         };
     }

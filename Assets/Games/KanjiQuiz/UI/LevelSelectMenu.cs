@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using Games.Pairs.UI;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
 using TMPro;
@@ -14,26 +12,37 @@ namespace Games.KanjiQuiz.UI
     {
         public KanjiQuizGame Game;
         public TMP_Dropdown KanjiSetDropdown;
-        public Button MainMenuButton;
+        public Button BackButton;
         public Button StartButton;
 
         private void Start()
         {
             InitializeKanjiSetDropdown();
-            MainMenuButton.onClick.AddListener(MainMenuButton_clicked);
+            BackButton.onClick.AddListener(BackButton_clicked);
             StartButton.onClick.AddListener(StartButton_clicked);
         }
 
+        private void Update()
+        {
+            if (Application.platform == RuntimePlatform.Android)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    BackButton_clicked();
+                }
+            }
+        }
+        
         private void InitializeKanjiSetDropdown()
         {
             KanjiSetDropdown.options.Clear();
-            foreach (var set in (KanjiSet[])Enum.GetValues(typeof(KanjiSet)))
+            foreach (var set in (KanjiData.KanjiSet[])Enum.GetValues(typeof(KanjiData.KanjiSet)))
             {
                 KanjiSetDropdown.options.Add(new TMP_Dropdown.OptionData(
-                    Enum.GetName(typeof(KanjiSet), set)
+                    Enum.GetName(typeof(KanjiData.KanjiSet), set)
                 ));
             }
-            KanjiSetDropdown.value = (int)KanjiSet.TOP_100_MOST_FREQUENT;
+            KanjiSetDropdown.value = (int)KanjiData.KanjiSet.TOP_100_MOST_FREQUENT;
         }
 
         private void StartButton_clicked()
@@ -41,15 +50,16 @@ namespace Games.KanjiQuiz.UI
             var menuManager = gameObject.GetComponentInParent<MenuManager>();
             menuManager.HideCurrentAndShow(menuManager.GetMenuByType<PlayerHud>(), () =>
             {
-                Debug.Log(Enum.GetName(typeof(KanjiSet), KanjiSetDropdown.value));
+                Debug.Log(Enum.GetName(typeof(KanjiData.KanjiSet), KanjiSetDropdown.value));
                 Game.StartGame(
-                    new KanjiQuizGameInitData(6, (KanjiSet)KanjiSetDropdown.value)
+                    new KanjiQuizGameInitData(6, (KanjiData.KanjiSet)KanjiSetDropdown.value)
                 );
             });
         }
 
-        private void MainMenuButton_clicked()
+        private void BackButton_clicked()
         {
+            MainMenuManager.EntryPoint = MainMenuManager.MainMenuEntryPoint.PLAY;
             SceneManager.LoadScene("Scenes/MainMenu");
         }
     }

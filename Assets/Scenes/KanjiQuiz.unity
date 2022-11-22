@@ -320,8 +320,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d1eaa6fe1156244495bcf16b9cf798f, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 68b85b96a1b8ac1498088381d5c3e2b5, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2827,7 +2827,7 @@ MonoBehaviour:
   AnimTarget: {fileID: 1187779124}
   Game: {fileID: 116558304}
   KanjiSetDropdown: {fileID: 920372931}
-  MainMenuButton: {fileID: 1902201739}
+  BackButton: {fileID: 1902201739}
   StartButton: {fileID: 1025787227}
 --- !u!1 &1665654643
 GameObject:

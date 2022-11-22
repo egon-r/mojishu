@@ -24,8 +24,7 @@ namespace Games.Pairs.UI
         public Button hiraganaButton;
         public Button mixedButton;
         public GameObject levelBackground;
-
-        public Button mainMenuButton;
+        public Button backButton;
 
         public LevelListItem levelListItemPrefab;
         public GameObject levelPanelContainer;
@@ -47,7 +46,7 @@ namespace Games.Pairs.UI
             hiraganaButton.onClick.AddListener(hiraganaButton_clicked);
             katakanaButton.onClick.AddListener(katakanaButton_clicked);
             mixedButton.onClick.AddListener(mixedButton_clicked);
-            mainMenuButton.onClick.AddListener(mainMenuButton_clicked);
+            backButton.onClick.AddListener(backButton_clicked);
 
             // order matters
             CreateHiraganaLevelItems();
@@ -57,6 +56,17 @@ namespace Games.Pairs.UI
             // select first page
             hiraganaButton_clicked();
             ReadLevelHighscores();
+        }
+
+        private void Update()
+        {
+            if (Application.platform == RuntimePlatform.Android)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    backButton_clicked();
+                }
+            }
         }
 
         [CanBeNull]
@@ -83,8 +93,9 @@ namespace Games.Pairs.UI
             return levelLinks.Find(current);
         }
         
-        private void mainMenuButton_clicked()
-        {
+        private void backButton_clicked()
+        {            
+            MainMenuManager.EntryPoint = MainMenuManager.MainMenuEntryPoint.PLAY;
             SceneManager.LoadScene("Scenes/MainMenu");
         }
 

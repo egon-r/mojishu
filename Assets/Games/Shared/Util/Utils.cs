@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Games.Shared.Data;
 using UnityEngine;
 
 namespace Games.Shared.Util
@@ -18,6 +19,18 @@ namespace Games.Shared.Util
             {
                 return false;
             }
+        }
+
+        public static object FindKey<K,V>(this IDictionary<K, V> dict, V value)
+        {
+            foreach (var kv in dict)
+            {
+                if (kv.Value.Equals(value))
+                {
+                    return kv.Key;
+                }
+            }
+            return null;
         }
         
         /// <summary>
