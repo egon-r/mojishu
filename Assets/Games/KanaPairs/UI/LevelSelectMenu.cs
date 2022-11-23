@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DigitalRuby.Tween;
-using Games.Pairs.Savegame;
+using Games.KanaPairs.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
 using JetBrains.Annotations;

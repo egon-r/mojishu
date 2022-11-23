@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Games.Pairs.Savegame;
+using Games.KanaPairs.Savegame;
 using Games.Pairs.UI;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;

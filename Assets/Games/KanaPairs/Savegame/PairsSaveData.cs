@@ -1,60 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using JetBrains.Annotations;
+﻿using System.Collections.Generic;
+using Games.Shared.Util;
 using Newtonsoft.Json;
-using UnityEngine;
 
-namespace Games.Pairs.Savegame
+namespace Games.KanaPairs.Savegame
 {
     /// <summary>
     /// Stores persistent data for "Pairs" game. 
     /// </summary>
-    [System.Serializable]
-    public class PairsSaveData
+    public class PairsSaveData: SerializedSavefile
     {
-        public Dictionary<string, int> LevelHighscores100 = new Dictionary<string, int>();
-
-        public bool WriteToFile(string fileName = "pairs_save.json")
-        {
-            try
-            {
-                var fullPath = Path.Combine(Application.persistentDataPath, fileName);
-                Debug.Log($"Writing savedata: {fullPath}");
-                File.WriteAllText(fullPath, ToJson());
-                return true;
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-                return false;
-            }
-        }
-
-        public bool ReadFromFile(string fileName = "pairs_save.json")
-        {
-            try
-            {
-                var fullPath = Path.Combine(Application.persistentDataPath, fileName);
-                Debug.Log($"Reading savedata: {fullPath}");
-                LoadFromJson(File.ReadAllText(fullPath));
-                return true;
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-                return false;
-            }
-        }
+        [JsonProperty("level_scores")]
+        public Dictionary<string, int> LevelHighscores100 = new();
         
-        public string ToJson()
+        public override string GetSaveFileName()
         {
-            return JsonConvert.SerializeObject(this);
-        }
-
-        public void LoadFromJson(string json)
-        {
-            JsonConvert.PopulateObject(json, this);
+            return "kana_pairs.savedata";
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Games.Shared.Data
 {
-    public static class KanjiData
+    public static partial class KanjiData
     {
         public enum KanjiSet
         {
@@ -65,7 +65,13 @@ namespace Games.Shared.Data
         {
             get
             {
-                return JLPT_N1.Concat(JLPT_N2).Concat(JLPT_N3).Concat(JLPT_N4).Concat(JLPT_N5).ToList();
+                var n1to5 = new[]
+                {
+                    KanjiSet.JLPT_N1, KanjiSet.JLPT_N2, KanjiSet.JLPT_N3, KanjiSet.JLPT_N4, KanjiSet.JLPT_N5
+                };
+                return AllKanjiList
+                    .Where(k => n1to5.Intersect(k.kanjiSets).Count() == n1to5.Count())
+                    .ToList();
             }
         }
 
@@ -74,7 +80,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_Top100MostFrequent.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.TOP_100_MOST_FREQUENT)).ToList();
             }
         }
 
@@ -82,7 +88,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_JLPT_N5.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N5)).ToList();
             }
         }
         
@@ -90,7 +96,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_JLPT_N4.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N4)).ToList();
             }
         }
         
@@ -98,7 +104,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_JLPT_N3.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N3)).ToList();
             }
         }
         
@@ -106,7 +112,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_JLPT_N2.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N2)).ToList();
             }
         }
         
@@ -114,7 +120,7 @@ namespace Games.Shared.Data
         {
             get
             {
-                return KanjiData_JLPT_N1.Kanji;
+                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N1)).ToList();
             }
         }
     }

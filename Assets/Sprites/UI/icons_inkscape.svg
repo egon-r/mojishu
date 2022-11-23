@@ -165,8 +165,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="376.38537"
-     inkscape:cy="571.78791"
+     inkscape:cx="278.65957"
+     inkscape:cy="714.78229"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -180,8 +180,10 @@
      inkscape:snap-intersection-paths="true"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
-     showguides="false"
-     inkscape:bbox-nodes="true" />
+     showguides="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -589,5 +591,49 @@
          y="126.42849"
          style="stroke-width:0.149223"
          id="tspan1397-7">Foreground</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.67761;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect920"
+       width="28.902222"
+       height="28.902222"
+       x="12.404099"
+       y="183.50398" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 13.717837,191.35546 13.13737,13.13736 13.13738,-13.13736"
+       id="path918" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="13.394058"
+       y="181.95549"
+       id="text3003-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan3001-1-7"
+         x="13.394058"
+         y="181.95549"
+         style="font-size:3.52778px;stroke-width:0.264583">dropdown arrow</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.67761;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect920-9"
+       width="28.902224"
+       height="28.902224"
+       x="58.309307"
+       y="183.56471" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="59.299263"
+       y="182.01622"
+       id="text3003-2-8-7"><tspan
+         sodipodi:role="line"
+         id="tspan3001-1-7-1"
+         x="59.299263"
+         y="182.01622"
+         style="font-size:3.52777px;stroke-width:0.264583">Checkmark</tspan></text>
+    <path
+       style="fill:none;stroke:#fffff8;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 86.36111,187.59024 65.924151,208.0272 59.159727,201.26278"
+       id="path1014" />
   </g>
 </svg>

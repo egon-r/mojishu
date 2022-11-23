@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Games.Shared.Data;
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Games.Shared.Util
 {
@@ -31,6 +32,18 @@ namespace Games.Shared.Util
                 }
             }
             return null;
+        }
+
+        public static double CurrentUnixTimestamp()
+        {
+            var dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            return (DateTime.Now.ToUniversalTime() - dt1970).TotalSeconds;
+        }
+
+        public static DateTime UnixTimestampToDateTime(double timestamp)
+        {
+            var dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            return dt1970.AddSeconds(timestamp).ToLocalTime();
         }
         
         /// <summary>

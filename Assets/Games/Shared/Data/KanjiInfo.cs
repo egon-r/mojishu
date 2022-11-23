@@ -10,15 +10,15 @@ namespace Games.Shared.Data
         public List<string> kunyomiReadingsKana;
         public List<string> kunyomiReadingsLatin;
         public List<string> englishTranslations;
-        public List<KanjiData.KanjiSet> classes;
+        public HashSet<KanjiData.KanjiSet> kanjiSets;
 
-        public KanjiInfo(string kanjiSymbol, KanjiData.KanjiSet[] classes,
+        public KanjiInfo(string kanjiSymbol, KanjiData.KanjiSet[] kanjiSets,
             string[] onyomiReadingsKana, string[] onyomiReadingsLatin,
             string[] kunyomiReadingsKana, string[] kunyomiReadingsLatin,
             string[] englishTranslations)
         {
             this.kanjiSymbol = kanjiSymbol;
-            this.classes = new List<KanjiData.KanjiSet>(classes);
+            this.kanjiSets = new HashSet<KanjiData.KanjiSet>(kanjiSets);
             this.onyomiReadingsKana = new List<string>(onyomiReadingsKana);
             this.kunyomiReadingsKana = new List<string>(kunyomiReadingsKana);
             this.englishTranslations = new List<string>(englishTranslations);
