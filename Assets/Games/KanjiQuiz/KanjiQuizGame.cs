@@ -33,7 +33,7 @@ namespace Games.KanjiQuiz
             get => currentAnswer;
         }
         
-        private KanjiQuizGameInitData currentGameInitData;
+        public KanjiQuizGameInitData currentGameInitData;
         private List<KanjiInfo> currentAnswerOptions;
         private float currentGameStartTime;
         public KanjiQuizAnswers AnswerGrid;
@@ -41,6 +41,10 @@ namespace Games.KanjiQuiz
         private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, float>> playerGuesses = new();
         private float realStartTime;
+        
+        public delegate void GameStartedEvent();
+
+        public event GameStartedEvent GameStarted;
 
         public void Hide()
         {
@@ -100,6 +104,7 @@ namespace Games.KanjiQuiz
             // show the game
             realStartTime = (float)Utils.CurrentUnixTimestamp();
             currentGameStartTime = Time.time;
+            RaiseGameStarted();
             Show();
         }
 
@@ -108,7 +113,7 @@ namespace Games.KanjiQuiz
             playerGuesses.Add(new Tuple<string, float>(card.Kanji.kanjiSymbol, (float)Utils.CurrentUnixTimestamp()));
             if (card.Kanji == currentAnswer)
             {
-                saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiSymbolStats()
+                saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiQuizSymbolStats()
                 {
                     LastSeen = realStartTime,
                     Answers = currentAnswerOptions.Select(k => k.kanjiSymbol).ToList(),
@@ -121,6 +126,11 @@ namespace Games.KanjiQuiz
             {
                 card.MarkAsWrong();
             }
+        }
+
+        protected virtual void RaiseGameStarted()
+        {
+            GameStarted?.Invoke();
         }
     }
 }

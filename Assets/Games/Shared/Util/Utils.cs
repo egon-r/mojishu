@@ -22,6 +22,10 @@ namespace Games.Shared.Util
             }
         }
 
+        public static double Remap (this double value, double from1, double to1, double from2, double to2) {
+            return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+        }
+        
         public static object FindKey<K,V>(this IDictionary<K, V> dict, V value)
         {
             foreach (var kv in dict)

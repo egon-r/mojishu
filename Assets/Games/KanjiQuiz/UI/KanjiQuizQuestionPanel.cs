@@ -55,7 +55,7 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
             }
             
             // kunyomi readings
-            text += "\n訓: ";
+            text += "\n\n訓: ";
             text += String.Join("、 ", value.kunyomiReadingsKana);
             if (ShowRomaji)
             {

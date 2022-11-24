@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace Games.KanjiQuiz.Savegame
 {   
-    public class KanjiSymbolStats
+    public class KanjiQuizSymbolStats
     {
         // timestamp in seconds when the kanji was last seen
         public float LastSeen;
@@ -22,13 +22,13 @@ namespace Games.KanjiQuiz.Savegame
         private static int HISTORY_SIZE = 20;
         
         [JsonProperty("kanji_stats")]
-        public Dictionary<string, Queue<KanjiSymbolStats>> KanjiStats = new();
+        public Dictionary<string, Queue<KanjiQuizSymbolStats>> KanjiStats = new();
 
-        public void AddKanjiStats(string symbol, KanjiSymbolStats stats, bool writeToFile = true)
+        public void AddKanjiStats(string symbol, KanjiQuizSymbolStats stats, bool writeToFile = true)
         {
             if (!KanjiStats.ContainsKey(symbol))
             {
-                KanjiStats[symbol] = new Queue<KanjiSymbolStats>(HISTORY_SIZE);
+                KanjiStats[symbol] = new Queue<KanjiQuizSymbolStats>(HISTORY_SIZE);
             }
             
             KanjiStats[symbol].Enqueue(stats);

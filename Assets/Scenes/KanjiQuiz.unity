@@ -153,8 +153,8 @@ RectTransform:
   m_Children:
   - {fileID: 2035017375}
   - {fileID: 1696650249}
-  - {fileID: 325763502}
   - {fileID: 1829633977}
+  - {fileID: 325763502}
   m_Father: {fileID: 224373061}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 1696650251}
   - component: {fileID: 1696650250}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: LevelNamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2010,7 +2010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -75, y: -150}
+  m_AnchoredPosition: {x: -74.999985, y: -150}
   m_SizeDelta: {x: -250, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1696650250
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Round 1/10
+  m_text: Kanji Quiz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8664a1078deb4b64a832ef802b1c3d9b, type: 2}
   m_sharedMaterial: {fileID: 6995055764243475641, guid: 8664a1078deb4b64a832ef802b1c3d9b, type: 2}
@@ -2312,7 +2312,7 @@ RectTransform:
   m_Children:
   - {fileID: 309221532}
   m_Father: {fileID: 34909482}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2383,6 +2383,7 @@ MonoBehaviour:
   Game: {fileID: 116558304}
   PauseButton: {fileID: 2035017376}
   JishoButton: {fileID: 1829633974}
+  LevelNameText: {fileID: 0}
 --- !u!1 &1865120397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,7 +3214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2329928882705292992, guid: be487ac02bad2194a9a01467d25b4358, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2329928882705292992, guid: be487ac02bad2194a9a01467d25b4358, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3546,7 +3547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2329928882705292992, guid: be487ac02bad2194a9a01467d25b4358, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2329928882705292992, guid: be487ac02bad2194a9a01467d25b4358, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3609,6 +3610,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 760451507}
     m_Modifications:
+    - target: {fileID: 6572558795664479081, guid: 1e19689b26a36f34297746f2ebe01ed5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572558795664479081, guid: 1e19689b26a36f34297746f2ebe01ed5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6572558795938629237, guid: 1e19689b26a36f34297746f2ebe01ed5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

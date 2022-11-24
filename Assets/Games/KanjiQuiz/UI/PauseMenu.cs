@@ -1,3 +1,4 @@
+using System;
 using Games.Shared.Util.Menu;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,11 @@ namespace Games.KanjiQuiz.UI
         public Button LevelSelectButton;
         public Button MainMenuButton;
 
+        private void OnEnable()
+        {
+            Game.Hide();
+        }
+
         // Start is called before the first frame update
         void Start()
         {
@@ -24,7 +30,11 @@ namespace Games.KanjiQuiz.UI
         {
             Time.timeScale = 1;
             Game.Hide();
-            SceneManager.LoadScene("Scenes/MainMenu");
+            var menuManager = gameObject.GetComponentInParent<MenuManager>();
+            menuManager.HideCurrentMenu(() =>
+            {
+                SceneManager.LoadScene("Scenes/MainMenu");
+            });
         }
 
         private void LevelSelectButton_clicked()
@@ -38,6 +48,7 @@ namespace Games.KanjiQuiz.UI
         private void ResumeButton_clicked()
         {
             Time.timeScale = 1;
+            Game.Show();
             var menuManager = gameObject.GetComponentInParent<MenuManager>();
             menuManager.HideCurrentAndShow(menuManager.GetMenuByType<PlayerHud>(), parallel: true);
         }

@@ -1,4 +1,7 @@
+using System;
+using Games.Shared.Data;
 using Games.Shared.Util.Menu;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +13,8 @@ namespace Games.KanjiQuiz.UI
         public KanjiQuizGame Game;
         public Button PauseButton;
         public Button JishoButton;
-        
+        public TextMeshProUGUI LevelNameText;
+
         // Start is called before the first frame update
         void Start()
         {
