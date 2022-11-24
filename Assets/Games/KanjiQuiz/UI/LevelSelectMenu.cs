@@ -4,6 +4,7 @@ using System.Linq;
 using Games.KanjiQuiz.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
+using Scenes.MainMenu;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;

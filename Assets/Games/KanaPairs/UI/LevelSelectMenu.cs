@@ -6,6 +6,7 @@ using Games.KanaPairs.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
 using JetBrains.Annotations;
+using Scenes.MainMenu;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
