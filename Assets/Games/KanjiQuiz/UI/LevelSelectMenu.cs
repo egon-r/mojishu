@@ -94,7 +94,7 @@ namespace Games.KanjiQuiz.UI
             Debug.Log(Enum.GetName(typeof(KanjiData.KanjiSet), GetSelectedSet()));
             menuManager.HideCurrentMenu(() =>
             {
-                Game.StartGame(
+                Game.StartRound(
                     new KanjiQuizGameInitData(
                         ShowRomajiToggle.isOn,
                         ShowEnglishTranslationsToggle.isOn,

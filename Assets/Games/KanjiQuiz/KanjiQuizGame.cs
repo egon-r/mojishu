@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DigitalRuby.Tween;
 using Games.KanjiQuiz.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace Games.KanjiQuiz
@@ -34,10 +36,11 @@ namespace Games.KanjiQuiz
         }
         
         public KanjiQuizGameInitData currentGameInitData;
+        public GridLayoutGroup AnswerGrid;
+        public KanjiQuizQuestionPanel QuestionPanel;
+        public KanjiQuizAnswerCard AnswerCardPrefab;
         private List<KanjiInfo> currentAnswerOptions;
         private float currentGameStartTime;
-        public KanjiQuizAnswers AnswerGrid;
-        public KanjiQuizQuestionPanel QuestionPanel;
         private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, float>> playerGuesses = new();
         private float realStartTime;
@@ -68,7 +71,7 @@ namespace Games.KanjiQuiz
             return answerOptionSet.ToList();
         }
 
-        public void StartGame(KanjiQuizGameInitData initData)
+        public void StartRound(KanjiQuizGameInitData initData)
         {
             saveData.ReadFromFile();
                 
@@ -91,10 +94,8 @@ namespace Games.KanjiQuiz
             currentAnswerOptions = currentAnswerOptions.Shuffle().ToList();
            
             // spawn answers
-            AnswerGrid.SpawnCards(currentAnswerOptions, card =>
-            {
-                card.Clicked += OnAnswerClicked;
-            });
+            ClearAnswerGrid();
+            SpawnCards(currentAnswerOptions);
             
             // update question panel
             QuestionPanel.ShowRomaji = initData.ShowRomaji;
@@ -113,14 +114,27 @@ namespace Games.KanjiQuiz
             playerGuesses.Add(new Tuple<string, float>(card.Kanji.kanjiSymbol, (float)Utils.CurrentUnixTimestamp()));
             if (card.Kanji == currentAnswer)
             {
-                saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiQuizSymbolStats()
+                if (card.state == KanjiQuizAnswerCard.CardState.CORRECT)
                 {
-                    LastSeen = realStartTime,
-                    Answers = currentAnswerOptions.Select(k => k.kanjiSymbol).ToList(),
-                    Duration = Time.time - currentGameStartTime,
-                    Guesses = playerGuesses
-                });
-                StartGame(currentGameInitData);
+                    card.IgnorePointerEvents = true;
+                    saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiQuizSymbolStats()
+                    {
+                        LastSeen = realStartTime,
+                        Answers = currentAnswerOptions.Select(k => k.kanjiSymbol).ToList(),
+                        Duration = Time.time - currentGameStartTime,
+                        Guesses = playerGuesses
+                    });
+                    StartRoundFinishedAnim(card, () =>
+                    {
+                        Destroy(card.gameObject);
+                        StartRound(currentGameInitData);
+                    });
+                }
+                else
+                {
+                    card.MarkAsCorrect();
+                    StartHideAnswersAnim(card, () => {});
+                }
             }
             else
             {
@@ -131,6 +145,91 @@ namespace Games.KanjiQuiz
         protected virtual void RaiseGameStarted()
         {
             GameStarted?.Invoke();
+        }
+
+        private void ClearAnswerGrid()
+        {
+            foreach (var child in AnswerGrid.transform)
+            {
+                var childTransform = child as Transform;
+                if (childTransform != null)
+                {
+                    Destroy(childTransform.gameObject);
+                }
+            }
+        }
+
+        private void SpawnCards(IList<KanjiInfo> kanjiInfos)
+        {
+            foreach (var kanjiInfo in kanjiInfos)
+            {
+                var card = Instantiate(AnswerCardPrefab, AnswerGrid.transform);
+                card.Kanji = kanjiInfo;
+                card.Clicked += OnAnswerClicked;
+            }
+        }
+
+        private void StartHideAnswersAnim(KanjiQuizAnswerCard ignoreCard, Action then)
+        {
+            var thenInvoked = false;
+            foreach (var child in AnswerGrid.transform)
+            {
+                var childTransform = child as Transform;
+                if (childTransform != null && childTransform.gameObject != ignoreCard.gameObject)
+                {
+                    var startRot = childTransform.rotation;
+                    var endRot = Quaternion.Euler(0.0f, 0.0f, Random.Range(10.0f, 80.0f));
+                    Action<ITween<Quaternion>> childRotAnim = (t) =>
+                    {
+                        childTransform.localRotation = t.CurrentValue;
+                    };
+                    gameObject.Tween(
+                        childRotAnim, startRot, endRot, 0.4f,
+                        TweenScaleFunctions.QuadraticEaseIn, childRotAnim
+                    );
+
+                    Action<ITween<Vector3>> childPosAnim = (t) =>
+                    {
+                        childTransform.localPosition = t.CurrentValue;
+                    };
+                    var startPos = childTransform.localPosition;
+                    var endPos = new Vector3(
+                        startPos.x + Random.Range(-600.0f, 600.0f), 
+                        startPos.y - 1000.0f, 
+                        startPos.z
+                    );
+                    gameObject.Tween(
+                        childPosAnim, startPos, endPos, 0.8f,
+                        TweenScaleFunctions.QuadraticEaseIn, childPosAnim,
+                        _ =>
+                        {
+                            Destroy(childTransform.gameObject);
+                            if (!thenInvoked)
+                            {
+                                thenInvoked = true;
+                                then.Invoke();
+                            }
+                        }
+                    );
+                }
+            }
+        }
+        
+        private void StartRoundFinishedAnim(KanjiQuizAnswerCard answerCard, Action then)
+        {
+            var startScale = answerCard.transform.localScale;
+            var endScale = startScale + new Vector3(1.0f, 1.0f, 1.0f);
+            Action<ITween<Vector3>> answerAnim = (t) =>
+            {
+                answerCard.transform.localScale = t.CurrentValue;
+                answerCard.CardBackground.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
+                answerCard.CardText.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
+            };
+            gameObject.Tween(
+                answerAnim, startScale, endScale, 0.6f, 
+                TweenScaleFunctions.CubicEaseOut, answerAnim,
+                _ => then.Invoke()
+            );
         }
     }
 }
