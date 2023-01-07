@@ -34,8 +34,46 @@ namespace Games.KanjiQuiz.Savegame
                 }
             }
             */
-            
+
+            // number of kanji seen
+            var kanjiSeen = saveData.KanjiStats.Count;
+            Debug.Log("Kanji seen: " + kanjiSeen);
+
+            // latest guesses
+            Debug.Log("Last Kanji seen:");
+            var latestGuesses = saveData.KanjiStats.OrderByDescending(kv =>
+            {
+                return kv.Value.Last().Guesses.Last().Item2;
+            });
+            foreach (var kv in latestGuesses.Take(10))
+            {
+                Debug.Log(kv.Key + " -> "
+                                 + Utils.UnixTimestampToDateTime(kv.Value.Last().Timestamp)
+                                 + " (Seen: " + kv.Value.Count + " times)");
+            }
+
+            // latest 1st tries
+            Debug.Log("Latest first tries:");
+            var latestFirstTries = latestGuesses.Where(kv =>
+            {
+                foreach (var stats in kv.Value)
+                {
+                    if (stats.Guesses.Count == 2)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            });
+            foreach (var kv in latestFirstTries.Take(10))
+            {
+                Debug.Log(kv.Key + " -> "
+                                 + Utils.UnixTimestampToDateTime(kv.Value.Last().Timestamp)
+                                 + " (Seen: " + kv.Value.Count + " times)");
+            }
+
             // list all guessed right at least once
+            /*
             Debug.Log("Latest correct guesses:");
             var correctlyGuessed = saveData.KanjiStats.Where(kv =>
             {
@@ -57,7 +95,8 @@ namespace Games.KanjiQuiz.Savegame
                 var correctDates = corrects.Select(c => Utils.UnixTimestampToDateTime(c.Item2));
                 Debug.Log($"\t{String.Join(", ", correctDates)}");
             }
-            
+            */
+
             // list all memorized (guessed right 3 times in a row recently)
         }
     }

@@ -67,6 +67,7 @@ namespace Games.KanjiQuiz
 
         public void MarkAsCorrect()
         {
+            IgnorePointerEvents = true;
             state = CardState.CORRECT;
             
             transform.SetParent(transform.parent.parent); // remove from layout
@@ -89,7 +90,8 @@ namespace Games.KanjiQuiz
             var startScale = transform.localScale;
             gameObject.Tween(scaleAnim, 
                 startScale, new Vector3(2.0f, 2.0f, 2.0f),
-                0.2f, TweenScaleFunctions.CubicEaseOut, scaleAnim
+                0.2f, TweenScaleFunctions.CubicEaseOut, scaleAnim,
+                _ => IgnorePointerEvents = false
             );
         }
 

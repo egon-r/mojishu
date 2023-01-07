@@ -7,14 +7,15 @@ namespace Games.KanjiQuiz.Savegame
 {   
     public class KanjiQuizSymbolStats
     {
-        // timestamp in seconds when the kanji was last seen
-        public float LastSeen;
+        // the time when the question was displayed
+        public double Timestamp;
         // duration spent on the question
-        public float Duration;
+        public double Duration;
         // number of answer options
         public List<string> Answers;
         // list of guessed kanji + timestamp
-        public List<Tuple<string, float>> Guesses;
+        // min: 2 (first click on correct guess -> second click to advance to next question) 
+        public List<Tuple<string, double>> Guesses;
     }
     
     public class KanjiQuizSaveData: SerializedSavefile

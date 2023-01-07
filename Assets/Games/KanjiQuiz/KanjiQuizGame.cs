@@ -40,10 +40,10 @@ namespace Games.KanjiQuiz
         public KanjiQuizQuestionPanel QuestionPanel;
         public KanjiQuizAnswerCard AnswerCardPrefab;
         private List<KanjiInfo> currentAnswerOptions;
-        private float currentGameStartTime;
+        private double currentGameStartTime;
         private KanjiQuizSaveData saveData = new();
-        private List<Tuple<string, float>> playerGuesses = new();
-        private float realStartTime;
+        private List<Tuple<string, double>> playerGuesses = new();
+        private double realStartTime;
         
         public delegate void GameStartedEvent();
 
@@ -103,7 +103,7 @@ namespace Games.KanjiQuiz
             QuestionPanel.Kanji = currentAnswer;
 
             // show the game
-            realStartTime = (float)Utils.CurrentUnixTimestamp();
+            realStartTime = Utils.CurrentUnixTimestamp();
             currentGameStartTime = Time.time;
             RaiseGameStarted();
             Show();
@@ -111,7 +111,7 @@ namespace Games.KanjiQuiz
 
         private void OnAnswerClicked(KanjiQuizAnswerCard card)
         {
-            playerGuesses.Add(new Tuple<string, float>(card.Kanji.kanjiSymbol, (float)Utils.CurrentUnixTimestamp()));
+            playerGuesses.Add(new Tuple<string, double>(card.Kanji.kanjiSymbol, Utils.CurrentUnixTimestamp()));
             if (card.Kanji == currentAnswer)
             {
                 if (card.state == KanjiQuizAnswerCard.CardState.CORRECT)
@@ -119,7 +119,7 @@ namespace Games.KanjiQuiz
                     card.IgnorePointerEvents = true;
                     saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiQuizSymbolStats()
                     {
-                        LastSeen = realStartTime,
+                        Timestamp = realStartTime,
                         Answers = currentAnswerOptions.Select(k => k.kanjiSymbol).ToList(),
                         Duration = Time.time - currentGameStartTime,
                         Guesses = playerGuesses
