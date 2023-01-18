@@ -25,9 +25,9 @@ namespace Games.KanjiQuiz
         public TextMeshProUGUI CardText;
         public CardState state = CardState.DEFAULT;
         public Boolean IgnorePointerEvents = false;
-        private KanjiInfo _kanji;
+        private KanjiInfoOld _kanji;
 
-        public KanjiInfo Kanji
+        public KanjiInfoOld Kanji
         {
             get => _kanji;
             set

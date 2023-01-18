@@ -4,9 +4,9 @@ namespace Games.Shared.Data
 {
     public class KanjiData_Top100MostFrequent
     {
-        public static List<KanjiInfo> Kanji = new()
+        public static List<KanjiInfoOld> Kanji = new()
         {
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "日",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ニチ", "ジツ" },
@@ -15,7 +15,7 @@ namespace Games.Shared.Data
                 new string[] { "hi", "-bi", "-ka" },
                 new string[] { "day", "sun", "Japan", "counter for days" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "一",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "イチ" },
@@ -24,7 +24,7 @@ namespace Games.Shared.Data
                 new string[] { "hito(tsu)" },
                 new string[] { "one" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "国",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "コク" },
@@ -33,7 +33,7 @@ namespace Games.Shared.Data
                 new string[] { "kuni" },
                 new string[] { "country" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "会",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "カイ" },
@@ -42,7 +42,7 @@ namespace Games.Shared.Data
                 new string[] { "a(u)" },
                 new string[] { "meeting; meet" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "人",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ジン、 ニン" },
@@ -51,7 +51,7 @@ namespace Games.Shared.Data
                 new string[] { "hito" },
                 new string[] { "person" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "年",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ネン" },
@@ -60,7 +60,7 @@ namespace Games.Shared.Data
                 new string[] { "toshi" },
                 new string[] { "year", "counter for years" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "大",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ダイ、 タイ" },
@@ -69,7 +69,7 @@ namespace Games.Shared.Data
                 new string[] { "oo(kii)" },
                 new string[] { "large", "big" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "十",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ジュウ" },
@@ -78,7 +78,7 @@ namespace Games.Shared.Data
                 new string[] { "tou", "to" },
                 new string[] { "ten", "10" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "二",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ニ、 ジ" },
@@ -87,7 +87,7 @@ namespace Games.Shared.Data
                 new string[] { "futa(tsu)" },
                 new string[] { "two", "2" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "本",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ホン" },
@@ -96,7 +96,7 @@ namespace Games.Shared.Data
                 new string[] { "moto" },
                 new string[] { "book", "present", "true", "counter for long cylindrical things" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "中",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "チュウ" },
@@ -105,7 +105,7 @@ namespace Games.Shared.Data
                 new string[] { "naka", "uchi", "ata(ru)" },
                 new string[] { "in", "inside", "middle", "mean", "center" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "長",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "チョウ" },
@@ -114,7 +114,7 @@ namespace Games.Shared.Data
                 new string[] { "naga(i)", "osa" },
                 new string[] { "long", "leader", "superior", "senior" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "出",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "シュツ、 スイ" },
@@ -123,7 +123,7 @@ namespace Games.Shared.Data
                 new string[] { "de(ru)", "da(su)", "i(deru)" },
                 new string[] { "exit", "leave", "go out" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "三",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "サン" },
@@ -132,7 +132,7 @@ namespace Games.Shared.Data
                 new string[] { "mi(tsu)" },
                 new string[] { "three", "3" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "同",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ドウ" },
@@ -141,7 +141,7 @@ namespace Games.Shared.Data
                 new string[] { "onaji" },
                 new string[] { "same", "agree", "equal" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "時",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ジ" },
@@ -150,7 +150,7 @@ namespace Games.Shared.Data
                 new string[] { "toki", "doki" },
                 new string[] { "time", "hour" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "政",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "セイ" },
@@ -159,7 +159,7 @@ namespace Games.Shared.Data
                 new string[] { "matsurigoto" },
                 new string[] { "politics", "government" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "事",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ジ" },
@@ -168,7 +168,7 @@ namespace Games.Shared.Data
                 new string[] { "koto" },
                 new string[] { "matter", "thing", "fact", "business", "reason", "possibly" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "自",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ジ、 シ" },
@@ -177,7 +177,7 @@ namespace Games.Shared.Data
                 new string[] { "mizuka(ra)" },
                 new string[] { "oneself" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "行",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "コウ、 ギョウ、 アン" },
@@ -186,7 +186,7 @@ namespace Games.Shared.Data
                 new string[] { "i(ku)", "yu(ku)", "okona(u)" },
                 new string[] { "going", "journey", "carry out", "line", "row" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "社",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "シャ" },
@@ -195,7 +195,7 @@ namespace Games.Shared.Data
                 new string[] { "yashiro" },
                 new string[] { "company", "firm", "office", "association", "shrine" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "見",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ケン" },
@@ -204,7 +204,7 @@ namespace Games.Shared.Data
                 new string[] { "mi(ru)", "mi(seru)" },
                 new string[] { "see", "hopes", "chances", "idea", "opinion", "look at", "visible" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "月",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ゲツ、 ガツ" },
@@ -213,7 +213,7 @@ namespace Games.Shared.Data
                 new string[] { "tsuki" },
                 new string[] { "month", "moon" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "分",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ブン、 フン、 ブ" },
@@ -222,7 +222,7 @@ namespace Games.Shared.Data
                 new string[] { "wa(keru)" },
                 new string[] { "part", "minute of time", "understand" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "議",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ギ" },
@@ -231,7 +231,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "deliberation", "consultation", "debate" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "後",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ゴ、 コウ" },
@@ -240,7 +240,7 @@ namespace Games.Shared.Data
                 new string[] { "nochi", "ushi(ro)", "ato" },
                 new string[] { "behind", "back", "later" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "前",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ゼン" },
@@ -249,7 +249,7 @@ namespace Games.Shared.Data
                 new string[] { "mae" },
                 new string[] { "in front", "before" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "民",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ミン" },
@@ -258,7 +258,7 @@ namespace Games.Shared.Data
                 new string[] { "tami" },
                 new string[] { "people", "nation", "subjects" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "生",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "セイ、 ショウ" },
@@ -267,7 +267,7 @@ namespace Games.Shared.Data
                 new string[] { "i(kiru)", "u(mu)", "o(u)", "ha(eru)", "nama" },
                 new string[] { "life", "genuine", "birth" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "連",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "レン" },
@@ -276,7 +276,7 @@ namespace Games.Shared.Data
                 new string[] { "tsura(naru)", "tsu(reru)" },
                 new string[] { "take along", "lead", "join", "connect" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "五",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ゴ" },
@@ -285,7 +285,7 @@ namespace Games.Shared.Data
                 new string[] { "itsu(tsu)" },
                 new string[] { "five", "5" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "発",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ハツ、 ホツ" },
@@ -294,7 +294,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "departure", "discharge", "emit", "start from" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "間",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "カン、 ケン" },
@@ -303,7 +303,7 @@ namespace Games.Shared.Data
                 new string[] { "aida", "ma", "ai" },
                 new string[] { "interval", "space" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "上",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ジョウ、 ショウ、 シャン" },
@@ -312,7 +312,7 @@ namespace Games.Shared.Data
                 new string[] { "ue", "uwa", "kami", "a(geru)", "nobo(ru)", "tatematsu(ru)" },
                 new string[] { "above", "up" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "対",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "タイ、 ツイ" },
@@ -321,7 +321,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "opposite", "even", "equal", "versus", "anti-", "compare" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "部",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ブ" },
@@ -330,7 +330,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "section", "bureau", "dept", "class", "copy", "part", "portion" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "東",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "トウ" },
@@ -339,7 +339,7 @@ namespace Games.Shared.Data
                 new string[] { "higashi" },
                 new string[] { "east" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "者",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "シャ" },
@@ -348,7 +348,7 @@ namespace Games.Shared.Data
                 new string[] { "mono" },
                 new string[] { "someone", "person" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "党",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N2 },
                 new string[] { "トウ" },
@@ -357,7 +357,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "party", "faction", "clique" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "地",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "チ、 ジ" },
@@ -366,7 +366,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "ground", "earth" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "合",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ゴウ、 ガッ、 カッ" },
@@ -375,7 +375,7 @@ namespace Games.Shared.Data
                 new string[] { "a(u)", "ai" },
                 new string[] { "fit", "suit", "join", "0.1" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "市",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "シ" },
@@ -384,7 +384,7 @@ namespace Games.Shared.Data
                 new string[] { "ichi" },
                 new string[] { "market", "city", "town" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "業",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ギョウ" },
@@ -393,7 +393,7 @@ namespace Games.Shared.Data
                 new string[] { "waza" },
                 new string[] { "business", "vocation", "arts", "performance" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "内",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ナイ" },
@@ -402,7 +402,7 @@ namespace Games.Shared.Data
                 new string[] { "uchi" },
                 new string[] { "inside", "within", "between", "among", "house", "home" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "相",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ソウ、 ショウ" },
@@ -411,7 +411,7 @@ namespace Games.Shared.Data
                 new string[] { "ai" },
                 new string[] { "inter-", "mutual", "together", "each other", "minister of state" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "方",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ホウ" },
@@ -420,7 +420,7 @@ namespace Games.Shared.Data
                 new string[] { "kata" },
                 new string[] { "direction", "person", "alternative" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "四",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "シ" },
@@ -429,7 +429,7 @@ namespace Games.Shared.Data
                 new string[] { "yo(tsu)", "yon" },
                 new string[] { "four", "4" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "定",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "テイ、 ジョウ" },
@@ -438,7 +438,7 @@ namespace Games.Shared.Data
                 new string[] { "sada(meru)" },
                 new string[] { "determine", "fix", "establish", "decide" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "今",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "コン、 キン" },
@@ -447,7 +447,7 @@ namespace Games.Shared.Data
                 new string[] { "ima" },
                 new string[] { "now; the present" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "回",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "カイ" },
@@ -456,7 +456,7 @@ namespace Games.Shared.Data
                 new string[] { "mawa(su)" },
                 new string[] { "-times", "round", "revolve", "counter" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "新",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "シン" },
@@ -465,7 +465,7 @@ namespace Games.Shared.Data
                 new string[] { "atara(shii)", "ara(ta)" },
                 new string[] { "new" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "場",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ジョウ" },
@@ -474,7 +474,7 @@ namespace Games.Shared.Data
                 new string[] { "ba" },
                 new string[] { "location", "place" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "金",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "キン、 コン、 ゴン" },
@@ -483,7 +483,7 @@ namespace Games.Shared.Data
                 new string[] { "kane", "kana", "gane" },
                 new string[] { "gold" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "員",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "イン" },
@@ -492,7 +492,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "employee", "member", "number", "the one in charge" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "九",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "キュウ、 ク" },
@@ -501,7 +501,7 @@ namespace Games.Shared.Data
                 new string[] { "kokono(tsu)" },
                 new string[] { "nine", "9" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "入",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ニュウ" },
@@ -510,7 +510,7 @@ namespace Games.Shared.Data
                 new string[] { "i(ru)", "hai(ru)" },
                 new string[] { "enter", "insert" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "選",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "セン" },
@@ -519,7 +519,7 @@ namespace Games.Shared.Data
                 new string[] { "era(bu)" },
                 new string[] { "elect", "select", "choose", "prefer" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "立",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "リツ" },
@@ -528,7 +528,7 @@ namespace Games.Shared.Data
                 new string[] { "ta(tsu)" },
                 new string[] { "stand up", "rise" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "開",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "カイ" },
@@ -537,7 +537,7 @@ namespace Games.Shared.Data
                 new string[] { "hira(ku)", "a(keru)" },
                 new string[] { "open", "unfold", "unseal" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "手",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "シュ" },
@@ -546,7 +546,7 @@ namespace Games.Shared.Data
                 new string[] { "te" },
                 new string[] { "hand" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "米",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ベイ、 マイ、 メエトル" },
@@ -555,7 +555,7 @@ namespace Games.Shared.Data
                 new string[] { "kome" },
                 new string[] { "rice", "USA", "meter" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "力",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "リョク、 リキ" },
@@ -564,7 +564,7 @@ namespace Games.Shared.Data
                 new string[] { "chikara" },
                 new string[] { "power", "strength", "strong", "strain", "bear up", "exert" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "学",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ガク" },
@@ -573,7 +573,7 @@ namespace Games.Shared.Data
                 new string[] { "mana(bu)" },
                 new string[] { "study", "learning", "science" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "問",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "モン" },
@@ -582,7 +582,7 @@ namespace Games.Shared.Data
                 new string[] { "to(u)" },
                 new string[] { "question", "ask", "problem" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "高",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "コウ" },
@@ -591,7 +591,7 @@ namespace Games.Shared.Data
                 new string[] { "taka(i)" },
                 new string[] { "tall", "high", "expensive" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "代",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ダイ" },
@@ -600,7 +600,7 @@ namespace Games.Shared.Data
                 new string[] { "ka(wari)" },
                 new string[] { "substitute", "change", "convert", "replace", "period" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "明",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "メイ、 ミョウ" },
@@ -609,7 +609,7 @@ namespace Games.Shared.Data
                 new string[] { "aka(rui)" },
                 new string[] { "bright", "light" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "実",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ジツ" },
@@ -618,7 +618,7 @@ namespace Games.Shared.Data
                 new string[] { "mi", "mino(ru)" },
                 new string[] { "reality", "truth" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "円",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "エン" },
@@ -627,7 +627,7 @@ namespace Games.Shared.Data
                 new string[] { "maru(i)" },
                 new string[] { "circle", "yen", "round" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "関",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "カン" },
@@ -636,7 +636,7 @@ namespace Games.Shared.Data
                 new string[] { "seki", "kaka(waru)" },
                 new string[] { "connection", "barrier", "gateway", "involve", "concerning" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "決",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ケツ" },
@@ -645,7 +645,7 @@ namespace Games.Shared.Data
                 new string[] { "ki(meru)" },
                 new string[] { "decide", "fix", "agree upon", "appoint" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "子",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "シ、 ス、 ツ" },
@@ -654,7 +654,7 @@ namespace Games.Shared.Data
                 new string[] { "ko", "ne" },
                 new string[] { "child" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "動",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ドウ" },
@@ -663,7 +663,7 @@ namespace Games.Shared.Data
                 new string[] { "ugo(ku)" },
                 new string[] { "move", "motion", "change" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "京",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "キョウ、 ケイ、 キン" },
@@ -672,7 +672,7 @@ namespace Games.Shared.Data
                 new string[] { "miyako" },
                 new string[] { "capital" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "全",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ゼン" },
@@ -681,7 +681,7 @@ namespace Games.Shared.Data
                 new string[] { "matta(ku)", "sube(te)" },
                 new string[] { "whole", "entire", "all", "complete", "fulfill" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "目",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "モク、 ボク" },
@@ -690,7 +690,7 @@ namespace Games.Shared.Data
                 new string[] { "me" },
                 new string[] { "eye", "class", "look", "insight", "experience" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "表",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ヒョウ" },
@@ -699,7 +699,7 @@ namespace Games.Shared.Data
                 new string[] { "omote", "arawa(su)" },
                 new string[] { "surface", "table", "chart", "diagram" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "戦",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "セン" },
@@ -708,7 +708,7 @@ namespace Games.Shared.Data
                 new string[] { "ikusa", "tataka(u)" },
                 new string[] { "war", "battle", "match" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "経",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ケイ" },
@@ -717,7 +717,7 @@ namespace Games.Shared.Data
                 new string[] { "he(ru)", "ta(tsu)" },
                 new string[] { "longitude", "pass thru", "expire", "warp" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "通",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ツウ" },
@@ -726,7 +726,7 @@ namespace Games.Shared.Data
                 new string[] { "too(ru)", "kayo(u)" },
                 new string[] { "traffic", "pass through", "avenue", "commute" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "外",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ガイ、 ゲ" },
@@ -735,7 +735,7 @@ namespace Games.Shared.Data
                 new string[] { "soto", "hoka", "hazu-", "to-" },
                 new string[] { "outside" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "最",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "サイ" },
@@ -744,7 +744,7 @@ namespace Games.Shared.Data
                 new string[] { "motto(mo)" },
                 new string[] { "utmost", "most", "extreme" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "言",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ゲン、 ゴン" },
@@ -753,7 +753,7 @@ namespace Games.Shared.Data
                 new string[] { "i(u)", "koto" },
                 new string[] { "say", "word" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "氏",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N1 },
                 new string[] { "シ" },
@@ -762,7 +762,7 @@ namespace Games.Shared.Data
                 new string[] { "uji" },
                 new string[] { "family name", "surname", "clan" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "現",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ゲン" },
@@ -771,7 +771,7 @@ namespace Games.Shared.Data
                 new string[] { "arawa(reru)", "utsu(tsu)" },
                 new string[] { "present", "existing", "actual" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "理",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "リ" },
@@ -780,7 +780,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "logic", "arrangement", "reason", "justice", "truth" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "調",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "チョウ" },
@@ -789,7 +789,7 @@ namespace Games.Shared.Data
                 new string[] { "shira(beru)", "tono(u)" },
                 new string[] { "tune", "tone", "meter", "prepare", "investigate" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "体",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "タイ" },
@@ -798,7 +798,7 @@ namespace Games.Shared.Data
                 new string[] { "karada" },
                 new string[] { "body", "substance", "object", "reality" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "化",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "カ、 ケ" },
@@ -807,7 +807,7 @@ namespace Games.Shared.Data
                 new string[] { "ba(keru)", "fu(keru)" },
                 new string[] { "change", "take the form of", "influence", "enchant", "delude", "-ization" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "田",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "デン" },
@@ -816,7 +816,7 @@ namespace Games.Shared.Data
                 new string[] { "ta" },
                 new string[] { "rice field", "rice paddy" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "当",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "トウ" },
@@ -825,7 +825,7 @@ namespace Games.Shared.Data
                 new string[] { "a(taru)" },
                 new string[] { "hit", "right", "appropriate" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "八",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ハチ" },
@@ -834,7 +834,7 @@ namespace Games.Shared.Data
                 new string[] { "ya(tsu)", "you" },
                 new string[] { "eight", "8" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "六",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "ロク" },
@@ -843,7 +843,7 @@ namespace Games.Shared.Data
                 new string[] { "mu(tsu)", "mui" },
                 new string[] { "six", "6" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "約",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ヤク" },
@@ -852,7 +852,7 @@ namespace Games.Shared.Data
                 new string[] { "tsuzu(maru)" },
                 new string[] { "promise", "approximately", "shrink" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "主",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "シュ" },
@@ -861,7 +861,7 @@ namespace Games.Shared.Data
                 new string[] { "nushi", "omo" },
                 new string[] { "lord", "chief", "master", "main thing", "principal" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "題",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "ダイ" },
@@ -870,7 +870,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "topic", "subject" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "下",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N5 },
                 new string[] { "カ、 ゲ" },
@@ -879,7 +879,7 @@ namespace Games.Shared.Data
                 new string[] { "shita", "shimo", "moto", "sa(geru)", "kuda(ru)", "o(rosu)" },
                 new string[] { "below", "down", "descend", "give", "low", "inferior" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "首",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "シュ" },
@@ -888,7 +888,7 @@ namespace Games.Shared.Data
                 new string[] { "kubi" },
                 new string[] { "neck" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "意",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N4 },
                 new string[] { "イ" },
@@ -897,7 +897,7 @@ namespace Games.Shared.Data
                 new string[] { "" },
                 new string[] { "idea", "mind", "heart", "taste", "thought" }
             ),
-            new KanjiInfo(
+            new KanjiInfoOld(
                 "法",
                 new KanjiData.KanjiSet[] { KanjiData.KanjiSet.TOP_100_MOST_FREQUENT, KanjiData.KanjiSet.JLPT_N3 },
                 new string[] { "ホウ" },

@@ -35,8 +35,8 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
         }
     }
 
-    private KanjiInfo _kanji;
-    public KanjiInfo Kanji
+    private KanjiInfoOld _kanji;
+    public KanjiInfoOld Kanji
     {
         get => _kanji;
         set

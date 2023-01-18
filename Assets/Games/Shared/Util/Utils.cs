@@ -65,5 +65,14 @@ namespace Games.Shared.Util
             }
             return list;
         }
+
+        public static T? GetValueOrNull<T>(this T[] array, int index) where T: struct
+        {
+            if (array.Length < index)
+            {
+                return array[index];
+            }
+            return null;
+        }
     }
 }

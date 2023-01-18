@@ -26,7 +26,6 @@ namespace Games.KanjiQuiz.UI
         {
             var savedata = new KanjiQuizSaveData();
             savedata.ReadFromFile();
-            (new KanjiQuizSaveDataReporter(savedata)).PrintReport();
         }
 
         private void Start()

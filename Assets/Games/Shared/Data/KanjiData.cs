@@ -26,7 +26,7 @@ namespace Games.Shared.Data
             { KanjiSet.TOP_100_MOST_FREQUENT, "Top 100 Most Frequent" },
         };
 
-        public static List<KanjiInfo> getKanjiSet(KanjiSet selectedSet)
+        public static List<KanjiInfoOld> getKanjiSet(KanjiSet selectedSet)
         {
             switch (selectedSet)
             {
@@ -43,14 +43,14 @@ namespace Games.Shared.Data
                 case KanjiSet.TOP_100_MOST_FREQUENT:
                     return Top100_MostFrequent;
                 default:
-                    return new List<KanjiInfo>();
+                    return new List<KanjiInfoOld>();
             }
         }
         
-        public static List<KanjiInfo> getKanjiSet(params KanjiSet[] selectedSets)
+        public static List<KanjiInfoOld> getKanjiSet(params KanjiSet[] selectedSets)
         {
             // use a set because there might be duplicates
-            var tmpSet = new HashSet<KanjiInfo>();
+            var tmpSet = new HashSet<KanjiInfoOld>();
             foreach (var set in selectedSets)
             {
                 foreach (var kanji in getKanjiSet(set))
@@ -61,7 +61,7 @@ namespace Games.Shared.Data
             return tmpSet.ToList();
         }
 
-        public static List<KanjiInfo> JLPT_N5_to_N1
+        public static List<KanjiInfoOld> JLPT_N5_to_N1
         {
             get
             {
@@ -76,7 +76,7 @@ namespace Games.Shared.Data
         }
 
         
-        public static List<KanjiInfo> Top100_MostFrequent
+        public static List<KanjiInfoOld> Top100_MostFrequent
         {
             get
             {
@@ -84,7 +84,7 @@ namespace Games.Shared.Data
             }
         }
 
-        public static List<KanjiInfo> JLPT_N5
+        public static List<KanjiInfoOld> JLPT_N5
         {
             get
             {
@@ -92,7 +92,7 @@ namespace Games.Shared.Data
             }
         }
         
-        public static List<KanjiInfo> JLPT_N4
+        public static List<KanjiInfoOld> JLPT_N4
         {
             get
             {
@@ -100,7 +100,7 @@ namespace Games.Shared.Data
             }
         }
         
-        public static List<KanjiInfo> JLPT_N3
+        public static List<KanjiInfoOld> JLPT_N3
         {
             get
             {
@@ -108,7 +108,7 @@ namespace Games.Shared.Data
             }
         }
         
-        public static List<KanjiInfo> JLPT_N2
+        public static List<KanjiInfoOld> JLPT_N2
         {
             get
             {
@@ -116,7 +116,7 @@ namespace Games.Shared.Data
             }
         }
         
-        public static List<KanjiInfo> JLPT_N1
+        public static List<KanjiInfoOld> JLPT_N1
         {
             get
             {

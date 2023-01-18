@@ -29,8 +29,8 @@ namespace Games.KanjiQuiz
     
     public class KanjiQuizGame: MonoBehaviour
     {
-        private KanjiInfo currentAnswer;
-        public KanjiInfo CurrentKanji
+        private KanjiInfoOld currentAnswer;
+        public KanjiInfoOld CurrentKanji
         {
             get => currentAnswer;
         }
@@ -39,7 +39,7 @@ namespace Games.KanjiQuiz
         public GridLayoutGroup AnswerGrid;
         public KanjiQuizQuestionPanel QuestionPanel;
         public KanjiQuizAnswerCard AnswerCardPrefab;
-        private List<KanjiInfo> currentAnswerOptions;
+        private List<KanjiInfoOld> currentAnswerOptions;
         private double currentGameStartTime;
         private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, double>> playerGuesses = new();
@@ -48,6 +48,13 @@ namespace Games.KanjiQuiz
         public delegate void GameStartedEvent();
 
         public event GameStartedEvent GameStarted;
+
+        private void OnEnable()
+        {
+            Debug.Log("KanjiQuizGame");
+            var dataLoader = new KanjiDataLoader();
+            
+        }
 
         public void Hide()
         {
@@ -59,9 +66,9 @@ namespace Games.KanjiQuiz
             gameObject.SetActive(true);
         }
 
-        private List<KanjiInfo> PickRandomKanji(IList<KanjiInfo> fromList, bool considerCurrentKanji = true)
+        private List<KanjiInfoOld> PickRandomKanji(IList<KanjiInfoOld> fromList, bool considerCurrentKanji = true)
         {
-            var answerOptionSet = new HashSet<KanjiInfo>() { currentAnswer };
+            var answerOptionSet = new HashSet<KanjiInfoOld>() { currentAnswer };
             while (answerOptionSet.Count < currentGameInitData.NumAnswers)
             {
                 var randomKanji = fromList[Random.Range(0, fromList.Count())];
@@ -159,7 +166,7 @@ namespace Games.KanjiQuiz
             }
         }
 
-        private void SpawnCards(IList<KanjiInfo> kanjiInfos)
+        private void SpawnCards(IList<KanjiInfoOld> kanjiInfos)
         {
             foreach (var kanjiInfo in kanjiInfos)
             {
