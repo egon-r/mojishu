@@ -16,7 +16,6 @@ namespace Games.KanjiQuiz.UI
     {
         public KanjiQuizGame Game;
         public TMP_Dropdown KanjiSetDropdown;
-        private Dictionary<int, KanjiData.KanjiSet> KanjiSetDropdownOptions = new();
         public Button BackButton;
         public Button StartButton;
         public Toggle ShowRomajiToggle;
@@ -50,54 +49,27 @@ namespace Games.KanjiQuiz.UI
         {
             KanjiSetDropdown.options.Clear();
 
-            var defaultSelection = KanjiData.KanjiSet.TOP_100_MOST_FREQUENT;
-            var defaultSelectionIndex = 0;
-            var sortedNames = KanjiData.KanjiSetFriendlyNames
-                .ToList().OrderByDescending(kv => kv.Key);
-            
-            for (var i = 0; i < sortedNames.Count(); i++)
+            foreach (var kanjiDataset in KanjiData.Datasets)
             {
-                var kanjiSet = sortedNames.ElementAt(i);
-
-                var kanjiList = KanjiData.getKanjiSet(kanjiSet.Key);
-                Debug.Log($"'{kanjiSet.Value}' contains {kanjiList.Count()} entries.");
-                if (kanjiList.Count() < 12)
-                {
-                    Debug.LogError("Not enough kanji in set '" + kanjiSet.Value + "'");
-                    continue;
-                }
-
-                
-                if (kanjiSet.Key == defaultSelection)
-                {
-                    defaultSelectionIndex = i;
-                }
-                KanjiSetDropdown.options.Add(new TMP_Dropdown.OptionData(
-                    kanjiSet.Value
-                ));
-                KanjiSetDropdownOptions[i] = kanjiSet.Key;
+                Debug.Log($"'{kanjiDataset.Key}' contains {kanjiDataset.Value.Count()} entries.");
+                KanjiSetDropdown.options.Add(new TMP_Dropdown.OptionData(kanjiDataset.Key));
             }
-
             KanjiSetDropdown.value = Int32.MaxValue;
-            KanjiSetDropdown.value = defaultSelectionIndex;
-        }
-
-        private KanjiData.KanjiSet GetSelectedSet()
-        {
-            return KanjiSetDropdownOptions[KanjiSetDropdown.value];
+            KanjiSetDropdown.value = 0;
         }
 
         private void StartButton_clicked()
         {
             var menuManager = gameObject.GetComponentInParent<MenuManager>();
-            Debug.Log(Enum.GetName(typeof(KanjiData.KanjiSet), GetSelectedSet()));
+            Debug.Log($"Selected Set: {KanjiData.Datasets.ElementAt(KanjiSetDropdown.value).Key}");
             menuManager.HideCurrentMenu(() =>
             {
                 Game.StartRound(
                     new KanjiQuizGameInitData(
                         ShowRomajiToggle.isOn,
                         ShowEnglishTranslationsToggle.isOn,
-                        6, GetSelectedSet()
+                        KanjiData.Datasets.ElementAt(KanjiSetDropdown.value).Key,
+                        6
                     )
                 );
                 menuManager.ShowMenu(menuManager.GetMenuByType<PlayerHud>());

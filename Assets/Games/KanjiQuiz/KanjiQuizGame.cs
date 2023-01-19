@@ -14,23 +14,23 @@ namespace Games.KanjiQuiz
     public class KanjiQuizGameInitData
     {
         public int NumAnswers;
-        public KanjiData.KanjiSet[] KanjiSets;
         public bool ShowRomaji;
         public bool ShowEnglishTranslations;
+        public string KanjiDatasetKey;
 
-        public KanjiQuizGameInitData(bool showRomaji, bool showEnglishTranslations, int numAnswers = 6, params KanjiData.KanjiSet[] kanjiSets)
+        public KanjiQuizGameInitData(bool showRomaji, bool showEnglishTranslations, string datasetKey, int numAnswers = 6)
         {
             ShowRomaji = showRomaji;
             ShowEnglishTranslations = showEnglishTranslations;
-            this.NumAnswers = numAnswers;
-            this.KanjiSets = kanjiSets;
+            NumAnswers = numAnswers;
+            KanjiDatasetKey = datasetKey;
         }
     }
     
     public class KanjiQuizGame: MonoBehaviour
     {
-        private KanjiInfoOld currentAnswer;
-        public KanjiInfoOld CurrentKanji
+        private KanjiInfo currentAnswer;
+        public KanjiInfo CurrentKanji
         {
             get => currentAnswer;
         }
@@ -39,7 +39,7 @@ namespace Games.KanjiQuiz
         public GridLayoutGroup AnswerGrid;
         public KanjiQuizQuestionPanel QuestionPanel;
         public KanjiQuizAnswerCard AnswerCardPrefab;
-        private List<KanjiInfoOld> currentAnswerOptions;
+        private List<KanjiInfo> currentAnswerOptions;
         private double currentGameStartTime;
         private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, double>> playerGuesses = new();
@@ -66,9 +66,9 @@ namespace Games.KanjiQuiz
             gameObject.SetActive(true);
         }
 
-        private List<KanjiInfoOld> PickRandomKanji(IList<KanjiInfoOld> fromList, bool considerCurrentKanji = true)
+        private List<KanjiInfo> PickRandomKanji(IList<KanjiInfo> fromList, bool considerCurrentKanji = true)
         {
-            var answerOptionSet = new HashSet<KanjiInfoOld>() { currentAnswer };
+            var answerOptionSet = new HashSet<KanjiInfo>() { currentAnswer };
             while (answerOptionSet.Count < currentGameInitData.NumAnswers)
             {
                 var randomKanji = fromList[Random.Range(0, fromList.Count())];
@@ -81,20 +81,14 @@ namespace Games.KanjiQuiz
         public void StartRound(KanjiQuizGameInitData initData)
         {
             saveData.ReadFromFile();
-                
+
+            var kanjiList = KanjiData.Datasets[initData.KanjiDatasetKey];
             playerGuesses.Clear();
             currentGameInitData = initData;
             
-            // get kanji list
-            var kanjiList = KanjiData.getKanjiSet(currentGameInitData.KanjiSets);
-            if (kanjiList.Count < currentGameInitData.NumAnswers)
-            {
-                Debug.LogError("selected kanji list is too small!");
-                return;
-            }
-            
             // randomly pick answer kanji
             currentAnswer = kanjiList[Random.Range(0, kanjiList.Count)];
+            Debug.Log("Answer Kanji: " + currentAnswer); 
             currentAnswerOptions = PickRandomKanji(kanjiList);
             
             // shuffle answer positions
@@ -118,16 +112,16 @@ namespace Games.KanjiQuiz
 
         private void OnAnswerClicked(KanjiQuizAnswerCard card)
         {
-            playerGuesses.Add(new Tuple<string, double>(card.Kanji.kanjiSymbol, Utils.CurrentUnixTimestamp()));
+            playerGuesses.Add(new Tuple<string, double>(card.Kanji.Kanji, Utils.CurrentUnixTimestamp()));
             if (card.Kanji == currentAnswer)
             {
                 if (card.state == KanjiQuizAnswerCard.CardState.CORRECT)
                 {
                     card.IgnorePointerEvents = true;
-                    saveData.AddKanjiStats(card.Kanji.kanjiSymbol, new KanjiQuizSymbolStats()
+                    saveData.AddKanjiStats(card.Kanji.Kanji, new KanjiQuizSymbolStats()
                     {
                         Timestamp = realStartTime,
-                        Answers = currentAnswerOptions.Select(k => k.kanjiSymbol).ToList(),
+                        Answers = currentAnswerOptions.Select(k => k.Kanji).ToList(),
                         Duration = Time.time - currentGameStartTime,
                         Guesses = playerGuesses
                     });
@@ -166,7 +160,7 @@ namespace Games.KanjiQuiz
             }
         }
 
-        private void SpawnCards(IList<KanjiInfoOld> kanjiInfos)
+        private void SpawnCards(IList<KanjiInfo> kanjiInfos)
         {
             foreach (var kanjiInfo in kanjiInfos)
             {

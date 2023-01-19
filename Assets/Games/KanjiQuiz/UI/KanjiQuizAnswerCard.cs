@@ -25,15 +25,15 @@ namespace Games.KanjiQuiz
         public TextMeshProUGUI CardText;
         public CardState state = CardState.DEFAULT;
         public Boolean IgnorePointerEvents = false;
-        private KanjiInfoOld _kanji;
+        private KanjiInfo _kanji;
 
-        public KanjiInfoOld Kanji
+        public KanjiInfo Kanji
         {
             get => _kanji;
             set
             {
                 _kanji = value;
-                CardText.text = value.kanjiSymbol;
+                CardText.text = value.Kanji;
             }
         }
 

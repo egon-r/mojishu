@@ -35,8 +35,8 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
         }
     }
 
-    private KanjiInfoOld _kanji;
-    public KanjiInfoOld Kanji
+    private KanjiInfo _kanji;
+    public KanjiInfo Kanji
     {
         get => _kanji;
         set
@@ -47,20 +47,20 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
             
             // onyomi readings
             text += "音: ";
-            text += String.Join("、 ", value.onyomiReadingsKana);
+            text += String.Join("、 ", value.Onyomi);
             if (ShowRomaji)
             {
-                text += "\nOnyomi: ";
-                text += String.Join(", ", value.onyomiReadingsLatin);
+                text += "\nOnyomi: TODO";
+                //text += String.Join(", ", value.onyomiReadingsLatin);
             }
             
             // kunyomi readings
             text += "\n\n訓: ";
-            text += String.Join("、 ", value.kunyomiReadingsKana);
+            text += String.Join("、 ", value.Kunyomi);
             if (ShowRomaji)
             {
-                text += "\nKunyomi: ";
-                text += String.Join(", ", value.kunyomiReadingsLatin);
+                text += "\nKunyomi: TODO";
+                //text += String.Join(", ", value.kunyomiReadingsLatin);
             }
             
             // english translation
@@ -68,7 +68,7 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
             {
                 text += "\n";
                 text += "\nEnglish: ";
-                text += String.Join(", ", value.englishTranslations);
+                text += String.Join(", ", value.English);
             }
             
             CardText.text = text;

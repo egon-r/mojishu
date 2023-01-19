@@ -74,5 +74,17 @@ namespace Games.Shared.Util
             }
             return null;
         }
+
+        public static int? toIntOrNull(this string str)
+        {
+            try
+            {
+                return (int)decimal.Parse(str);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
 }

@@ -2,248 +2,146 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 using Games.Shared.Util;
+using JetBrains.Annotations;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Games.Shared.Data
 {
-    public class KanjiInfo
+    public class KanjiInfo : IEqualityComparer<KanjiInfo>
     {
-        // "[ [ ""一年生（いちねんせい）"", ""first-year student"" ], [ ""一番（いちばん）"", ""number one"" ],...
         public struct ExampleInfo
         {
             public string Kanji;
             public string Kana;
             public string English;
-
-            public override string ToString()
-            {
-                return $"{Kanji} ({Kana}): {English}";
-            }
-        }
-
-        public struct KanaLatinString
-        {
-            public string Kana;
-            public string Latin;
             
             public override string ToString()
             {
-                return $"{Kana} ({Latin})";
+                return $"{Kanji} ({Kana}), {English}";
             }
         }
 
         public string Kanji;
-        public string Name;
-        public int NumStrokes;
-        public string English;
-        public int Grade;
-        public List<KanaLatinString> Kunyomi;
-        public List<KanaLatinString> Onyomi;
-        public List<ExampleInfo> Examples;
-        public string Radical;
-        public int RadicalOrder;
-        public int RadicalNumStrokes;
-        public KanaLatinString RadicalName;
-        public string RadicalEnglish;
-        public KanaLatinString RadicalPosition;
-
-        public KanjiInfo()
-        {
-        }
+        public string KaName;
+        public List<ExampleInfo> Examples = new();
+        public List<string> Onyomi = new();
+        public List<string> Kunyomi = new();
+        public List<string> Nanori = new();
+        public List<string> English = new();
+        public int? Jlpt;
+        public int? Strokes;
+        public int? UsageFreq2500;
+        public int? Grade;
+        public List<string> Radicals = new();
 
         public override string ToString()
         {
-            return $"{Kanji} ({Name}): \n" +
-                   $"\tKUN: {String.Join(',', Kunyomi)}\n" +
-                   $"\tON: {String.Join(',', Onyomi)}\n" +
-                   $"\tEnglish: {English}\n" +
-                   $"\tExamples: {String.Join(',', Examples)}\n" +
+            return $"{Kanji} ({KaName})\n" +
+                   $"\tON: {String.Join(", ", Onyomi)}\n" +
+                   $"\tKUN: {String.Join(", ", Kunyomi)}\n" +
+                   $"\tNAN: {String.Join(", ", Nanori)}\n" +
+                   $"\tJLPT: {Jlpt}\n" +
                    $"\tGrade: {Grade}\n" +
-                   $"\tStrokes: {NumStrokes}\n" +
-                   $"\tRadical: {Radical}\n"
-                ;
-        }
-    }
-
-    public class CSVReader
-    {
-        private bool abort = false;
-        public string FilePath;
-
-        public CSVReader(string filePath)
-        {
-            FilePath = filePath;
+                   $"\tUsage: {UsageFreq2500}\n" +
+                   $"\tExample '0' of '{Examples.Count}': {Examples[0]}\n" +
+                   $"\tStrokes: {Strokes}";
         }
 
-        public void Abort()
+        public bool Equals(KanjiInfo x, KanjiInfo y)
         {
-            abort = true;
+            if (ReferenceEquals(x, y)) return true;
+            if (ReferenceEquals(x, null)) return false;
+            if (ReferenceEquals(y, null)) return false;
+            if (x.GetType() != y.GetType()) return false;
+            return x.Kanji == y.Kanji;
         }
 
-        public void ReadLines(Action<string, int> lineAction)
+        public int GetHashCode(KanjiInfo obj)
         {
-            var reader = File.OpenText(FilePath);
-            var lineCount = 0;
-            while (reader.Peek() >= 0)
-            {
-                if (abort)
-                {
-                    abort = false;
-                    return;
-                }
-
-                var line = reader.ReadLine();
-                lineAction.Invoke(line, lineCount);
-                lineCount++;
-            }
-        }
-
-        public void ReadFields(string line, Action<string> fieldAction = null, Action<string, int> fieldIndexedAction = null)
-        {
-            var lineChars = line.ToCharArray();
-            var field = "";
-            var fieldCount = 0;
-            var isString = false;
-            var fieldCompleted = new Action(() =>
-            {
-                fieldAction?.Invoke(field);
-                fieldIndexedAction?.Invoke(field, fieldCount);
-                field = "";
-                fieldCount++;
-            });
-            
-            for (var i = 0; i < lineChars.Length; i++)
-            {
-                if (abort)
-                {
-                    abort = false;
-                    return;
-                }
-
-                var c = lineChars[i];
-                var nextC = lineChars.GetValueOrNull(i + 1);
-                if (c == '"' && nextC != '"')
-                {
-                    isString = !isString;
-                }
-
-                if (c == ',' && !isString)
-                {
-                    fieldCompleted.Invoke();
-                }
-                else
-                {
-                    field += c;
-                }
-            }
-            fieldCompleted.Invoke();
-        }
-
-        public IList<string> GetFields(string line)
-        {
-            var fields = new List<string>();
-            ReadFields(line, fields.Add);
-            return fields;
+            return (obj.Kanji != null ? obj.Kanji.GetHashCode() : 0);
         }
     }
 
     public class KanjiDataLoader
     {
+        public Dictionary<string, KanjiInfo> KanjiData = new();
+
         public KanjiDataLoader()
         {
-            Debug.Log("KanjiDataLoader");
-            var dataFilePath = Path.Combine(Application.dataPath, "Games", "Shared", "Data", "Kanji", "ka_data.csv");
+            
+        }
 
-            var csvReader = new CSVReader(dataFilePath);
+        public IEnumerable<KanjiInfo> getMostFrequent(int count = 100)
+        {
+            return KanjiData.Values
+                .Where(kanji => kanji.UsageFreq2500 != null)
+                .OrderBy(kanji => kanji.UsageFreq2500)
+                .Take(count);
+        }
+
+        public IEnumerable<KanjiInfo> getKanjiByGrade(int grade)
+        {
+            return KanjiData.Values.Where(kanji => kanji.Grade == grade);
+        }
+
+        public IEnumerable<KanjiInfo> getKanjiByJlpt(int jlpt)
+        {
+            return KanjiData.Values.Where(kanji => kanji.Jlpt == jlpt);
+        }
+
+        public void LoadData(string path, bool header = true)
+        {
+            var csvReader = new CSVReader(path);
             csvReader.ReadLines((line, lineNum) =>
             {
-                if (lineNum > 0)
+                if (lineNum == 0 && header)
                 {
-                    KanjiInfo kanjiInfo = new KanjiInfo();
+                    // Debug.Log($"Headers: {line}");
+                }
+                else
+                {
                     var fields = csvReader.GetFields(line);
-                    SetKanjiInfoFields(ref kanjiInfo, fields);
-                    Debug.Log(kanjiInfo);
-                    csvReader.Abort();
+                    var kanjiInfo = CreateKanjiInfo(fields);
+                    KanjiData[kanjiInfo.Kanji] = kanjiInfo;
                 }
             });
         }
-
-        private void SetKanjiInfoFields(ref KanjiInfo kanjiInfo, IList<string> fields)
+        
+        private KanjiInfo CreateKanjiInfo(IList<string> fields)
         {
-            // kanji, kname, kstroke, kmeaning, kgrade, kunyomi_ja, kunyomi, onyomi_ja, onyomi, examples, radical, 
-            // rad_order, rad_stroke, rad_name_ja, rad_name, rad_meaning, rad_position_ja, rad_position
+            // kanji, ka_name, ka_examples, onyomi, kunyomi, nanori, english, jlpt, strokes, freq, grade, radicals
+            var kanjiInfo = new KanjiInfo();
             kanjiInfo.Kanji = fields[0];
-            kanjiInfo.Name = fields[1];
-            kanjiInfo.NumStrokes = int.Parse(fields[2]);
-            kanjiInfo.English = fields[3];
-            kanjiInfo.Grade = int.Parse(fields[4]);
-            kanjiInfo.Kunyomi = MakeKanaLatinStringList(fields[5], fields[6]);
-            kanjiInfo.Onyomi = MakeKanaLatinStringList(fields[7], fields[8]);
-            kanjiInfo.Examples = MakeExamplesList(fields[9]);
-            kanjiInfo.Radical = fields[10];
-            kanjiInfo.RadicalOrder = int.Parse(fields[11]);
-            kanjiInfo.RadicalNumStrokes = int.Parse(fields[12]);
-            kanjiInfo.RadicalName.Kana = fields[13];
-            kanjiInfo.RadicalName.Latin = fields[14];
-            kanjiInfo.RadicalEnglish = fields[15];
-            kanjiInfo.RadicalPosition.Kana = fields[16];
-            kanjiInfo.RadicalPosition.Latin = fields[17];
-        }
+            kanjiInfo.KaName = fields[1];
 
-        private List<KanjiInfo.KanaLatinString> MakeKanaLatinStringList(string kanasStr, string latinsStr, string kanaSep = "、", string latinSep = ",")
-        {
-            var kanas = kanasStr.Split(kanaSep);
-            var latins = latinsStr.Split(latinSep);
-            if (kanas.Length != latins.Length)
+            var examplesStr = fields[2].Trim(' ', '"').Replace("\"\"", "\"");
+            var examples = JsonConvert.DeserializeObject<List<List<string>>>(examplesStr);
+            foreach (var example in examples)
             {
-                Debug.LogWarning("kanas.Length != latins.Length");
-            }
-
-            var list = new List<KanjiInfo.KanaLatinString>();
-            for (int i = 0; i < kanas.Length; i++)
-            {
-                list.Add(new KanjiInfo.KanaLatinString()
+                var exampleSplit = example[0].Split('（');
+                kanjiInfo.Examples.Add(new KanjiInfo.ExampleInfo
                 {
-                    Kana = kanas[i],
-                    Latin = latins[i]
+                    Kanji = exampleSplit[0],
+                    Kana = exampleSplit[1].TrimEnd('）'),
+                    English = example[1]
                 });
             }
-
-            return list;
-        }
-
-        private List<KanjiInfo.ExampleInfo> MakeExamplesList(string examplesStr)
-        {
-            // "[ [ ""一年生（いちねんせい）"", ""first-year student"" ], [ ""一番（いちばん）"", ""number one"" ],
-            // [ ""一度（いちど）"", ""once"" ], [ ""一杯（いっぱい）"", ""one cup of, a lot of"" ],
-            // [ ""一緒（いっしょ）"", ""together"" ], [ ""一分（いっぷん）"", ""one minute"" ],
-            var examples = new List<KanjiInfo.ExampleInfo>();
-
-            var exampleRx = new Regex("\\[(.*?)\\]"); // capture between [ and ]
-            var exampleStrRx = new Regex("\"\"(.*?)\"\""); // capture between "" and ""
-
-            foreach (Match exampleMatch in exampleRx.Matches(examplesStr))
-            {
-                var exampleStrMatches = exampleStrRx.Matches(exampleMatch.Groups[0].Value);
-                var exampleStrJp = exampleStrMatches[0].Groups[1].Value;
-                var exampleStrJpSplit = exampleStrJp.Split('（');
-                
-                var exampleStrEn = exampleStrMatches[1].Groups[1].Value;
-                var exampleStrKana = exampleStrJpSplit[1].TrimEnd('）').Trim();
-                var exampleStrKanji = exampleStrJpSplit[0].Trim();
-                
-                var example = new KanjiInfo.ExampleInfo()
-                {
-                    English = exampleStrEn,
-                    Kana = exampleStrKana,
-                    Kanji = exampleStrKanji
-                };
-                examples.Add(example);
-            }
             
-            return examples;
+            kanjiInfo.Onyomi.AddRange(fields[3].Split(", "));
+            kanjiInfo.Kunyomi.AddRange(fields[4].Split(", "));
+            kanjiInfo.Nanori.AddRange(fields[5].Split(", "));
+            kanjiInfo.English.AddRange(fields[6].Split(", "));
+
+            kanjiInfo.Jlpt = fields[7].toIntOrNull();
+            kanjiInfo.Strokes = fields[8].toIntOrNull();
+            kanjiInfo.UsageFreq2500 = fields[9].toIntOrNull();
+            kanjiInfo.Grade = fields[10].toIntOrNull();
+            
+            kanjiInfo.Radicals.AddRange(fields[11].Split(", "));
+            
+            return kanjiInfo;
         }
     }
 }

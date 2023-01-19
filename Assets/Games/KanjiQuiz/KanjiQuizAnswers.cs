@@ -18,7 +18,7 @@ namespace Games.KanjiQuiz
             }
         }
 
-        public void SpawnCards(IList<KanjiInfoOld> kanjiInfos, Action<KanjiQuizAnswerCard> onCardSpawned = null)
+        public void SpawnCards(IList<KanjiInfo> kanjiInfos, Action<KanjiQuizAnswerCard> onCardSpawned = null)
         {
             Grid.Items.ForEach(Destroy);
             Grid.Items.Clear();

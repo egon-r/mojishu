@@ -1,127 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using UnityEngine;
 
 namespace Games.Shared.Data
 {
-    public static partial class KanjiData
+    public class KanjiData
     {
-        public enum KanjiSet
-        {
-            JLPT_N1,
-            JLPT_N2,
-            JLPT_N3,
-            JLPT_N4,
-            JLPT_N5,
-            TOP_100_MOST_FREQUENT,
-        }
+        public static Dictionary<string, List<KanjiInfo>> Datasets = new();
 
-        public static Dictionary<KanjiSet, string> KanjiSetFriendlyNames = new()
+        static KanjiData()
         {
-            { KanjiSet.JLPT_N1, "JLPT N1" },
-            { KanjiSet.JLPT_N2, "JLPT N2" },
-            { KanjiSet.JLPT_N3, "JLPT N3" },
-            { KanjiSet.JLPT_N4, "JLPT N4" },
-            { KanjiSet.JLPT_N5, "JLPT N5" },
-            { KanjiSet.TOP_100_MOST_FREQUENT, "Top 100 Most Frequent" },
-        };
+            var dataLoader = new KanjiDataLoader();
+            dataLoader.LoadData(Path.Combine(Application.dataPath, "Games", "Shared", "Data", "Kanji", "kanji_data.csv"));
 
-        public static List<KanjiInfoOld> getKanjiSet(KanjiSet selectedSet)
-        {
-            switch (selectedSet)
-            {
-                case KanjiSet.JLPT_N1:
-                    return JLPT_N1;
-                case KanjiSet.JLPT_N2:
-                    return JLPT_N2;
-                case KanjiSet.JLPT_N3:
-                    return JLPT_N3;
-                case KanjiSet.JLPT_N4:
-                    return JLPT_N4;
-                case KanjiSet.JLPT_N5:
-                    return JLPT_N5;
-                case KanjiSet.TOP_100_MOST_FREQUENT:
-                    return Top100_MostFrequent;
-                default:
-                    return new List<KanjiInfoOld>();
-            }
-        }
-        
-        public static List<KanjiInfoOld> getKanjiSet(params KanjiSet[] selectedSets)
-        {
-            // use a set because there might be duplicates
-            var tmpSet = new HashSet<KanjiInfoOld>();
-            foreach (var set in selectedSets)
-            {
-                foreach (var kanji in getKanjiSet(set))
-                {
-                    tmpSet.Add(kanji);
-                }
-            }
-            return tmpSet.ToList();
-        }
-
-        public static List<KanjiInfoOld> JLPT_N5_to_N1
-        {
-            get
-            {
-                var n1to5 = new[]
-                {
-                    KanjiSet.JLPT_N1, KanjiSet.JLPT_N2, KanjiSet.JLPT_N3, KanjiSet.JLPT_N4, KanjiSet.JLPT_N5
-                };
-                return AllKanjiList
-                    .Where(k => n1to5.Intersect(k.kanjiSets).Count() == n1to5.Count())
-                    .ToList();
-            }
-        }
-
-        
-        public static List<KanjiInfoOld> Top100_MostFrequent
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.TOP_100_MOST_FREQUENT)).ToList();
-            }
-        }
-
-        public static List<KanjiInfoOld> JLPT_N5
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N5)).ToList();
-            }
-        }
-        
-        public static List<KanjiInfoOld> JLPT_N4
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N4)).ToList();
-            }
-        }
-        
-        public static List<KanjiInfoOld> JLPT_N3
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N3)).ToList();
-            }
-        }
-        
-        public static List<KanjiInfoOld> JLPT_N2
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N2)).ToList();
-            }
-        }
-        
-        public static List<KanjiInfoOld> JLPT_N1
-        {
-            get
-            {
-                return AllKanjiList.Where(k => k.kanjiSets.Contains(KanjiSet.JLPT_N1)).ToList();
-            }
+            Datasets["Top 100 Most Used"] = dataLoader.getMostFrequent(100).ToList();
+            Datasets["Grade 1"] = dataLoader.getKanjiByGrade(1).ToList();
+            Datasets["Grade 2"] = dataLoader.getKanjiByGrade(2).ToList();
+            Datasets["Grade 3"] = dataLoader.getKanjiByGrade(3).ToList();
+            Datasets["Grade 4"] = dataLoader.getKanjiByGrade(4).ToList();
+            Datasets["Grade 5"] = dataLoader.getKanjiByGrade(5).ToList();
+            Datasets["Grade 6"] = dataLoader.getKanjiByGrade(6).ToList();
+            Datasets["Grade 8"] = dataLoader.getKanjiByGrade(8).ToList();
         }
     }
 }
