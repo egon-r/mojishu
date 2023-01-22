@@ -1,0 +1,10 @@
+E:\projects\unity\mojishu\nuget-project\nuget-project\bin\Debug\nuget_project.dll
+E:\projects\unity\mojishu\nuget-project\nuget-project\bin\Debug\nuget_project.pdb
+E:\projects\unity\mojishu\nuget-project\nuget-project\bin\Debug\Kawazu.dll
+E:\projects\unity\mojishu\nuget-project\nuget-project\bin\Debug\LibNMeCab.dll
+E:\projects\unity\mojishu\nuget-project\nuget-project\bin\Debug\LibNMeCab.IpaDicBin.dll
+E:\projects\unity\mojishu\nuget-project\nuget-project\obj\Debug\nuget-project.csproj.AssemblyReference.cache
+E:\projects\unity\mojishu\nuget-project\nuget-project\obj\Debug\nuget-project.csproj.CoreCompileInputs.cache
+E:\projects\unity\mojishu\nuget-project\nuget-project\obj\Debug\nuget-project.csproj.CopyComplete
+E:\projects\unity\mojishu\nuget-project\nuget-project\obj\Debug\nuget_project.dll
+E:\projects\unity\mojishu\nuget-project\nuget-project\obj\Debug\nuget_project.pdb

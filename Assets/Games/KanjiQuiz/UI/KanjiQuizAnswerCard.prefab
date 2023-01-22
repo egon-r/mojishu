@@ -135,6 +135,79 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4759035857394388774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530212053325045880}
+  - component: {fileID: 6216404777994224151}
+  - component: {fileID: 4173610005018695189}
+  m_Layer: 0
+  m_Name: card_video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &530212053325045880
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4759035857394388774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3415552052979568743}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -30, y: -30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6216404777994224151
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4759035857394388774}
+  m_CullTransparentMesh: 1
+--- !u!114 &4173610005018695189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4759035857394388774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 462c64387132b6549ab18de0e98efa6b, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 95fb38bcb92864a4d93fdea71b429991, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &5316695380603213780
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +239,7 @@ RectTransform:
   m_Children:
   - {fileID: 7652383108566137837}
   - {fileID: 8290613840416472070}
+  - {fileID: 530212053325045880}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -188,11 +262,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultBackground: {fileID: 21300000, guid: bb086526fd75ef340a289f081dbd8246, type: 3}
   WrongBackground: {fileID: 21300000, guid: fab99c6ec8ac6eb48a71a32412d072e7, type: 3}
-  CorrectBackground: {fileID: 0}
   PressedBackground: {fileID: 21300000, guid: 6edcf90222ccbf140bd63707a9500625, type: 3}
   CardBackground: {fileID: 414371598132666435}
   CardText: {fileID: 8831464547136728237}
   state: 0
+  IgnorePointerEvents: 0
+  VideoRenderTexture: {fileID: 8400000, guid: 95fb38bcb92864a4d93fdea71b429991, type: 2}
+  CardVideo: {fileID: 4173610005018695189}
 --- !u!1 &7017414283706992851
 GameObject:
   m_ObjectHideFlags: 0

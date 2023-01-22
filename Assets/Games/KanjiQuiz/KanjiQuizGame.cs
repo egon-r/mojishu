@@ -49,13 +49,6 @@ namespace Games.KanjiQuiz
 
         public event GameStartedEvent GameStarted;
 
-        private void OnEnable()
-        {
-            Debug.Log("KanjiQuizGame");
-            var dataLoader = new KanjiDataLoader();
-            
-        }
-
         public void Hide()
         {
             gameObject.SetActive(false);
@@ -170,13 +163,14 @@ namespace Games.KanjiQuiz
             }
         }
 
-        private void StartHideAnswersAnim(KanjiQuizAnswerCard ignoreCard, Action then)
+        private void StartHideAnswersAnim(KanjiQuizAnswerCard correctCard, Action then)
         {
+            correctCard.PrepareStrokeVideo();
             var thenInvoked = false;
             foreach (var child in AnswerGrid.transform)
             {
                 var childTransform = child as Transform;
-                if (childTransform != null && childTransform.gameObject != ignoreCard.gameObject)
+                if (childTransform != null && childTransform.gameObject != correctCard.gameObject)
                 {
                     var startRot = childTransform.rotation;
                     var endRot = Quaternion.Euler(0.0f, 0.0f, Random.Range(10.0f, 80.0f));
@@ -216,15 +210,16 @@ namespace Games.KanjiQuiz
             }
         }
         
-        private void StartRoundFinishedAnim(KanjiQuizAnswerCard answerCard, Action then)
+        private void StartRoundFinishedAnim(KanjiQuizAnswerCard correctCard, Action then)
         {
-            var startScale = answerCard.transform.localScale;
+            correctCard.StopStrokeVideo();
+            var startScale = correctCard.transform.localScale;
             var endScale = startScale + new Vector3(1.0f, 1.0f, 1.0f);
             Action<ITween<Vector3>> answerAnim = (t) =>
             {
-                answerCard.transform.localScale = t.CurrentValue;
-                answerCard.CardBackground.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
-                answerCard.CardText.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
+                correctCard.transform.localScale = t.CurrentValue;
+                correctCard.CardBackground.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
+                correctCard.CardText.color = new Color(255.0f, 255.0f, 255.0f, 1.0f - t.CurrentProgress);
             };
             gameObject.Tween(
                 answerAnim, startScale, endScale, 0.6f, 

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "G8SilRvU1qaU2HAJpD91YAv2FBdKdsbzVg1vOaHOxHi7+Kejs8XOqJ/DDkB0nwikE0Z2RWEQR5YWr9k2OyuW3Q==",
+  "success": true,
+  "projectFilePath": "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\nuget-project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\skynet\\.nuget\\packages\\kawazu\\1.1.4\\kawazu.1.1.4.nupkg.sha512",
+    "C:\\Users\\skynet\\.nuget\\packages\\libnmecab\\0.10.1\\libnmecab.0.10.1.nupkg.sha512",
+    "C:\\Users\\skynet\\.nuget\\packages\\libnmecab.ipadicbin\\0.10.0\\libnmecab.ipadicbin.0.10.0.nupkg.sha512"
+  ],
+  "logs": []
+}

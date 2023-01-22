@@ -12,8 +12,8 @@ namespace Games.Shared.Data
         static KanjiData()
         {
             var dataLoader = new KanjiDataLoader();
-            dataLoader.LoadData(Path.Combine(Application.dataPath, "Games", "Shared", "Data", "Kanji", "kanji_data.csv"));
-
+            dataLoader.LoadData(Path.Combine(Application.streamingAssetsPath, "Kanji", "kanji_data.csv"));
+            
             Datasets["Top 100 Most Used"] = dataLoader.getMostFrequent(100).ToList();
             Datasets["Grade 1"] = dataLoader.getKanjiByGrade(1).ToList();
             Datasets["Grade 2"] = dataLoader.getKanjiByGrade(2).ToList();

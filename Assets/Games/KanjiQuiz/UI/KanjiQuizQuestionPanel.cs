@@ -1,5 +1,8 @@
 using System;
+using System.IO;
 using Games.Shared.Data;
+using Games.Shared.Util;
+using Kawazu;
 using TMPro;
 using UnityEngine;
 
@@ -44,14 +47,21 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
             _kanji = value;
 
             var text = "";
-            
+
             // onyomi readings
             text += "音: ";
             text += String.Join("、 ", value.Onyomi);
             if (ShowRomaji)
             {
-                text += "\nOnyomi: TODO";
-                //text += String.Join(", ", value.onyomiReadingsLatin);
+                text += "\nOnyomi: ";
+                for (int i = 0; i < value.Onyomi.Count; i++)
+                {
+                    if (i > 0)
+                    {
+                        text += ", ";
+                    }
+                    text += $"{JPConvert.KanaToRomaji(value.Onyomi[i])}";
+                }
             }
             
             // kunyomi readings
@@ -59,8 +69,15 @@ public class KanjiQuizQuestionPanel : MonoBehaviour
             text += String.Join("、 ", value.Kunyomi);
             if (ShowRomaji)
             {
-                text += "\nKunyomi: TODO";
-                //text += String.Join(", ", value.kunyomiReadingsLatin);
+                text += "\nKunyomi: ";
+                for (int i = 0; i < value.Kunyomi.Count; i++)
+                {
+                    if (i > 0)
+                    {
+                        text += ", ";
+                    }
+                    text += $"{JPConvert.KanaToRomaji(value.Kunyomi[i])}";
+                }
             }
             
             // english translation

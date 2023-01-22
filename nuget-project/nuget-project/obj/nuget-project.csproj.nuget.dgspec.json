@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\nuget-project.csproj": {}
+  },
+  "projects": {
+    "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\nuget-project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\nuget-project.csproj",
+        "projectName": "nuget-project.csproj",
+        "projectPath": "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\nuget-project.csproj",
+        "packagesPath": "C:\\Users\\skynet\\.nuget\\packages\\",
+        "outputPath": "E:\\projects\\unity\\mojishu\\nuget-project\\nuget-project\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\skynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Kawazu": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

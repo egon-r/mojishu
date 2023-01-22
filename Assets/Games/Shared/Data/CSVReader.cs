@@ -2,40 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using Games.Shared.Util;
+using UnityEditor;
 
 namespace Games.Shared.Data
 {
     public class CSVReader
     {
-        private bool abort = false;
-        public string FilePath;
-
-        public CSVReader(string filePath)
+        public CSVReader()
         {
-            FilePath = filePath;
-        }
-
-        public void Abort()
-        {
-            abort = true;
-        }
-
-        public void ReadLines(Action<string, int> lineAction)
-        {
-            var reader = File.OpenText(FilePath);
-            var lineCount = 0;
-            while (reader.Peek() >= 0)
-            {
-                if (abort)
-                {
-                    abort = false;
-                    return;
-                }
-
-                var line = reader.ReadLine();
-                lineAction.Invoke(line, lineCount);
-                lineCount++;
-            }
         }
 
         public void ReadFields(string line, Action<string> fieldAction = null, Action<string, int> fieldIndexedAction = null)
@@ -54,12 +28,6 @@ namespace Games.Shared.Data
             
             for (var i = 0; i < lineChars.Length; i++)
             {
-                if (abort)
-                {
-                    abort = false;
-                    return;
-                }
-
                 var c = lineChars[i];
                 var nextC = lineChars.GetValueOrNull(i + 1);
                 if (c == '"' && nextC != '"')
