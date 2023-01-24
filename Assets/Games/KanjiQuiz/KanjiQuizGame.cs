@@ -40,6 +40,7 @@ namespace Games.KanjiQuiz
         public KanjiQuizQuestionPanel QuestionPanel;
         public KanjiQuizAnswerCard AnswerCardPrefab;
         private List<KanjiInfo> currentAnswerOptions;
+        private KanjiQuizAnswerCard currentAnswerCard;
         private double currentGameStartTime;
         private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, double>> playerGuesses = new();
@@ -89,7 +90,7 @@ namespace Games.KanjiQuiz
            
             // spawn answers
             ClearAnswerGrid();
-            SpawnCards(currentAnswerOptions);
+            SpawnCards();
             
             // update question panel
             QuestionPanel.ShowRomaji = initData.ShowRomaji;
@@ -126,8 +127,9 @@ namespace Games.KanjiQuiz
                 }
                 else
                 {
-                    card.MarkAsCorrect();
-                    StartHideAnswersAnim(card, () => {});
+                    currentAnswerCard = card;
+                    currentAnswerCard.MarkAsCorrect();
+                    StartHideAnswersAnim( () => {});
                 }
             }
             else
@@ -143,6 +145,10 @@ namespace Games.KanjiQuiz
 
         private void ClearAnswerGrid()
         {
+            if (currentAnswerCard)
+            {
+                Destroy(currentAnswerCard.gameObject);
+            }
             foreach (var child in AnswerGrid.transform)
             {
                 var childTransform = child as Transform;
@@ -153,25 +159,29 @@ namespace Games.KanjiQuiz
             }
         }
 
-        private void SpawnCards(IList<KanjiInfo> kanjiInfos)
+        private void SpawnCards()
         {
-            foreach (var kanjiInfo in kanjiInfos)
+            foreach (var answerOption in currentAnswerOptions)
             {
                 var card = Instantiate(AnswerCardPrefab, AnswerGrid.transform);
-                card.Kanji = kanjiInfo;
+                card.Kanji = answerOption;
                 card.Clicked += OnAnswerClicked;
+                if (answerOption == currentAnswer)
+                {
+                    card.PrepareStrokeVideo();
+                }
             }
         }
 
-        private void StartHideAnswersAnim(KanjiQuizAnswerCard correctCard, Action then)
+        private void StartHideAnswersAnim(Action then)
         {
-            correctCard.PrepareStrokeVideo();
             var thenInvoked = false;
             foreach (var child in AnswerGrid.transform)
             {
                 var childTransform = child as Transform;
-                if (childTransform != null && childTransform.gameObject != correctCard.gameObject)
+                if (childTransform != null && childTransform.gameObject != currentAnswerCard.gameObject)
                 {
+                    // rotate animation
                     var startRot = childTransform.rotation;
                     var endRot = Quaternion.Euler(0.0f, 0.0f, Random.Range(10.0f, 80.0f));
                     Action<ITween<Quaternion>> childRotAnim = (t) =>
@@ -182,7 +192,8 @@ namespace Games.KanjiQuiz
                         childRotAnim, startRot, endRot, 0.4f,
                         TweenScaleFunctions.QuadraticEaseIn, childRotAnim
                     );
-
+                    
+                    // drop animation
                     Action<ITween<Vector3>> childPosAnim = (t) =>
                     {
                         childTransform.localPosition = t.CurrentValue;

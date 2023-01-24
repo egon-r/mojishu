@@ -23,7 +23,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/egon-r/index.json": {}
         },
         "frameworks": {
           "net472": {
@@ -37,6 +38,10 @@
             "Kawazu": {
               "target": "Package",
               "version": "[1.1.4, )"
+            },
+            "LibNMeCab": {
+              "target": "Package",
+              "version": "[0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa, )"
             }
           }
         }

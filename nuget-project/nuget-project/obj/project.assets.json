@@ -47,7 +47,7 @@
           }
         }
       },
-      "LibNMeCab/0.10.1": {
+      "LibNMeCab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/LibNMeCab.dll": {
@@ -125,7 +125,7 @@
           }
         }
       },
-      "LibNMeCab/0.10.1": {
+      "LibNMeCab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/LibNMeCab.dll": {
@@ -203,7 +203,7 @@
           }
         }
       },
-      "LibNMeCab/0.10.1": {
+      "LibNMeCab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/LibNMeCab.dll": {
@@ -281,7 +281,7 @@
           }
         }
       },
-      "LibNMeCab/0.10.1": {
+      "LibNMeCab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/LibNMeCab.dll": {
@@ -354,17 +354,16 @@
         "lib/netstandard2.0/Kawazu.dll"
       ]
     },
-    "LibNMeCab/0.10.1": {
-      "sha512": "GXP1Lu5YJQM1kE0KYMMDoYVwdZdLja66yaiQK/tR3XWNGalCC+gwDS6Dm4WWuB8xgFq9VB0c71WfTNEhXyR7ww==",
+    "LibNMeCab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa": {
+      "sha512": "GKeKxQVsQC1OJN9AfGyKwaGOnE4Vi3Igy4lWT8hI+xRcMulXuiERjm3pTN5puD2Fzbxf15S4ZEMs/ts1YWlntg==",
       "type": "package",
-      "path": "libnmecab/0.10.1",
+      "path": "libnmecab/0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "NMeCab-icon-512.png",
+        "images/icon.png",
         "lib/netstandard2.0/LibNMeCab.dll",
         "lib/netstandard2.0/LibNMeCab.xml",
-        "libnmecab.0.10.1.nupkg.sha512",
+        "libnmecab.0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa.nupkg.sha512",
         "libnmecab.nuspec"
       ]
     },
@@ -394,7 +393,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Kawazu >= 1.1.4"
+      "Kawazu >= 1.1.4",
+      "LibNMeCab >= 0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa"
     ]
   },
   "packageFolders": {
@@ -419,7 +419,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/egon-r/index.json": {}
       },
       "frameworks": {
         "net472": {
@@ -433,6 +434,10 @@
           "Kawazu": {
             "target": "Package",
             "version": "[1.1.4, )"
+          },
+          "LibNMeCab": {
+            "target": "Package",
+            "version": "[0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa, )"
           }
         }
       }
@@ -448,5 +453,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: LibNMeCab from 0.10.1 to 0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa. Reference the package directly from the project to select a different version. \r\n nuget-project.csproj -> Kawazu 1.1.4 -> LibNMeCab (>= 0.10.1) \r\n nuget-project.csproj -> LibNMeCab (>= 0.0.112-3d1aa03abe7782f8dfa7db73eac96a1732eb79fa)",
+      "libraryId": "LibNMeCab",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

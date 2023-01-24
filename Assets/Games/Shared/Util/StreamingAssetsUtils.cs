@@ -3,16 +3,14 @@ using System.Diagnostics;
 using System.IO;
 using UnityEngine.Device;
 using UnityEngine.Networking;
-using Debug = UnityEngine.Debug;
 
 namespace Games.Shared.Util
 {
     public class StreamingAssetsUtils
     {
-        public static string getFileAsString(string relPath, int timeoutMs = 2000)
+        public static DownloadHandler getFinishedFileDownloadHandler(string path, int timeoutMs = 2000)
         {
-            var reqPath = Path.Combine(Application.streamingAssetsPath, relPath);
-            var fileReq = UnityWebRequest.Get(reqPath);
+            var fileReq = UnityWebRequest.Get(path);
             fileReq.SendWebRequest();
             
             var timeoutWatch = new Stopwatch();
@@ -22,16 +20,23 @@ namespace Games.Shared.Util
                 // waiting...
                 if (timeoutWatch.ElapsedMilliseconds > timeoutMs)
                 {
-                    throw new Exception($"Timeout while requesting '{reqPath}'!");
+                    throw new Exception($"Timeout while requesting '{path}'!");
                 }
             }
 
             if (fileReq.result != UnityWebRequest.Result.Success)
             {
-                throw new Exception($"UnityWebRequest failed for '{reqPath}'!");
+                throw new Exception($"UnityWebRequest failed for '{path}'!");
             }
-         
-            return fileReq.downloadHandler.text;
+
+            return fileReq.downloadHandler;
+        }
+        
+        public static string getFileAsString(string relPath, int timeoutMs = 2000)
+        {
+            var absPath = Path.Combine(Application.streamingAssetsPath, relPath);
+            var downloadHandler = getFinishedFileDownloadHandler(absPath, timeoutMs);
+            return downloadHandler.text;
         }
     }
 }

@@ -10,6 +10,7 @@ using UnityEngine.Video;
 
 namespace Games.KanjiQuiz
 {
+    [RequireComponent(typeof(VideoPlayer))]
     public class KanjiQuizAnswerCard : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
     {
         public enum CardState
@@ -30,6 +31,7 @@ namespace Games.KanjiQuiz
         public RawImage CardVideo;
         private KanjiInfo _kanji;
         private VideoPlayer videoPlayer;
+        private bool shouldPrepareVideo = false;
 
         public KanjiInfo Kanji
         {
@@ -48,7 +50,19 @@ namespace Games.KanjiQuiz
         private void Start()
         {
             CardVideo.enabled = false;
-            videoPlayer = gameObject.AddComponent<VideoPlayer>();
+            videoPlayer = gameObject.GetComponent<VideoPlayer>();
+        }
+
+        private void Update()
+        {
+            if (shouldPrepareVideo)
+            {
+                shouldPrepareVideo = false;
+                videoPlayer.targetTexture = VideoRenderTexture;
+                videoPlayer.source = VideoSource.Url;
+                videoPlayer.url = _kanji.getVideoUrl();
+                videoPlayer.Prepare();
+            }
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -77,10 +91,7 @@ namespace Games.KanjiQuiz
 
         public void PrepareStrokeVideo()
         {
-            videoPlayer.targetTexture = VideoRenderTexture;
-            videoPlayer.source = VideoSource.Url;
-            videoPlayer.url = _kanji.getVideoUrl();
-            videoPlayer.Prepare();
+            shouldPrepareVideo = true;
         }
 
         public void StopStrokeVideo()
@@ -98,10 +109,6 @@ namespace Games.KanjiQuiz
         
         public void PlayStrokeVideo()
         {
-            if (!videoPlayer.isPrepared)
-            {
-                PrepareStrokeVideo();
-            }
             CardText.enabled = false;
             videoPlayer.playbackSpeed = 1.5f;
             videoPlayer.isLooping = true;
@@ -109,6 +116,7 @@ namespace Games.KanjiQuiz
             {
                 StartCoroutine(StrokeVideoLoopPointReached(source));
             };
+            videoPlayer.time = 0.0f;
             videoPlayer.Play();
             CardVideo.enabled = true;
         }
