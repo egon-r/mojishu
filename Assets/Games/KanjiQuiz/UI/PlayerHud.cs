@@ -12,7 +12,6 @@ namespace Games.KanjiQuiz.UI
         private MenuManager menuManager;
         public KanjiQuizGame Game;
         public Button PauseButton;
-        public Button JishoButton;
         public TextMeshProUGUI LevelNameText;
 
         // Start is called before the first frame update
@@ -20,12 +19,6 @@ namespace Games.KanjiQuiz.UI
         {
             menuManager = gameObject.GetComponentInParent<MenuManager>();
             PauseButton.onClick.AddListener(PauseButton_clicked);
-            JishoButton.onClick.AddListener(JishoButton_clicked);
-        }
-
-        private void JishoButton_clicked()
-        {
-            Application.OpenURL("https://jisho.org/search/%23kanji%20" + Game.CurrentKanji);
         }
 
         private void PauseButton_clicked()

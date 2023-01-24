@@ -121,18 +121,31 @@ namespace Games.KanjiQuiz
             CardVideo.enabled = true;
         }
 
+        public void DetachFromLayout()
+        {
+            if (gameObject.GetComponent<LayoutElement>() == null)
+            {
+                gameObject.AddComponent<LayoutElement>();
+            }
+            gameObject.GetComponent<LayoutElement>().ignoreLayout = true;
+        }
+        
         public void MarkAsCorrect()
         {
             IgnorePointerEvents = true;
             state = CardState.CORRECT;
+            
+            DetachFromLayout();
+            StartCorrectAnim();
+        }
 
-            transform.SetParent(transform.parent.parent); // remove from layout
-
+        private void StartCorrectAnim()
+        {
             Action<ITween<Vector3>> translateAnim = (t) => { transform.localPosition = t.CurrentValue; };
             var startPos = transform.localPosition;
             gameObject.Tween(
                 translateAnim,
-                startPos, new Vector3(0.0f, -400.0f, 1.0f),
+                startPos, new Vector3(0.0f, 0.0f, 1.0f),
                 0.2f, TweenScaleFunctions.CubicEaseOut, translateAnim
             );
 
