@@ -10,7 +10,7 @@ namespace Games.Shared.Util
     {
         public static DownloadHandler getFinishedFileDownloadHandler(string path, int timeoutMs = 2000)
         {
-            var fileReq = UnityWebRequest.Get(path);
+            var fileReq = UnityWebRequest.Get("file://" + path);
             fileReq.SendWebRequest();
             
             var timeoutWatch = new Stopwatch();
