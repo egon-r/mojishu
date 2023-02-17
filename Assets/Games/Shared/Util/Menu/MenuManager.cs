@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace Games.Shared.Util.Menu
 {
     public class MenuManager: MonoBehaviour
     {
-        public CanvasGroup InitialMenu;
+        [Header("Setup")]
         public List<CanvasGroup> Menus;
+        public CanvasGroup InitialMenu;
         private CanvasGroup CurrentMenu;
 
         private void Start()
