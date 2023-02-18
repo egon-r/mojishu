@@ -9,15 +9,15 @@ namespace Games.KanjiQuiz.UI
 {
     public class PlayerHud : AnimatedMenu
     {
-        private MenuManager menuManager;
         public KanjiQuizGame Game;
         public Button PauseButton;
         public TextMeshProUGUI LevelNameText;
+        private MenuManager menuManager;
 
         // Start is called before the first frame update
         void Start()
         {
-            menuManager = gameObject.GetComponentInParent<MenuManager>();
+            menuManager = getMenuManager();
             PauseButton.onClick.AddListener(PauseButton_clicked);
         }
 

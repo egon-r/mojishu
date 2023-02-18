@@ -8,8 +8,6 @@ namespace Editor
     [CustomEditor(typeof(MenuManager))]
     public class MenuManagerInspector : UnityEditor.Editor
     {
-        private int selectedEditorMenuIndex = 0;
-        
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
@@ -22,17 +20,26 @@ namespace Editor
             if (menuManager.Menus.Count > 0)
             {
                 var menuOptions = new List<string>();
+                var doNothingOption = "<Do Nothing>";
                 foreach (var menu in menuManager.Menus)
                 {
                     menuOptions.Add(menu.name);
                 }
+                menuOptions.Add(doNothingOption);
                 
-                selectedEditorMenuIndex = EditorGUILayout.Popup("Editor Menu", selectedEditorMenuIndex, menuOptions.ToArray());
+                menuManager.selectedEditorMenuIndex = EditorGUILayout.Popup("Editor Menu", menuManager.selectedEditorMenuIndex, menuOptions.ToArray());
 
-                var selectedEditorMenu = menuManager.Menus[selectedEditorMenuIndex];
-                foreach (var menu in menuManager.Menus)
+                if (menuManager.selectedEditorMenuIndex >= menuManager.Menus.Count)
                 {
-                    menu.gameObject.SetActive(menu == selectedEditorMenu);
+                    // do nothing, the user is in charge of activate/deactivate (alt+shift+A)
+                }
+                else
+                {
+                    var selectedEditorMenu = menuManager.Menus[menuManager.selectedEditorMenuIndex];
+                    foreach (var menu in menuManager.Menus)
+                    {
+                        menu.gameObject.SetActive(menu == selectedEditorMenu);
+                    }
                 }
             }
 

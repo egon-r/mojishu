@@ -11,6 +11,14 @@ public class KanjiQuizQuestionPanel : MonoBehaviour, IPointerClickHandler
     public VerticalLayoutGroup ContentLayout;
     public TextMeshProUGUI ContentText;
 
+    private double _questionFontSize = -1;
+
+    public double QuestionFontSize
+    {
+        get => _questionFontSize;
+        set => _questionFontSize = value;
+    }
+    
     private bool _showRomaji;
     public bool ShowRomaji
     {
@@ -49,7 +57,6 @@ public class KanjiQuizQuestionPanel : MonoBehaviour, IPointerClickHandler
             RenderQuestionPanelText(_kanji);
         }
     }
-
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -130,6 +137,10 @@ public class KanjiQuizQuestionPanel : MonoBehaviour, IPointerClickHandler
         // jisho link
         text += "\n\n<align=\"right\"><color=#2e2eff><link=\"jisho-link\">view on jisho.org</link></color></align>";
 
+        if (_questionFontSize > 0)
+        {
+            ContentText.fontSize = (float)_questionFontSize;
+        }
         ContentText.text = text;
     }
 

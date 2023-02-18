@@ -100,22 +100,17 @@ namespace Games.KanjiQuiz
             CardVideo.enabled = false;
         }
 
-        private IEnumerator StrokeVideoLoopPointReached(VideoPlayer player)
-        {
-            player.Stop();
-            yield return new WaitForSeconds(5.0f);
-            player.Play();
-        }
-        
         public void PlayStrokeVideo()
         {
             CardText.enabled = false;
             videoPlayer.playbackSpeed = 1.5f;
-            videoPlayer.isLooping = true;
+            videoPlayer.isLooping = false;
+            /*
             videoPlayer.loopPointReached += source =>
             {
-                StartCoroutine(StrokeVideoLoopPointReached(source));
+                Debug.Log("loop");
             };
+            */
             videoPlayer.time = 0.0f;
             videoPlayer.Play();
             CardVideo.enabled = true;

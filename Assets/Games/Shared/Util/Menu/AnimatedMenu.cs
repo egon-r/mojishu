@@ -25,14 +25,19 @@ namespace Games.Shared.Util.Menu
                 case AnimationType.SLIDE_FROM_TOP:
                     return new Vector3(0, Screen.height, 0);
                 case AnimationType.SLIDE_FROM_BOTTOM:
-                    return new Vector3(0, -1 * Screen.height, 0);
+                    return new Vector3(0, -2 * Screen.height, 0);
                 case AnimationType.SLIDE_FROM_LEFT:
-                    return new Vector3(-1 * Screen.width, 0, 0);
+                    return new Vector3(-2 * Screen.width, 0, 0);
                 case AnimationType.SLIDE_FROM_RIGHT:
                     return new Vector3(Screen.width, 0, 0);
                 default:
                     return Vector3.zero;
             }
+        }
+
+        public MenuManager getMenuManager()
+        {
+            return gameObject.GetComponentInParent<MenuManager>();
         }
 
         public virtual void PlayShowAnimation(Action onComplete = null)

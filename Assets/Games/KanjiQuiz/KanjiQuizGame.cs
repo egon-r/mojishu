@@ -14,14 +14,10 @@ namespace Games.KanjiQuiz
     public class KanjiQuizGameInitData
     {
         public int NumAnswers;
-        public bool ShowRomaji;
-        public bool ShowEnglishTranslations;
         public string KanjiDatasetKey;
 
-        public KanjiQuizGameInitData(bool showRomaji, bool showEnglishTranslations, string datasetKey, int numAnswers = 6)
+        public KanjiQuizGameInitData(string datasetKey, int numAnswers = 6)
         {
-            ShowRomaji = showRomaji;
-            ShowEnglishTranslations = showEnglishTranslations;
             NumAnswers = numAnswers;
             KanjiDatasetKey = datasetKey;
         }
@@ -29,6 +25,8 @@ namespace Games.KanjiQuiz
     
     public class KanjiQuizGame: MonoBehaviour
     {
+        public static KanjiQuizGame GetCurrentGame() => GameObject.Find("_Game").GetComponent<KanjiQuizGame>();
+        
         private KanjiInfo currentAnswer;
         public KanjiInfo CurrentKanji
         {
@@ -39,10 +37,11 @@ namespace Games.KanjiQuiz
         public GridLayoutGroup AnswerGrid;
         public KanjiQuizQuestionPanel QuestionPanel;
         public KanjiQuizAnswerCard AnswerCardPrefab;
+        public KanjiQuizSavefile SaveFile = new();
+
         private List<KanjiInfo> currentAnswerOptions;
         private KanjiQuizAnswerCard currentAnswerCard;
         private double currentGameStartTime;
-        private KanjiQuizSaveData saveData = new();
         private List<Tuple<string, double>> playerGuesses = new();
         private double realStartTime;
         
@@ -74,7 +73,7 @@ namespace Games.KanjiQuiz
 
         public void StartRound(KanjiQuizGameInitData initData)
         {
-            saveData.ReadFromFile();
+            SaveFile.ReadFromFile();
 
             var kanjiList = KanjiData.Datasets[initData.KanjiDatasetKey];
             playerGuesses.Clear();
@@ -93,8 +92,9 @@ namespace Games.KanjiQuiz
             SpawnCards();
             
             // update question panel
-            QuestionPanel.ShowRomaji = initData.ShowRomaji;
-            QuestionPanel.ShowEnglishTranslations = initData.ShowEnglishTranslations;
+            QuestionPanel.QuestionFontSize = SaveFile.questionPanelFontSize;
+            QuestionPanel.ShowRomaji = SaveFile.showRomaji;
+            QuestionPanel.ShowEnglishTranslations = SaveFile.showEnglishTranslations;
             QuestionPanel.Kanji = currentAnswer;
 
             // show the game
@@ -112,7 +112,7 @@ namespace Games.KanjiQuiz
                 if (card.state == KanjiQuizAnswerCard.CardState.CORRECT)
                 {
                     card.IgnorePointerEvents = true;
-                    saveData.AddKanjiStats(card.Kanji.Kanji, new KanjiQuizSymbolStats()
+                    SaveFile.AddKanjiStats(card.Kanji.Kanji, new KanjiQuizSymbolStats()
                     {
                         Timestamp = realStartTime,
                         Answers = currentAnswerOptions.Select(k => k.Kanji).ToList(),

@@ -10,14 +10,14 @@ namespace Games.Pairs.UI
     /// </summary>
     public class PlayerHud : AnimatedMenu
     {
-        private MenuManager menuManager;
         public TextMeshProUGUI LevelText;
         public Button Pause;
+        private MenuManager menuManager;
 
         // Start is called before the first frame update
         void Start()
         {
-            menuManager = gameObject.GetComponentInParent<MenuManager>();
+            menuManager = getMenuManager();
             Pause.onClick.AddListener(pause_clicked);
         }
     

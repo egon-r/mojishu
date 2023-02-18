@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using Games.KanjiQuiz.Savegame;
 using Games.Shared.Data;
 using Games.Shared.Util.Menu;
 using Scenes.MainMenu;
@@ -13,24 +12,26 @@ namespace Games.KanjiQuiz.UI
 {
     public class LevelSelectMenu : AnimatedMenu
     {
-        public KanjiQuizGame Game;
+        private KanjiQuizGame Game;
         public TMP_Dropdown KanjiSetDropdown;
         public Button BackButton;
+        public Button SettingsButton;
         public Button StartButton;
-        public Toggle ShowRomajiToggle;
-        public Toggle ShowEnglishTranslationsToggle;
+        private MenuManager menuManager;
 
         private void OnEnable()
         {
-            var savedata = new KanjiQuizSaveData();
-            savedata.ReadFromFile();
+            Game.SaveFile.ReadFromFile();
         }
 
         private void Start()
-        {
+        {            
+            Game = KanjiQuizGame.GetCurrentGame();
+            menuManager = getMenuManager();
             InitializeKanjiSetDropdown();
             BackButton.onClick.AddListener(BackButton_clicked);
             StartButton.onClick.AddListener(StartButton_clicked);
+            SettingsButton.onClick.AddListener(SettingsButton_clicked);
         }
 
         private void Update()
@@ -42,6 +43,14 @@ namespace Games.KanjiQuiz.UI
                     BackButton_clicked();
                 }
             }
+        }
+        
+        private void SettingsButton_clicked()
+        {
+            menuManager.HideCurrentMenu(() =>
+            {
+                menuManager.ShowMenu(menuManager.GetMenuByType<SettingsMenu>());
+            });
         }
 
         private void InitializeKanjiSetDropdown()
@@ -59,14 +68,11 @@ namespace Games.KanjiQuiz.UI
 
         private void StartButton_clicked()
         {
-            var menuManager = gameObject.GetComponentInParent<MenuManager>();
             Debug.Log($"Selected Set: {KanjiData.Datasets.ElementAt(KanjiSetDropdown.value).Key}");
             menuManager.HideCurrentMenu(() =>
             {
                 Game.StartRound(
                     new KanjiQuizGameInitData(
-                        ShowRomajiToggle.isOn,
-                        ShowEnglishTranslationsToggle.isOn,
                         KanjiData.Datasets.ElementAt(KanjiSetDropdown.value).Key,
                         6
                     )

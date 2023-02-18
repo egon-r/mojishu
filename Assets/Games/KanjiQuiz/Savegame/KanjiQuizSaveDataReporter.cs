@@ -10,9 +10,9 @@ namespace Games.KanjiQuiz.Savegame
 {
     public class KanjiQuizSaveDataReporter
     {
-        private KanjiQuizSaveData saveData;
+        private KanjiQuizSavefile saveData;
 
-        public KanjiQuizSaveDataReporter(KanjiQuizSaveData saveData)
+        public KanjiQuizSaveDataReporter(KanjiQuizSavefile saveData)
         {
             this.saveData = saveData;
         }

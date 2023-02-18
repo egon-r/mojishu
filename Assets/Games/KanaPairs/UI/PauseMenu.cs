@@ -12,15 +12,15 @@ namespace Games.Pairs.UI
     /// </summary>
     public class PauseMenu : AnimatedMenu
     {
-        private MenuManager menuManager;
         public Button Resume;
         public Button LevelSelect;
         public Button MainMenu;
+        private MenuManager menuManager;
 
         // Start is called before the first frame update
         void Start()
         {
-            menuManager = gameObject.GetComponentInParent<MenuManager>();
+            menuManager = getMenuManager();
             Resume.onClick.AddListener(resume_clicked);
             LevelSelect.onClick.AddListener(levelSelect_clicked);
             MainMenu.onClick.AddListener(mainMenu_clicked);

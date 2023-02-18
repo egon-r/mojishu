@@ -18,7 +18,6 @@ namespace Games.Pairs.UI
     /// </summary>
     public class LevelSelectMenu : AnimatedMenu
     {
-        private MenuManager menuManager;
         public Sprite buttonHighlightSprite;
         public Sprite buttonDefaultSprite;
         public Button katakanaButton;
@@ -31,6 +30,7 @@ namespace Games.Pairs.UI
         public GameObject levelPanelContainer;
         public PairsGame pairsGame;
 
+        private MenuManager menuManager;
         private PairsSaveData pairsSaveData = new PairsSaveData();
         private Dictionary<string, LevelListItem> kanaLevelPanels = new Dictionary<string, LevelListItem>();
         private Dictionary<string, LevelListItem> hiraganaLevelPanels = new Dictionary<string, LevelListItem>();
@@ -42,14 +42,14 @@ namespace Games.Pairs.UI
         // Start is called before the first frame update
         void Start()
         {
-            menuManager = gameObject.GetComponentInParent<MenuManager>();
-
+            menuManager = getMenuManager();
+            
             hiraganaButton.onClick.AddListener(hiraganaButton_clicked);
             katakanaButton.onClick.AddListener(katakanaButton_clicked);
             mixedButton.onClick.AddListener(mixedButton_clicked);
             backButton.onClick.AddListener(backButton_clicked);
 
-            // order matters
+            // order matters here
             CreateHiraganaLevelItems();
             CreateKatakanaLevelItems();
             CreateMixedLevelItems();

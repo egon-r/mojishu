@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using UnityEngine.Device;
 using UnityEngine.Networking;
+using Debug = UnityEngine.Debug;
 
 namespace Games.Shared.Util
 {
@@ -10,7 +11,11 @@ namespace Games.Shared.Util
     {
         public static DownloadHandler getFinishedFileDownloadHandler(string path, int timeoutMs = 2000)
         {
+#if UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
             var fileReq = UnityWebRequest.Get("file://" + path);
+#else
+            var fileReq = UnityWebRequest.Get(path);
+#endif
             fileReq.SendWebRequest();
             
             var timeoutWatch = new Stopwatch();

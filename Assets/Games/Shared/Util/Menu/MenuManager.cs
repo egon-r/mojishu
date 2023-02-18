@@ -11,6 +11,8 @@ namespace Games.Shared.Util.Menu
         public List<CanvasGroup> Menus;
         public CanvasGroup InitialMenu;
         private CanvasGroup CurrentMenu;
+        [HideInInspector]
+        public int selectedEditorMenuIndex = 0;
 
         private void Start()
         {

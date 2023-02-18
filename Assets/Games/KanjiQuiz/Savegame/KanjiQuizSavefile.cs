@@ -18,12 +18,16 @@ namespace Games.KanjiQuiz.Savegame
         public List<Tuple<string, double>> Guesses;
     }
     
-    public class KanjiQuizSaveData: SerializedSavefile
+    public class KanjiQuizSavefile: SerializedSavefile
     {
         private static int HISTORY_SIZE = 20;
         
         [JsonProperty("kanji_stats")]
         public Dictionary<string, Queue<KanjiQuizSymbolStats>> KanjiStats = new();
+
+        public bool showRomaji = true;
+        public bool showEnglishTranslations = true;
+        public double questionPanelFontSize = 40.0;
 
         public void AddKanjiStats(string symbol, KanjiQuizSymbolStats stats, bool writeToFile = true)
         {
