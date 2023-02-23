@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 namespace Scenes.MainMenu
 {
+    [AutoAssignable]
     public class MainMenu: AnimatedMenu
     {
         public Button Play;
         public Button Credits;
         public Button Exit;
-        public TextMeshProUGUI versionText;
+        public TextMeshProUGUI VersionText;
     }
 }
