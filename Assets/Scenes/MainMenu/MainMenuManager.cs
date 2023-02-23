@@ -1,22 +1,19 @@
-using System;
-using System.Collections.Generic;
-using DigitalRuby.Tween;
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
+using Games.Shared.Util.Menu;
+
 
 namespace Scenes.MainMenu
 {
-    public class MainMenuManager : MonoBehaviour
+    public class MainMenuManager : MenuManager
     {
         public enum MainMenuEntryPoint
         {
             MAIN, PLAY
         }
 
-        // instantly jumps to a specific menu, used f.e. when clicking "back" from a different scene
+        // instantly jumps to a specific menu, used when clicking "back" from a different scene
         public static MainMenuEntryPoint EntryPoint = MainMenuEntryPoint.MAIN; 
-    
+        
+        /*
         public List<CanvasGroup> childMenus = new List<CanvasGroup>();
         public CanvasGroup settingsMenu;
         public CanvasGroup playMenu;
@@ -92,30 +89,6 @@ namespace Scenes.MainMenu
                 AnimateInPlayMenu(_ => { });
                 ShowMenu(playMenu);
             });
-        }
-
-        private void Settings_clicked()
-        {
-            Debug.Log("Settings");
-            /*
-        System.Action<ITween<float>> rotate = (t) =>
-        {
-            settingsButton.transform.rotation = Quaternion.identity;
-            settingsButton.transform.Rotate(transform.forward, t.CurrentValue);
-        };
-        System.Action<ITween<float>> rotateFinished = (t) =>
-        {
-            ShowMenu(settingsMenu);
-        };
-
-        float startAngle = settingsButton.transform.rotation.eulerAngles.z;
-        float endAngle = startAngle + 360.0f;
-
-        settingsButton.gameObject.Tween(
-            "Settings", startAngle, endAngle, 1.0f, TweenScaleFunctions.CubicEaseInOut,
-            rotate, rotateFinished
-        );
-        */
         }
 
         public void HideMenu(CanvasGroup menu)
@@ -229,5 +202,6 @@ namespace Scenes.MainMenu
                 onAnimFinished
             );
         }
+        */
     }
 }

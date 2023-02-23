@@ -8,6 +8,7 @@ namespace Scenes.MainMenu
 {
     public class CreditsMenu : MonoBehaviour
     {
+        /*
         public MainMenuManager MainMenu;
         public Button MainMenuButton;
     
@@ -32,5 +33,6 @@ namespace Scenes.MainMenu
         {
             MainMenu.ShowMenu(MainMenu.mainMenu);
         }
+        */
     }
 }

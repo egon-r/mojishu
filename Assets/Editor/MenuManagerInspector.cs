@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Editor
 {
-    [CustomEditor(typeof(MenuManager))]
+    [CustomEditor(typeof(MenuManager), true)]
     public class MenuManagerInspector : UnityEditor.Editor
     {
         public override void OnInspectorGUI()

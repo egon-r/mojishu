@@ -25,7 +25,7 @@ namespace Games.KanjiQuiz.Savegame
         [JsonProperty("kanji_stats")]
         public Dictionary<string, Queue<KanjiQuizSymbolStats>> KanjiStats = new();
 
-        public bool showRomaji = true;
+        public bool showRomaji = false;
         public bool showEnglishTranslations = true;
         public double questionPanelFontSize = 40.0;
 

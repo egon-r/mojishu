@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DigitalRuby.Tween;
 using Games.KanjiQuiz.Savegame;
+using Games.KanjiQuiz.UI;
 using Games.Shared.Data;
 using Games.Shared.Util;
 using UnityEngine;
@@ -59,7 +60,7 @@ namespace Games.KanjiQuiz
             gameObject.SetActive(true);
         }
 
-        private List<KanjiInfo> PickRandomKanji(IList<KanjiInfo> fromList, bool considerCurrentKanji = true)
+        private List<KanjiInfo> PickRandomKanji(IList<KanjiInfo> fromList)
         {
             var answerOptionSet = new HashSet<KanjiInfo>() { currentAnswer };
             while (answerOptionSet.Count < currentGameInitData.NumAnswers)
@@ -109,8 +110,17 @@ namespace Games.KanjiQuiz
             playerGuesses.Add(new Tuple<string, double>(card.Kanji.Kanji, Utils.CurrentUnixTimestamp()));
             if (card.Kanji == currentAnswer)
             {
-                if (card.state == KanjiQuizAnswerCard.CardState.CORRECT)
+                if (card.state != KanjiQuizAnswerCard.CardState.CORRECT)
                 {
+                    // 1st click on correct
+                    currentAnswerCard = card;
+                    currentAnswerCard.MarkAsCorrect();
+                    QuestionPanel.Solved = true;
+                    StartHideAnswersAnim( () => {});
+                }
+                else
+                {
+                    // 2nd click on correct
                     card.IgnorePointerEvents = true;
                     SaveFile.AddKanjiStats(card.Kanji.Kanji, new KanjiQuizSymbolStats()
                     {
@@ -124,12 +134,6 @@ namespace Games.KanjiQuiz
                         Destroy(card.gameObject);
                         StartRound(currentGameInitData);
                     });
-                }
-                else
-                {
-                    currentAnswerCard = card;
-                    currentAnswerCard.MarkAsCorrect();
-                    StartHideAnswersAnim( () => {});
                 }
             }
             else

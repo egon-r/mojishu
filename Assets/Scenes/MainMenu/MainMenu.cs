@@ -1,7 +1,15 @@
-﻿namespace Scenes.MainMenu
+﻿using Games.Shared.Util;
+using Games.Shared.Util.Menu;
+using TMPro;
+using UnityEngine.UI;
+
+namespace Scenes.MainMenu
 {
-    public class MainMenu
+    public class MainMenu: AnimatedMenu
     {
-        
+        public Button Play;
+        public Button Credits;
+        public Button Exit;
+        public TextMeshProUGUI versionText;
     }
 }

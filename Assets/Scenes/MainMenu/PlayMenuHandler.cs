@@ -8,6 +8,7 @@ namespace Scenes.MainMenu
 {
     public class PlayMenuHandler : MonoBehaviour
     {
+        /*
         public MainMenuManager MainMenu;
         public Button BackButton;
         public Button KanaPairsGame;
@@ -74,5 +75,6 @@ namespace Scenes.MainMenu
         {
             LoadGameButtonClicked(KanaPairsGame, "Scenes/PairsGame");
         }
+        */
     }
 }
