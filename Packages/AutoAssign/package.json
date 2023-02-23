@@ -1,0 +1,18 @@
+{
+  "name": "dev.egonr.dev.egonr.autoassign",
+  "version": "0.0.1",
+  "displayName": "Auto Assign",
+  "description": "Auto assigns fields that match with children.",
+  "unity": "2021.3",
+  "unityRelease": "18f1",
+  "keywords": [
+    "Auto",
+    "Assign",
+    "egonr.dev"
+  ],
+  "author": {
+    "name": "Egon Rabeder",
+    "email": "contact@egonr.dev",
+    "url": "https://egonr.dev"
+  }
+}
