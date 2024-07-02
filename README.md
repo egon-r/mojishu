@@ -1,5 +1,9 @@
 # Mojishu
 
+![mojishu1](https://github.com/egon-r/mojishu/assets/107209158/f01bb996-cc70-4fdc-b2ec-1fa9e2f74a23)
+![mojishu2](https://github.com/egon-r/mojishu/assets/107209158/8a67a350-6f26-4cba-843f-c30e37cc329b)
+![mojishu3](https://github.com/egon-r/mojishu/assets/107209158/cea431e4-137c-4bb2-b1b1-eec13726dbbd)
+
 ## Related Projects
 - [NMeCab](https://github.com/egon-r/NMeCab)
 - [Kawazu](https://github.com/egon-r/Kawazu)
